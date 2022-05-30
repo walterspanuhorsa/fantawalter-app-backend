@@ -51,4 +51,18 @@ public class fanta {
     	}
     	return maxVal;
     }
+    
+    
+    public static int returnXpValue(String csv_value) {
+    	int xpValue = 0;
+    	
+    	if (csv_value.contains("-")) {
+    		String[] aValues = csv_value.split("-");
+    		String[] readyInt= aValues[0].split(".");
+    		
+    		System.out.println(readyInt[0]);
+    	}
+    	
+    	return xpValue;
+    }
 }
