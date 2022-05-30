@@ -64,6 +64,14 @@ public class fanta {
     		xpValue = Integer.parseInt(readyInt[0]);
     	}
     	
+    	if (csv_value.contains("+")) {
+    		String[] aValues = csv_value.split("+");
+    		String[] readyInt= aValues[0].split("\\.");
+    		
+    		xpValue = Integer.parseInt(readyInt[0]);
+    	}
+    	
+    	
     	return xpValue;
     }
 }
