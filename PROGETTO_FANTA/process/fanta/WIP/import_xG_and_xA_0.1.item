@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DWFIKQOXcg/8chMtRrRq2y+X0iQXImkm9MQZFLJv"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:1oANELsf9ruQQVcmaoKDy2SUs35ZKlG2TXR+zqVx"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:g3eodscTamq3OU+VPSLjzrhQPdUSe3FVyyqu9Mlh"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:pKnkdH5Py5hQkmJ4v027yFGgFfJcMIXDq5cTXV87"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -127,7 +127,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Europe/Paris&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/Yv+gQA7NNZl68BBr0vRvc8RcfvoL4PbG9f6nvKq"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rsT9ktCRS1IAXLAs9jVYzUrNeK4V1wvP+dQYDUx2"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -249,25 +249,31 @@
       <column comment="" key="false" length="-1" name="Numero" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="cognome" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="55" name="inizCognome" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="xG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="xA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz1" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz2" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz3" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomteTecnico_opz4" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;output_row.Numero = input_row.Numero;&#13;&#10;//output_row.Player = input_row.Player;&#10;&#10;&#10;String[] aValues = input_row.Player.split(&quot; &quot;);&#10;&#10;&#10;output_row.nome =  aValues[0];&#10;output_row.cognome =  aValues[1].toUpperCase();&#10;output_row.inizCognome = aValues[1].toUpperCase() +  &quot; &quot; +StringHandling.SUBSTR(aValues[0], 0, 1)+&quot;.&quot;;&#10;&#10;&#10;output_row.xG = fanta.returnXpValue(input_row.xG);&#10;output_row.xA = fanta.returnXpValue(input_row.xA);&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;output_row.Numero = input_row.Numero;&#13;&#10;//output_row.Player = input_row.Player;&#10;&#10;&#10;String[] aValues = input_row.Player.split(&quot; &quot;);&#10;&#10;&#10;output_row.nome =  aValues[0];&#10;output_row.cognome =  aValues[1].toUpperCase();&#10;output_row.inizCognome = aValues[1].toUpperCase() +  &quot; &quot; +StringHandling.SUBSTR(aValues[0], 0, 1)+&quot;.&quot;;&#10;&#10;&#10;output_row.xG = fanta.returnXpValue(input_row.xG);&#10;output_row.xA = fanta.returnXpValue(input_row.xA);&#10;&#10;if(!Relational.ISNULL(aValues[3]){&#10;&#9;output_row.nomeTecnico_opz1= aValues[3].toUpperCase();&#10;&#9;output_row.nomeTecnico_opz1= aValues[3].toUpperCase() +&quot; &quot;+ aValues[3].toUpperCase();&#10;}&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="metadata" name="tJavaRow_1">
       <column comment="" key="false" length="-1" name="Numero" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="cognome" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="55" name="inizCognome" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="xG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="xA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz1" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz2" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz3" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomteTecnico_opz4" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="192">
@@ -290,11 +296,17 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="cognome"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="inizCognome"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="xG"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="xA"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nomeTecnico_opz1"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nomeTecnico_opz2"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nomeTecnico_opz3"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nomteTecnico_opz4"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
@@ -304,9 +316,12 @@
       <column comment="" key="false" length="-1" name="Numero" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="cognome" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="55" name="inizCognome" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="xG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="xA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz1" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz2" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomeTecnico_opz3" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="55" name="nomteTecnico_opz4" nullable="true" originalLength="55" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
@@ -319,7 +334,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:LjrpOctkwuDhlkEq50qUsmzy23DaDxSCli99GhhE"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:g/Xzl/8b/iwpHidYFrREs3OUjZO8C0Hib9+ifShl"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -371,6 +386,17 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="nomteTecnico_opz4"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nomeTecnico_opz3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nomeTecnico_opz2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
@@ -418,13 +444,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5b94723a-38bb-4977-a0d7-d584e2e37a4a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Fl9VVQAXL+hDqbIijht/7F0PVUdP9OKs829SqD8d8UnlsBWBDZViCTi2Cisi0j22OVTXiAvo4gj3&#13;
-5DE2oK8yWg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e20ef009-a6bb-4dc2-a107-da188360d54a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uaMfn5PwEKZjVQ4lxg+Yao0hh2eKlpS47kmixmONpeQoC+rJ4fR9gEfhPssvymi8RdpaUyuYVetw&#13;
-4DPms+hfSQ==</DigestValue></Reference></SignedInfo><SignatureValue>Ms+nI0r+QdMwxfvLa/MlYuk7srEVpacWDoH5LXwQgFgH5jnyUz0fjmFuxqk6L+T0Ozrh9mABibRP&#13;
-+T0i2nEz0bKkRenwWI/K16MDfVshuUQmLDEFM4vjD84ONHptDmsQgn7upOGTauPuaWpI7FAmXEK+&#13;
-St//lgrH5Vf1L9e2Mpv7I7uLjqIW8hSJn8bBPwKy+ee3ut4dlSuzcKNKaALfeM+08meJY5qaqil5&#13;
-qec603QOxFu8qSN3KNAVWeuCg0sEht8fLFd7gg2g4dFmJFNZ4rxndgU1eIt7yOebJ2aHbVjcljHN&#13;
-J3yJHcoOVC7auow1NQn3lx6rbU+hTudynLdjvA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3fad0ee8-2139-484d-9763-e2076ae2ef2a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MmibWmwdsSdc53bK5ncONuJwmGdtSqG+iK7eOnMHiHAKYG8G064STyEQVTnLTVeh9qL2glMKxtba&#13;
+aZPGRAruUw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_498ca8b4-1e25-494f-b743-f455ab733f44"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KmGZYaMS1mlqBNgqieKqOsLHQu/L+ZyCQZW3a+cHBx0ZkIcssXbwIY5UYOudvxFh2uOIj1Nqob/E&#13;
+r0g3fBZkNQ==</DigestValue></Reference></SignedInfo><SignatureValue>YB/UQksLZp4e5z0VW4tipjcDTuW+L8rAqD/9z5YpVjFSh10Ui6diJGYwungDGRJ8sRaxVT2j09Mk&#13;
+03rMJHU+e3IRpGLCfhh9qa9v693wpyj7UfLcHV+KUhD9kV3HvTtgLVyq8Edb3h7KlfkOccFS1Ijt&#13;
+X5kTaLjbb5uTD8ryBbg/VNJnJP6Ai4DVquHHpfuYjNM3QQZi9LqmTRK6g9z6O9TuYd1PO5cF/ZR7&#13;
+ymElbmcSk4wUzIq3T4lybMqWSA0I/DMEJKnDSq4K6jkeoWbPyga96yJ3FCGlwAp4ZAudsuOkbduT&#13;
+qiwo1us2HBY92ZYSrthCZGlZWqibT735RewuFg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -446,4 +472,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e20ef009-a6bb-4dc2-a107-da188360d54a" Target="#_5b94723a-38bb-4977-a0d7-d584e2e37a4a"><Timestamp>2022-05-30 23:07:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_498ca8b4-1e25-494f-b743-f455ab733f44" Target="#_3fad0ee8-2139-484d-9763-e2076ae2ef2a"><Timestamp>2022-05-30 23:11:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
