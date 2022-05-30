@@ -65,7 +65,7 @@ public class fanta {
     	}
     	
     	if (csv_value.contains("+")) {
-    		String[] aValues = csv_value.split("+");
+    		String[] aValues = csv_value.split("\\+");
     		String[] readyInt= aValues[0].split("\\.");
     		
     		xpValue = Integer.parseInt(readyInt[0]);
