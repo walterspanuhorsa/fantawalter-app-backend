@@ -1,0 +1,90 @@
+package routines;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.util.Properties;
+
+import javax.activation.DataHandler;
+import javax.mail.BodyPart;
+import javax.mail.Flags.Flag;
+import javax.mail.Folder;
+import javax.mail.Message;
+import javax.mail.Part;
+import javax.mail.Session;
+import javax.mail.Store;
+import javax.mail.internet.MimeMultipart;
+
+import org.apache.commons.lang3.StringUtils;
+
+public class EmailReader {
+
+	private static Properties emailProperties;
+
+	static {
+		emailProperties = new Properties();
+		emailProperties.setProperty("mail.store.protocol", "imaps");
+		emailProperties.setProperty("mail.imaps.host", "mail.prixquality.com");
+		emailProperties.setProperty("mail.imaps.port", "993");
+		emailProperties.setProperty("mail.imaps.connectiontimeout", "5000");
+		emailProperties.setProperty("mail.imaps.timeout", "5000");
+		emailProperties.setProperty("mail.imap.socketFactory.class",
+				"javax.net.ssl.SSLSocketFactory");
+		emailProperties
+				.setProperty("mail.imap.socketFactory.fallback", "false");
+	}
+
+	public EmailReader() {
+		try {
+			connect();
+		} catch (Exception e) {
+			System.out.println("Failed to connect to email server:" + e);
+		}
+	}
+
+	private void connect() throws Exception {
+		Session session = Session.getDefaultInstance(emailProperties);
+		Store store = session.getStore("imaps");
+		store.connect("prix.banchi-frigo@prixquality.com", "Ogirf-Ihcnab.Xirp");
+		Folder folders[] = store.getDefaultFolder().list();
+		System.out.println("Folder length: " + folders.length);
+		Folder inbox = store.getDefaultFolder().getFolder("INBOX");
+		inbox.open(Folder.READ_WRITE);
+		System.out.println("Number of unread messages in inbox: "
+				+ inbox.getUnreadMessageCount());
+		System.out.println("Number of messages in inbox: " + inbox.getMessageCount());
+		int firstUnreadMessage = inbox.getMessageCount()
+				- inbox.getUnreadMessageCount();
+		for (int i = firstUnreadMessage; i < inbox.getMessageCount(); i++) {
+			System.out.println("Fetching message: " + i);
+			Message msg = inbox.getMessages()[i];
+			String subject = msg.getSubject();
+			if (subject.contains("resume")) {
+				DataHandler handler = msg.getDataHandler();
+				MimeMultipart attachment = (MimeMultipart) handler.getContent();
+				System.out.println("Attachment count: " + attachment.getCount());
+				for (int j = 0; j < attachment.getCount(); j++) {
+					BodyPart bodyPart = attachment.getBodyPart(j);
+					if (!Part.ATTACHMENT.equalsIgnoreCase(bodyPart
+							.getDisposition())
+							&& !StringUtils.isNotBlank(bodyPart.getFileName())) {
+						continue; // dealing with attachments only
+					}
+					InputStream is = bodyPart.getInputStream();
+					File f = new File("/tmp/" + bodyPart.getFileName());
+					FileOutputStream fos = new FileOutputStream(f);
+					byte[] buf = new byte[4096];
+					int bytesRead;
+					while ((bytesRead = is.read(buf)) != -1) {
+						fos.write(buf, 0, bytesRead);
+					}
+					fos.close();
+				}
+			}
+			System.out.println(msg.getSubject());
+			msg.setFlag(Flag.SEEN, true);
+		}
+		inbox.close(false);
+		System.out.println("Successfully connected to email service");
+	}
+}

@@ -1,0 +1,26 @@
+package routines;
+import java.io.*;
+
+
+public class Walt_MD5 {
+
+		
+		public static String getHashString(Field[] input_row){
+			Field[] input_row_f = input_row.getClass().getDeclaredFields();
+			String MD5String = "";
+
+			for (int i = 0; i < input_row_f.length; i++) {
+			Field input_field = input_row_f[i];
+
+			int mod = input_field.getModifiers();
+			if (!Modifier.isStatic(mod) && Modifier.isPublic(mod)) {
+			MD5String = MD5String + input_field.get(input_row);
+
+		}
+
+	}
+			MD5 md5 = new MD5();
+			md5.update(MD5String);
+			return md5.getHashString();
+  }
+}
