@@ -61,7 +61,9 @@ public class fanta {
     		String[] aValues = csv_value.split("-");
     		String[] readyInt= aValues[0].split("\\.");
     		
-    		xpValue = Math.round(Float.parseFloat(readyInt[0]));
+    		
+    		
+    		xpValue = Math.round(Double.parseDouble(readyInt[0]));
     	}
     	
     	if (csv_value.contains("+")) {
