@@ -59,18 +59,16 @@ public class fanta {
     	
     	if (csv_value.contains("-")) {
     		String[] aValues = csv_value.split("-");
-    		String[] readyInt= aValues[0].split("\\.");
-    		
-    		
-    		
+
+    		xpValue = (int)Math.round(Double.parseDouble(aValues[0]));
+ 
     		
     	}
     	
     	if (csv_value.contains("+")) {
-    		String[] aValues = csv_value.split("\\+");
-    		String[] readyInt= aValues[0].split("\\.");
-    		
-    		xpValue = (int)Math.round(Double.parseDouble(readyInt[0]));
+    		String[] aValues = csv_value.split("+");
+
+    		xpValue = (int)Math.round(Double.parseDouble(aValues[0]));
     	}
     	
     	
