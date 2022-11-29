@@ -74,4 +74,34 @@ public class fanta {
     	
     	return xpValue;
     }
+    
+    public static int calcolaPrezzo(int ind_app, String ruolo) {
+    	int valore = 1;
+    	
+    	
+    	if ("P".equals(ruolo)){
+
+    		valore = (int)((ind_app-70)*2);
+    		} 
+    		if ("D".equals(ruolo)){
+
+    		valore = (int)((ind_app-70)*1.5);
+    		} 
+    		if ("C".equals(ruolo)){
+
+    		valore = (int)((ind_app -75)*2.8); 
+    		} 
+    		if ("A".equals(ruolo)){
+
+
+    		valore = (int)((ind_app-75)*8.5);
+    		} 
+
+    		valore = (valore< 1)? 1 : valore;
+
+    	
+    	
+    	return valore;
+    }
+    
 }
