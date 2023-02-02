@@ -60,7 +60,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:nwazL0HhfaLcWK8I2EGmHfdUciXmTWw+solXC5bo"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:7cMPo6DzEWmouDB/i7eMfka2Yps36QR3p9gXix2E"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -95,7 +95,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AIU+dspiKdsbTaQbfV4caKUls/ZUtNNdBYJbKIoB"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ahZu0fFLJhUMgwI7RSQcqvIBcqb+nCe3AbDjS3YI"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -143,7 +143,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;serverTimezone=Europe/Rome&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rEG8LM8FBwh47CVki9xo69ZgJp7NLiGDwfCPA2sL"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bo5EEfg7eAsw2VkwGZO2l32uzfW//mo+wGHmBXmt"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -172,7 +172,6 @@
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/Talend-Studio/workspace/temp/risultati_giornata&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
@@ -195,10 +194,9 @@
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:qewKk7IJ0JMWDDOqAUmlf6DQEUdUnVl2CnxTsPKC"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:ROz6oDA8Loa8f9fr3bHnyVMF1+T1+uJHaGldJgJG"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;newLine&quot;"/>
@@ -273,7 +271,6 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//codice generato in accordo con schema di input e output&#13;&#10;output_row.ruolo = input_row.ruolo;&#13;&#10;output_row.nomeGiocatore = input_row.nomeGiocatore;&#13;&#10;output_row.squadra = input_row.squadra;&#13;&#10;output_row.voto = input_row.voto;&#13;&#10;output_row.votomodif = input_row.votomodif;&#13;&#10;&#10;&#10;if(Relational.ISNULL(input_row.nomeGiocatore) || input_row.nomeGiocatore.equals(&quot;&quot;)){&#10;if (Mathematical.NUM(input_row.ruolo) == 0){&#10;&#10;&#9;context.nome_squadra= input_row.ruolo;&#10;}&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -287,7 +284,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -322,114 +318,6 @@
       <column comment="" key="false" length="-1" name="votomodif" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileExcelWorkbookOpen" componentVersion="13.5" offsetLabelX="0" offsetLabelY="0" posX="256" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExcelWorkbookOpen_1"/>
-    <elementParameter field="CHECK" name="CREATE_EMPTY_WORKBOOK" value="false"/>
-    <elementParameter field="CHECK" name="USE_BYTEARRAY" value="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/Talend-Studio/workspace/temp/risultati_giornata/Formazioni_fantasygnocca_1_giornata.xlsx&quot;"/>
-    <elementParameter field="TEXT" name="BYTEARRAY" show="false" value="yourByteArrayVariable"/>
-    <elementParameter field="CLOSED_LIST" name="SPREADSHEET_TYPE" show="false" value="XLSX"/>
-    <elementParameter field="LABEL" name="CONFIGTEXT" value="The memory saving mode currently applies only to the writing of large files, not to the reading!"/>
-    <elementParameter field="CHECK" name="CREATE_STREAMING_WORKBOOK" value="false"/>
-    <elementParameter field="CHECK" name="DIE_IF_FILE_NOT_EXISTS" value="true"/>
-    <elementParameter field="CHECK" name="DECRYPT_FILE" value="false"/>
-    <elementParameter field="TEXT" name="PASSWORD" show="false" value="&quot;secret&quot;"/>
-    <elementParameter field="CHECK" name="REGISTER_BACKPORT_FUNCTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FUNCTION_ADDONS"/>
-    <elementParameter field="TEXT" name="ZIP_BOMB_WARNING_THRESHOLD" value="0.005d"/>
-    <elementParameter field="LABEL" name="RELEASE_LABEL_20220523" value="Release: 13.5 build at: 20220523"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-  </node>
-  <node componentName="tFileExcelReferencedCellInput" componentVersion="13.5" offsetLabelX="0" offsetLabelY="0" posX="544" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExcelReferencedCellInput_1"/>
-    <elementParameter field="COMPONENT_LIST" name="WORKBOOK" value="tFileExcelWorkbookOpen_1"/>
-    <elementParameter field="CHECK" name="IGNORE_MISSING_CELLS" value="false"/>
-    <elementParameter field="LABEL" name="RELEASE_LABEL_20220523" value="Release: 13.5 build at: 20220523"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFileExcelReferencedCellInput_1">
-      <column comment="Cell reference (optional with sheet)" defaultValue="" key="false" length="64" name="IN_CELL_REF" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Sheet name or index (0-based) will be used if not given in Excel cell reference" defaultValue="" key="false" length="32" name="IN_SHEET_NAME_OR_INDEX" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="Row index (1-based) will be used if Excel cell reference is empty" defaultValue="" key="false" length="10" name="IN_CELL_ROW" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="Column as index (0-based) or name (A-based) will be used if Excel cell reference is empty" defaultValue="" key="false" length="4" name="IN_CELL_COL" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="Cell value as Object" defaultValue="" key="false" length="0" name="OUT_CELL_VALUE_OBJECT" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="Cell value as String" defaultValue="" key="false" length="255" name="OUT_CELL_VALUE_STRING" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell value as Double (if it is a number)" defaultValue="" key="false" length="22" name="OUT_CELL_VALUE_DOUBLE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="Cell value as Date (if it is a date)" defaultValue="" key="false" length="10" name="OUT_CELL_VALUE_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="Cell value as Boolean (if it is a boolean)" defaultValue="" key="false" length="0" name="OUT_CELL_VALUE_BOOLEAN" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column comment="Cell formula" defaultValue="" key="false" length="255" name="OUT_CELL_FORMULA" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell type as Java class name" defaultValue="" key="false" length="255" name="OUT_CELL_TYPE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell comment text" defaultValue="" key="false" length="255" name="OUT_CELL_COMMENT" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell comment author" defaultValue="" key="false" length="255" name="OUT_CELL_COMMENT_AUTHOR" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell background color as r:g:b" defaultValue="" key="false" length="16" name="OUT_CELL_BG_COLOR" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell foreground color as r:g:b" defaultValue="" key="false" length="16" name="OUT_CELL_FG_COLOR" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="544">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_CELL_REF"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_SHEET_NAME_OR_INDEX"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_CELL_ROW"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IN_CELL_COL"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_VALUE_OBJECT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_VALUE_STRING"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_VALUE_DOUBLE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_VALUE_DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_VALUE_BOOLEAN"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_FORMULA"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_TYPE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_COMMENT"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_COMMENT_AUTHOR"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_BG_COLOR"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="OUT_CELL_FG_COLOR"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_2">
-      <column comment="Cell reference (optional with sheet)" defaultValue="" key="false" length="64" name="IN_CELL_REF" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Sheet name or index (0-based) will be used if not given in Excel cell reference" defaultValue="" key="false" length="32" name="IN_SHEET_NAME_OR_INDEX" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="Row index (1-based) will be used if Excel cell reference is empty" defaultValue="" key="false" length="10" name="IN_CELL_ROW" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column comment="Column as index (0-based) or name (A-based) will be used if Excel cell reference is empty" defaultValue="" key="false" length="4" name="IN_CELL_COL" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="Cell value as Object" defaultValue="" key="false" length="0" name="OUT_CELL_VALUE_OBJECT" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
-      <column comment="Cell value as String" defaultValue="" key="false" length="255" name="OUT_CELL_VALUE_STRING" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell value as Double (if it is a number)" defaultValue="" key="false" length="22" name="OUT_CELL_VALUE_DOUBLE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="Cell value as Date (if it is a date)" defaultValue="" key="false" length="10" name="OUT_CELL_VALUE_DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="Cell value as Boolean (if it is a boolean)" defaultValue="" key="false" length="0" name="OUT_CELL_VALUE_BOOLEAN" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column comment="Cell formula" defaultValue="" key="false" length="255" name="OUT_CELL_FORMULA" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell type as Java class name" defaultValue="" key="false" length="255" name="OUT_CELL_TYPE" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell comment text" defaultValue="" key="false" length="255" name="OUT_CELL_COMMENT" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell comment author" defaultValue="" key="false" length="255" name="OUT_CELL_COMMENT_AUTHOR" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell background color as r:g:b" defaultValue="" key="false" length="16" name="OUT_CELL_BG_COLOR" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="Cell foreground color as r:g:b" defaultValue="" key="false" length="16" name="OUT_CELL_FG_COLOR" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
@@ -442,27 +330,15 @@
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tFileInputExcel_1">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
-  </connection>
-  <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileExcelWorkbookOpen_1" offsetLabelX="0" offsetLabelY="0" source="tFileExcelWorkbookOpen_1" target="tFileExcelReferencedCellInput_1">
-    <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
-    <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate2"/>
-  </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileExcelReferencedCellInput_1" offsetLabelX="0" offsetLabelY="0" source="tFileExcelReferencedCellInput_1" target="tLogRow_2">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -496,18 +372,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileExcelWorkbookOpen_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ad3b1594-9e4a-4236-bb10-4c41664e1d2e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SJd5QuRU95S1Skrprv8B9c3Ste5CU9mMjqBK3UTklh/T7Fvb4+G2MFukQrf08E5Q29PfEvr7cV3+&#13;
-Vh4Xhy+z3Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_40953690-61cb-4e64-bead-40ff8d2ed47a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o7Y0LK5kBWsakUhRpS9rzfCyZDirFVv1Nh+IRFEUJz8xF3EMOwWyErDjtScF0HREmStaA9eVxyy/&#13;
-AAsxCUgIIQ==</DigestValue></Reference></SignedInfo><SignatureValue>gBfx8E+iJjd0vQ2tbCVGNSv8g1Oo5vYrDVRhIJlYQzT1N2JQl8LUbZo8f1gxdM+3/azAKVOEh/9m&#13;
-HLN27Fy9GJLlwrcIDb3m0O+LQlJMFC4lRYFXyFobV7EL0KjaM2FAu5nOceiO27YLufv8o166IA8c&#13;
-JsQhvsME+WrRa6QSe6glJT9XSa176DMTn1l53GoPPfP+uFjvPnK/VSGPIjZd4fbu6N7BaPTHOWcp&#13;
-yN6zDbbihd8qFDyY4JYnwM9XsaW9qCmh9vOSxhIDDNAYP1k8k+p0RJjLLCSErZcMGEtcVzaYZz/8&#13;
-IsG0SScBBSmSKvjOrKJcpvjulWUhGB+Ev02ukA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a5b1e8a5-74eb-4063-a5ee-db9bfbf090b0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O3z6NMZCPdrThLu76yIW+E4PeuMVl2wW870pcltxHA4S+tNq3JvhcQCDoYUVhyrj1I3q/bcjxTye&#13;
+OBjpSkWJnA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_25700e50-2497-4114-a182-d8c3cf8d2ab3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FQ8KKPENPWanIKPX2SVcQu1OdPd06yx6inHK3/tyn/dXnVzOKp37z5C2DJVH+lmB+InJ4ouGDauj&#13;
+K9EelYF7Rw==</DigestValue></Reference></SignedInfo><SignatureValue>Ggf8EiHBNR8NjRkGbRfS8yCQXjLIFNlZMNXBjc6e3MimlqkcDCKvD2iSYVdX+VTqkvarcKW3XBui&#13;
+Y1UQZpiGbxniP9rvOjWxIJ48lo59t73kHhipj6lMKaggtY+ycrJ+CMOc8Clfk5IvloQEX3/RGFd8&#13;
+0AKoz/SjbBaV9FUAmH/SW0QgfR2WCC/glN70AADJ7Kw39eL3StydunwpTLRmwK9zpBxsIM+xtXqV&#13;
+Ms/n7psjisVh5fbIHMkZlbdTigRhGA3UYOdXuS+Qt6YCNhH5577ZCmLCLyG/FsU/GQqOySRE9kZG&#13;
+nE077Pl422N1EJQXuomUyYewNQTt8m6v656r6A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -529,4 +400,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_40953690-61cb-4e64-bead-40ff8d2ed47a" Target="#_ad3b1594-9e4a-4236-bb10-4c41664e1d2e"><Timestamp>2023-02-02 18:00:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_25700e50-2497-4114-a182-d8c3cf8d2ab3" Target="#_a5b1e8a5-74eb-4063-a5ee-db9bfbf090b0"><Timestamp>2023-02-02 18:02:32</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
