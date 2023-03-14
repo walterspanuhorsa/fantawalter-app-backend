@@ -61,7 +61,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:G7y/OHqYCxjDc5Y0RcmKoqvHP7R7iWZmw7sU+r8k"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:2q/k0egI2DTGrljM9R1dNx0uZkKaYCD5bdOFfK5q"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -96,7 +96,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GZ0S0qI/9MQAPy2f9Yy49bbm2aTFWF9w4od6pUDw"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:dtUU0jXYfZLK/PK/YT+FdDrgIP9Y12qjUrAMVK+v"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -144,7 +144,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;serverTimezone=Europe/Rome&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CjFLCF0HidOz1z5O1uYlM5+Ct4B/KlJyfHRT9OO4"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jxkXadaIYC0iBn460cQyAoeLPgAa4pjkMgF1dDiS"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -173,7 +173,6 @@
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileList_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/Talend-Studio/workspace/temp/risultati_giornata&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
@@ -196,7 +195,6 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.giornata = context.giornata+1;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -204,10 +202,9 @@
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:WGxnQcQhi1VYGFb9vJn5i7Rfozrn+v7zmsSim6ik"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:dipN2u2G+LGSPAKiGcNWkgMTfCaEgVsPP/oST6fI"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;newLine&quot;"/>
@@ -282,7 +279,6 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//codice generato in accordo con schema di input e output&#13;&#10;output_row.ruolo = input_row.ruolo;&#13;&#10;output_row.nomeGiocatore = input_row.nomeGiocatore;&#13;&#10;output_row.squadra = input_row.squadra;&#13;&#10;output_row.voto = input_row.voto;&#13;&#10;output_row.votomodif = input_row.votomodif;&#13;&#10;&#10;&#10;if(!Relational.ISNULL(input_row.ruolo) &#10;&amp;&amp;   (input_row.ruolo.equals(&quot;TETTENHAM&quot;) || input_row.ruolo.contains(&quot;PARAMETRI ZERO&quot;)&#10; ||   input_row.ruolo.equals(&quot;FEL LAZIO&quot;) || input_row.ruolo.contains(&quot;800A&quot;)&#10; ||   input_row.ruolo.equals(&quot;RITORNO AL CELIBATO&quot;) || input_row.ruolo.contains(&quot;AS IGNORANTI&quot;)&#10; ||   input_row.ruolo.equals(&quot;ATLETICO MOGADISCIO&quot;) || input_row.ruolo.contains(&quot;LAUTARO SII O MI SIGNORE&quot;)&#10; )&#10; ){&#10;&#10;&#9;&#9;context.nome_squadra= input_row.ruolo;&#10;&#9;&#9;System.out.println(&quot;ENTRO!&quot;);&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -296,7 +292,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -343,7 +338,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -389,7 +383,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -398,7 +391,7 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7C2TycmdjMU+CJJ7v2WNr+5W4nirDAdskAo7hKvl"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:o5/FFWqtGCzCgR8uT19x2ga7ayV8ZSzGtGlwF8f5"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FormazioniGiornata&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -493,10 +486,9 @@
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:c0my+cgZbleDRfpxiBgFXKTY1nIsyDj09fGnYCo6"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:GgMiUMRNm348X2BtE8nqF+yzoSluBqwcUyCq4x0m"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;newLine&quot;"/>
@@ -571,7 +563,6 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="//codice generato in accordo con schema di input e output&#13;&#10;output_row.ruolo = input_row.ruolo;&#13;&#10;output_row.nomeGiocatore = input_row.nomeGiocatore;&#13;&#10;output_row.squadra = input_row.squadra;&#13;&#10;output_row.voto = input_row.voto;&#13;&#10;output_row.votomodif = input_row.votomodif;&#13;&#10;&#10;&#10;if(!Relational.ISNULL(input_row.ruolo) &#10;&amp;&amp;   (input_row.ruolo.equals(&quot;TETTENHAM&quot;) || input_row.ruolo.contains(&quot;PARAMETRI ZERO&quot;)&#10; ||   input_row.ruolo.equals(&quot;FEL LAZIO&quot;) || input_row.ruolo.contains(&quot;800A&quot;)&#10; ||   input_row.ruolo.equals(&quot;RITORNO AL CELIBATO&quot;) || input_row.ruolo.contains(&quot;AS IGNORANTI&quot;)&#10; ||   input_row.ruolo.equals(&quot;ATLETICO MOGADISCIO&quot;) || input_row.ruolo.contains(&quot;LAUTARO SII O MI SIGNORE&quot;)&#10; )&#10; ){&#10;&#10;&#9;&#9;context.nome_squadra= input_row.ruolo;&#10;&#9;&#9;System.out.println(&quot;ENTRO!&quot;);&#10;}"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -585,7 +576,6 @@
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
@@ -609,7 +599,7 @@
       <column comment="" key="false" length="6" name="votomodif" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="!Relational.ISNULL(row4.nomeGiocatore)" name="copyOfoutput" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="context.counter++" name="id" nullable="true" type="id_Integer"/>
@@ -632,7 +622,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_6"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -678,7 +667,6 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1536" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -687,7 +675,7 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rCJelzqXjSnFno+uVAUhpYmMK0/LjwkVxLOfcf6e"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:2a+uV/wSaBMvNTWgiCV7HARCJjibhr9AzLzTKtu5"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;FormazioniGiornata&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -782,7 +770,6 @@
   </node>
   <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
@@ -791,7 +778,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:croVc/MW8gs3M4XimWKn2wXLxf43T1uMquy00enM"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:rQnBXitLYq4Co2BIt4tcpah5aFRY6c8sVkj/RyK6"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -809,13 +796,14 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBRow_1"/>
     <metadata connector="REJECT" name="REJECT">
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="544">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -825,7 +813,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cCgaEJdWxLgQc8VCY6qSgmtdvvV7A6/9WLp3QlfZ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ywn/LOnbW5cdy8l4PMZMmpuHOtbSpktiINiw9D3H"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -845,25 +833,26 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="nomeFantasquadra"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
       <column comment="" key="false" length="-1" name="nomeFantasquadra" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="544">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFlowToIterate_1"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="true"/>
     <elementParameter field="TABLE" name="MAP" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="544">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.nome_squadra=row11.nomeFantasquadra;&#10;&#10;context.counter = context.counter+1;&#10;&#10;if (context.counter &gt; 0){&#10;context.colonnaX = (context.counter*5) +1;&#10;} else {context.colonnaX = 0;}&#10;;&#10;&#10;System.out.println(context.nome_squadra);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3"/>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="544">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -873,7 +862,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ydvisv0gf0HiR98/EoFG1q9cbRbS80O4xF08IUXq"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:g2Nvi5qLXa2K60GiiaeVj/KgKa++Nhua2AnrT3W9"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -899,6 +888,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="votomodif"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_2">
       <column comment="" key="false" length="-1" name="nomeFantasquadra" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="nomeGiocatore" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -906,7 +896,7 @@
       <column comment="" key="false" length="-1" name="votomodif" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="544">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
@@ -927,7 +917,7 @@
       <column comment="" key="false" length="-1" name="votomodif" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="output_excel" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row6.nomeFantasquadra" name="nomeFantasquadra" nullable="true" type="id_String"/>
@@ -943,7 +933,7 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="544">
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="false"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -970,7 +960,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:HTNSvRw1FOfyujUlKmVz0lZI5bNAlnO/FRbkgqtS"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:Lk/6Dw/TIA/Q0KYxi0kw9DDPpBg+Z01mem7snlgw"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -994,13 +984,12 @@
   </node>
   <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
     <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="544">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.counter = -1;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -1019,21 +1008,17 @@
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tJava_2">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tParallelize_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
   <connection connectorName="FLOW" label="output" lineStyle="0" metaname="output" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
@@ -1049,22 +1034,18 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
   </connection>
   <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tJavaRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="FLOW" label="copyOfoutput" lineStyle="0" metaname="copyOfoutput" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tLogRow_6">
@@ -1080,16 +1061,13 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfoutput"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tLogRow_6" offsetLabelX="0" offsetLabelY="0" source="tLogRow_6" target="tDBOutput_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tFileList_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
   </connection>
   <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tFlowToIterate_1">
@@ -1112,13 +1090,11 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output_excel"/>
   </connection>
-  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tFileInputExcel_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
-  </connection>
   <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tFileInputExcel_2">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Synchronize"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tFileInputExcel_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tDBInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
@@ -1190,13 +1166,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b05a84c4-6c2c-4892-9ae8-da6d9259dea7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6CNMXni6H7tM973rhvg6Ft4yXlEYiN6iAIj5if5RWN0ZtXRDIMPq3ZdK4aLTA2sHh14RYcUcK2yl&#13;
-3o1iTzQnQA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7944f6bf-159a-4f9d-b38a-99decf159d71"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KBFUv0kpewRQ2QA/Ok32dcXi4yn5DTfgWLBVd9ewP4XTfRwG1hZS77A/L4v/RfGVLhco6qCC6v6G&#13;
-BksIgSs6ug==</DigestValue></Reference></SignedInfo><SignatureValue>bBH7pthPbOceMQEiNGABunjyqhCU+Iywzausdqne8Kdw74X/KnuefDHlWMZHsGUV8+F0oX1ExEQt&#13;
-YDlCSvrr4G4Xgqk9I0LYukE4/LQ7OTTlnacbywC82GLL+fcRbQDQvgGZ+S1pnhp+hUdhI9Is73IL&#13;
-hnv3UipmGsYyptwIeSQLds96lm+cq1I95H8dKlAUDJPqUF0Hl7DjmI/4cyR1d2c5dDa3auecoina&#13;
-GDKHeI4gAd9FFvqbqVq5nbppPo78yyTbxT3JZLCraVPL8WaPeznZyWFQ4qKpCjQsHJOLHCusCc1Z&#13;
-x3ZviyBapAvxzLORj9CNjIPZ7dKO9OB4AxJ+tA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_33b202cd-5368-4ddb-98e8-b2de95e7e90c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AWm/rUopmKpDo3n7KOmWc9gNyyl7+FI/XAGNOv9WMrQix6AMKJVQy2DuqvzGt9gj2qj/Bn0g3AEE&#13;
+pKKqTA5o2A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_151c4b82-4a8a-4e66-93c9-c82f895ecf1c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ykOuvlvV0Aa/AiIoM1RZwE3Ut04xuI06AYFcf4ws68eI8RZXJzulkQPjjlHb5YmJK6R1C0Y/whD2&#13;
+GCa3iAYntA==</DigestValue></Reference></SignedInfo><SignatureValue>nVE/HRzjQMHT4OsJ80lY0jhtgJP2bNWHBKnh4Ra9drcMqI2sEr5q9islXJvRVK3hn44beY1GLwS8&#13;
+Cd0+K/s6uSgrGFiUQo21CKa0q5glfymLh6tDtnN9UHnViJXgaUE2sd8QefBqgBPw2HKqACw8PfaA&#13;
+oZI7tJ/ENsYRBIPTEDBpKl3bJ402KGvYMQkR3R86nAWs1GK12NKAPhLiRR+kBKgf+BHoMEdL0HwO&#13;
+tMnjsF1Y9nR0ydb4YU0uOUyM431z5siqtY/Af+hWrHWWIWzkIXq34N4Qo7RO1HNZv+UnNM05VPEZ&#13;
+0ExafLwk1SWDrJXf7MPZwicGcHVKQZ2/H98aQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1218,4 +1194,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7944f6bf-159a-4f9d-b38a-99decf159d71" Target="#_b05a84c4-6c2c-4892-9ae8-da6d9259dea7"><Timestamp>2023-02-04 00:25:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_151c4b82-4a8a-4e66-93c9-c82f895ecf1c" Target="#_33b202cd-5368-4ddb-98e8-b2de95e7e90c"><Timestamp>2023-03-14 11:54:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
