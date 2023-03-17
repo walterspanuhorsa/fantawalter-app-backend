@@ -61,7 +61,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Ugg7KSC+1TjQzMtuyVSSuze9jzAgHdgpLuDFAMvy"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:w/nyYb2hIGn3MLkYkxlQpZIlHSlV/AfI7mtQlEDO"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -96,7 +96,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cDGuHJNROrmFPmRGepp8xBk69N280Xgb8D8MP+Uy"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MysRykPbtttUEBwr43UD/3KDXvFmvA/Akm+io5b0"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -144,7 +144,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;serverTimezone=Europe/Rome&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FZoE6z3bdT/cV6Dzpf+RacISNJV+DGGhsgHKtOEZ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7ccqF1z9bDrdI3PB/UVrQ+e82WunL7yagJ4KW76p"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -204,7 +204,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:diYQITh6PwYq1BGKkXETum3A6GkwgN8gZL16jFxH"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:KktxJfdNy45uKXA7l1qu0sBo+KixA0WPNSpJznKE"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;newLine&quot;"/>
@@ -309,10 +309,6 @@
       <column comment="" key="false" length="-1" name="giornata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="nomeFantasquadra" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="ruolo" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="nomeGiocatore" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="squadra" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="voto" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="votomodif" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
@@ -322,10 +318,6 @@
         <mapperTableEntries expression="context.giornata" name="giornata" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="context.nome_squadra" name="nomeFantasquadra" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.ruolo" name="ruolo" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.nomeGiocatore" name="nomeGiocatore" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="StringHandling.UPCASE(row2.squadra)" name="squadra" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="!row2.voto.equals(&quot;-&quot;)? Double.parseDouble(row2.voto.replace(&quot;,&quot;, &quot;.&quot;)) : null " name="voto" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="!row2.votomodif.equals(&quot;-&quot;)? Double.parseDouble(row2.votomodif.replace(&quot;,&quot;, &quot;.&quot;)) : null " name="votomodif" nullable="true" type="id_Double"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
         <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
@@ -358,14 +350,6 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ruolo"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nomeGiocatore"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="squadra"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="voto"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="votomodif"/>
-      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -375,17 +359,13 @@
       <column comment="" key="false" length="-1" name="giornata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="nomeFantasquadra" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="ruolo" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="nomeGiocatore" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="squadra" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="voto" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="votomodif" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:BoAl1pwITTauFI+TulfzFqBt+a8mNMdOCpriemwY"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:wZKqQc7Np+wNJWVi3qpeQpOWPiW6JgDGgZa6EGz4"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
       <elementValue elementRef="SHEETNAME" value="&quot;newLine&quot;"/>
@@ -490,23 +470,15 @@
       <column comment="" key="false" length="-1" name="giornata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="nomeFantasquadra" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="ruolo" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="nomeGiocatore" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="squadra" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="voto" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="votomodif" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables activateExpressionFilter="true" expressionFilter="!Relational.ISNULL(row4.nomeGiocatore)" name="copyOfoutput" sizeState="INTERMEDIATE">
+      <outputTables activateExpressionFilter="true" expressionFilter="Mathematical.NUM(  row4.ruolo )" name="copyOfoutput" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="context.counter++" name="id" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="context.giornata" name="giornata" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="context.nome_squadra" name="nomeFantasquadra" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row4.ruolo" name="ruolo" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row4.nomeGiocatore" name="nomeGiocatore" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="StringHandling.UPCASE(row4.squadra)" name="squadra" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="!row4.voto.equals(&quot;-&quot;)? Double.parseDouble(row4.voto.replace(&quot;,&quot;, &quot;.&quot;)) : null " name="voto" nullable="true" type="id_Double"/>
-        <mapperTableEntries expression="!row4.votomodif.equals(&quot;-&quot;)? Double.parseDouble(row4.votomodif.replace(&quot;,&quot;, &quot;.&quot;)) : null " name="votomodif" nullable="true" type="id_Double"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
         <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
@@ -539,14 +511,6 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="ruolo"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nomeGiocatore"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="squadra"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="voto"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="votomodif"/>
-      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -556,10 +520,6 @@
       <column comment="" key="false" length="-1" name="giornata" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="40" name="nomeFantasquadra" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="ruolo" nullable="true" originalLength="3" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="40" name="nomeGiocatore" nullable="true" originalLength="40" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="squadra" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="voto" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="votomodif" nullable="true" originalLength="6" pattern="" precision="2" sourceType="" type="id_Double" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMysqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
@@ -572,7 +532,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lL81n7VbVBeERqIyB7BJpg22Jz4Lp+LFgq67uRmS"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3Pr/8wboXKi4zAYUgPzzzxIkeoGWV9Dn2pMVr0FQ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -608,7 +568,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gA/vHh7gSh4Z1WTpcUKEKEyibxIy6jNWGam1NVrR"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:3iV8Id250/2DYF0/JNITU0PfE3beADqA32MnDYU7"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -660,7 +620,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VmNIe9KV8cJZdq06WOA+LZJUF2uOnKXRXqkX5QFR"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:H0z0xZfXOdfrwiDllick+FxKNkZRMRvvYDvc+zC5"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -760,7 +720,7 @@
       <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PROTECT_FILE" show="false" value="false"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:aW3YKu3TxAUfBQ4M6AuTP+eaa2WdScB1CILypdBO"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:0Vx/OPQDzwUAG7XT3gU2mTGA0AOJEfJFV4hGnsUp"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
     <elementParameter field="CHECK" name="FLUSHONROW" show="false" value="false"/>
     <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="100"/>
@@ -969,13 +929,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_24d0019a-5198-44c2-a1af-560b2f90cfbc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>hepFUrEPIBbL3051mhaerjbewjGcTHk//nRBrMX0gJKItJowZGBD3j/sj1h8UrsBn0iX0KUku8AX&#13;
-M96BQgHXug==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b7b9c9f4-3971-4252-bcbf-85ffa95f35a4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>443NcuVGavD8bcgAPFU1xXULE2kxoOHEulOF1u5UHtNNAxLtTHjuW3Xiva9EkZL5ExS3WZQapAO0&#13;
-lqxYjAn5MA==</DigestValue></Reference></SignedInfo><SignatureValue>elim8Qi9KgotBS/BsKD/U5bD4yf8olewQDB3yY1dlchMpdFs0QWvyP8E7QHIXc8OYUQgLbE2zsz3&#13;
-XREmDsvAJr+PRCNHBvAfwW66ExR18T66UU/abeQDrCRVxf14Spm7Es5EcNp/u8qamrnAhvUzJzCm&#13;
-We0qM6ER0eOhMxyVO4kkOyl+y17QZyhbqljoRBZTf+jVm3rTGt1WAlugjm4625VjUpUeKbdYpsv0&#13;
-G3qp/x8eL6qqrxuC5bUiTHCd+C7md42ZTSOi9NdkaXtL/ft8jiKzyU4+m2dQJsuGyPMlM7H+QFU8&#13;
-JuRSG8ZZPBHELssHQCg08tKCLYYqcCJDGiL0iA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f62cff4c-12fe-4499-ac96-bfc9c559ae77"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>rjoVUmVWrGE6x+1xcMz2vHZSgOSrAKjzx2Tw/4G9Oo4jTiJ3X24szf6vKZU0oG8KVaMyZNdEgd9q&#13;
+NW1o8OlIMg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e532ea9d-eaaf-4e66-96ea-40ae162addea"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bhnJUR6QXxvIc3C2XjTvZt8Obz9DQYO4TmBLqZkZsPa7VVyssaDCm5PjZojEiHEzOjQHicUUXV/E&#13;
+mvUFVe9isA==</DigestValue></Reference></SignedInfo><SignatureValue>CT+bt1aljKKJYffNi+nDMQzgnX4D0HZvxvMgatGQR5HewB/Cv+bERolbBGlnaUaclKKYT8Hezol8&#13;
+A3CYVgKFCEp40kiqzI/eM+57NiZSmETCYR49xIFjidjhORyvfloMCxKRkTk+yqDHhpNMg4GozzTU&#13;
+iRuj0VK0Jo7fpLvoFSyLXGxd9h7QL2SvzFm0vf2+UcJ3Y0DBlkp5L9tV4In6WfmAaXsJB2wum8OM&#13;
+gBVMf38KM8L9KVlLsTFQYsXVhxNjW21GubL5EKLil6kGZj0uv2oYK8AB8GZaAf3bIu3CjfWK6DwZ&#13;
+P1kw59hVruQugsq+4EEGQFIGcCiDpukj2nTsVQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -997,4 +957,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b7b9c9f4-3971-4252-bcbf-85ffa95f35a4" Target="#_24d0019a-5198-44c2-a1af-560b2f90cfbc"><Timestamp>2023-03-17 16:08:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e532ea9d-eaaf-4e66-96ea-40ae162addea" Target="#_f62cff4c-12fe-4499-ac96-bfc9c559ae77"><Timestamp>2023-03-17 16:09:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
