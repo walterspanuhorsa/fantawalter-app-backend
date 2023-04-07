@@ -55,20 +55,20 @@ public class fanta {
     
     public static int returnXpValue(String csv_value) {
     	
+    	System.out.println(csv_value);
+    	
     	int xpValue = 0;
     	
     	if (csv_value.contains("-")) {
     		String[] aValues = csv_value.split("-");
-    		String[] readyInt= aValues[0].split("\\.");
+
+    		xpValue = (int)Math.round(Double.parseDouble(aValues[0]));
+ 
     		
-    		xpValue = Integer.parseInt(readyInt[0]);
-    	}
-    	
-    	if (csv_value.contains("+")) {
+    	}else if (csv_value.contains("+")) {
     		String[] aValues = csv_value.split("\\+");
-    		String[] readyInt= aValues[0].split("\\.");
-    		
-    		xpValue = Integer.parseInt(readyInt[0]);
+
+    		xpValue = (int)Math.round(Double.parseDouble(aValues[0]));
     	}
     	
     	
