@@ -1,25 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="PRD">
-    <contextParameter comment="" internalId="_W6VwEE3eEeyiyKCzdnbZ8g" name="mysql_host" prompt="mysql_host?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="10.0.101.5"/>
-    <contextParameter comment="" internalId="_W6VwEU3eEeyiyKCzdnbZ8g" name="mysql_user" prompt="mysql_user?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="talend_prd"/>
-    <contextParameter comment="" internalId="_W6VwEk3eEeyiyKCzdnbZ8g" name="mysq_pass" prompt="mysq_pass?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_Password" value="enc:system.encryption.key.v1:euL8oz+1uqVEOhvF32YVrYvlN/18KIYLlpynIHY8MKXfaPqrHQ=="/>
-    <contextParameter comment="" internalId="_W6VwE03eEeyiyKCzdnbZ8g" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="3306"/>
-    <contextParameter comment="" internalId="_W6VwFE3eEeyiyKCzdnbZ8g" name="mysql_db" prompt="mysql_db?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="prod"/>
-  </context>
-  <context confirmationNeeded="false" name="DEV">
-    <contextParameter comment="" internalId="_W6VwFU3eEeyiyKCzdnbZ8g" name="mysql_host" prompt="mysql_host?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="localhost"/>
-    <contextParameter comment="" internalId="_W6VwFk3eEeyiyKCzdnbZ8g" name="mysql_user" prompt="mysql_user?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="root"/>
-    <contextParameter comment="" internalId="_W6VwF03eEeyiyKCzdnbZ8g" name="mysq_pass" prompt="mysq_pass?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_Password" value=""/>
-    <contextParameter comment="" internalId="_W6VwGE3eEeyiyKCzdnbZ8g" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="3306"/>
-    <contextParameter comment="" internalId="_W6VwGU3eEeyiyKCzdnbZ8g" name="mysql_db" prompt="mysql_db?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="test"/>
-  </context>
-  <context confirmationNeeded="false" name="UAT">
-    <contextParameter comment="" internalId="_W6VwGk3eEeyiyKCzdnbZ8g" name="mysql_host" prompt="mysql_host?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="10.0.105.5"/>
-    <contextParameter comment="" internalId="_W6VwG03eEeyiyKCzdnbZ8g" name="mysql_user" prompt="mysql_user?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="root"/>
-    <contextParameter comment="" internalId="_W6VwHE3eEeyiyKCzdnbZ8g" name="mysq_pass" prompt="mysq_pass?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_Password" value=""/>
-    <contextParameter comment="" internalId="_W6VwHU3eEeyiyKCzdnbZ8g" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="3306"/>
-    <contextParameter comment="" internalId="_W6VwHk3eEeyiyKCzdnbZ8g" name="mysql_db" prompt="mysql_db?" promptNeeded="false" repositoryContextId="_VZmd0EbSEeyfmJaoA4A9Kg" type="id_String" value="uat"/>
-  </context>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -63,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:BSR5ZMXJ1JDewgwnvcGouNddhDaVPjfPyfscznln"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:B+SZ72L/eB10bBc+pkYKR2U9RDcgq6/h9OkG2Fvp"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -76,37 +56,37 @@
     <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
-    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend Studio Horsa/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend Studio Horsa/Talend-Studio 8/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tMysqlOutput"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
     <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
     <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:W/O9eA7w2a8tmzgiW0TC9B5vwvrgLAGZb9htdM9K"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:QhJQF8OEbPSZk1jUWDnMidUGEUKICwUrzmkRtubi"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;log_stats&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;log_logs&quot;"/>
-    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;log_meter&quot;"/>
-    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
-    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
-    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
-    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
     <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
     <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
     <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
@@ -117,11 +97,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
     <routinesParameter id="_EP4UgFS2EeuNVb_Yr8goDA" name="DQTechnical"/>
     <routinesParameter id="_EPf6AFS2EeuNVb_Yr8goDA" name="DataMasking"/>
     <routinesParameter id="_ENmckFS2EeuNVb_Yr8goDA" name="DataOperation"/>
@@ -138,13 +113,78 @@
     <routinesParameter id="_EPIGkFS2EeuNVb_Yr8goDA" name="TalendStringUtil"/>
     <routinesParameter id="_EPB_8FS2EeuNVb_Yr8goDA" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_43578369-efb6-4f35-8d33-ca075aebea45"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YHFjRqSPkp6Wo/4Ic2BD61InLXc9gWUV/USEU2CTHguYMfWSJEND22wNxfymINF62g3nZ9bWNe8I&#13;
-CCfrqzxRNA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cb0d9443-6a81-4f50-8ad0-fe9235b62ec4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7RNVj+hGnMwfMjB+2IrySrsCAGT5vl2d0gAxjMk7P+DCPVVxYi94r2dPV7aHk2vrrNh4qkXWXMj/&#13;
-PXEz9/Tc6Q==</DigestValue></Reference></SignedInfo><SignatureValue>NbYD1C+Kyf65+4nJOc67CovNxg5hKTbV5vE7pJwAFDgtxiA70rWbAtp5tDE6dazbc6Tc2NHYxIe5&#13;
-8lxwiVE0cA74k5m8G/nIBAxBi78uSKSgeEBBCDvmft+JX2AX/BEJtHIr6OPB+qvOUlOvQiZ+dIL4&#13;
-F0cPW38Ws3A2UL9xn3P4K8UP3e14cTVxI3RR0xRQu0idjHMY38SwkJp0f1xZidPJ5bM1ufA5l8kb&#13;
-EsVZ9Qgtg04uqzyUuTgjRXkJI5xxEi4uR1TipCcJnyygwb2RM9NOdWra4BdoE+9EtzYjZy4Amuh1&#13;
-96Gy5/qnSMMSsfC2mJLruee9p/0mF4J1GWFyRA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="risultato"/>
+      <elementValue elementRef="VALUE" value="&quot;TOTALE: 73,50&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="risultato" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;String[] ris = input_row.risultato.split(&quot;: &quot;);&#10;&#10;System.out.println(ris[1]);&#10;&#10;String str = ris[1].replaceAll(&quot;,&quot;,&quot;.&quot;);&#10;&#10;output_row.bd = BigDecimal.valueOf(Double.valueOf(str));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" key="false" length="-1" name="bd" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="bd"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="bd" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c7dc1de9-d569-4c2e-82b7-eea6961403dc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>y7BYHZQZe5nC0JJaXFSJPxenMaanCrQUolJadrhnP6Qrc3lHzIakS4CeOuTE/wbNaoQ8FB6xSBWB&#13;
+Y/rum68Qig==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_276e5a35-bf2c-475d-ab3c-87f88b9c4dfa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/XbiOQcst3EyEXmalFGp/fJV/spO2cc44nCyyV7vlZVeav89JXevpT0so/5vBRLGxXV1i2wmQe89&#13;
+Nlvb0q5V2g==</DigestValue></Reference></SignedInfo><SignatureValue>hs8zasmsbC3Lc4Hck3hAbqCcQT+EpFboxEridgGpwo1FEwB/Lpimjg6meHJlGB1TTa9Y86/elBoA&#13;
+Ym10b0OSFh8XoDHlbooaMn/yj9Fcq4iUotSa41+Hp+YSeLt/zwp+Z+eqY1hMRLnZx5lYXpxhktLa&#13;
+Vn1VSq3yJychrNdxGCbs7wIwyup+MgPTpABFjSGsv+3nNSebctwOsLCt9MDVMAp9ruWnGlBCJ89c&#13;
+LjlAo95vDFFjc8Crut7sa/jOWtdaorTCoTQIi7g78WT7YNm9Roqwzg8MaLpzvYixV3cIDsiu7Sw4&#13;
+/ASv5+cJ3PuL0nknBK7a2VfK20WvfnBdHz2duQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -166,4 +206,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cb0d9443-6a81-4f50-8ad0-fe9235b62ec4" Target="#_43578369-efb6-4f35-8d33-ca075aebea45"><Timestamp>2022-05-31 22:49:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_276e5a35-bf2c-475d-ab3c-87f88b9c4dfa" Target="#_c7dc1de9-d569-4c2e-82b7-eea6961403dc"><Timestamp>2023-04-20 22:38:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
