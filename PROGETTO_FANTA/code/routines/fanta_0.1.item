@@ -75,33 +75,100 @@ public class fanta {
     	return xpValue;
     }
     
-    public static int calcolaPrezzo(int ind_app, String ruolo) {
-    	int valore = 1;
+    public static String returnName (String Name, String Ruolo) {
+    	Name = Name.toLowerCase();
+    	String[] splited = Name.split("\\s+");
+    	splited[0] = splited[0].substring(0, 1).toUpperCase() + splited[0].substring(1);
     	
+    	System.out.println (Name + "=> " + splited[1]);
     	
-    	if ("P".equals(ruolo)){
+    	if( Name.equals("di francesco f") ) {
+    		return "Di Francesco F.";
+    	}
+    	
+    	if (splited[0].equals("El") || splited[0].equals("Di") || splited[0].equals("De") ) {
+    		return splited[0] + " " +  splited[1].substring(0, 1).toUpperCase() + splited[1].substring(1);
+    		
+    	}
+    	
+     	if (Name.equals("alex sandro l") || Name.equals("akpa akpro j") || Name.equals("carlos augusto -") || Name.equals("nicolussi caviglia h") || Name.equals("marcos antonio -") || Name.equals("luis alberto r")
+     			|| Name.equals("mario rui s")  ||  Name.equals("martinez quarta l") ){
+     		return splited[0] + " " + splited[1];
+     	}
+    	
+    	if (splited[0].equals("Alvarez") ||  splited[0].equals("Camara") ||  splited[0].equals("Carboni")  ||  splited[0].equals("Coda") || splited[0].equals("Coulibaly") ||  splited[0].equals("Ferrari") || splited[0].equals("Gonzalez")  
+    			|| splited[0].equals("Gudmundsson") || splited[0].equals("Henderson") || splited[0].equals("Hernandez")  || splited[0].equals("Kamara")
+    			|| splited[0].equals("Lopez")  || splited[0].equals("Llorente")  || splited[0].equals("Martinez") || splited[0].equals("Moro") ||  splited[0].equals("Perez")
+    			|| splited[0].equals("Ricci") || splited[0].equals("Ranocchia") || splited[0].equals("Rodriguez")  ||  splited[0].equals("Valencia")  || splited[0].equals("Zapata") 
 
-    		valore = (int)((ind_app-70)*2);
-    		} 
-    		if ("D".equals(ruolo)){
-
-    		valore = (int)((ind_app-70)*1.5);
-    		} 
-    		if ("C".equals(ruolo)){
-
-    		valore = (int)((ind_app -75)*2.8); 
-    		} 
-    		if ("A".equals(ruolo)){
-
-
-    		valore = (int)((ind_app-75)*8.5);
-    		} 
-
-    		valore = (valore< 1)? 1 : valore;
+    			)	 {
+    		return splited[0] + " " + splited[1].substring(0, 1).toUpperCase() +".";
+    	}
+    	
 
     	
+    	if (splited[0].equals("Leao")) {
+    		return "Rafael Leao";
+    	}
     	
-    	return valore;
-    }
+    	if (Name.equals("dany mota m")){
+    		return "Mota";
+    	}
+    	
+    	if( splited[0].equals("Toure")) {
+    		return "Toure' E.";
+    	}
+
+    	if (Name.equals("anderson f")) {
+    		return "Felipe Anderson";
+    	}
+    	 
+     	if (splited[0].equals("Pellegrini") && Ruolo.equals("C") ) {
+     		return "Pellegrini Lo.";
+    	}
+     	
+     	if (splited[0].equals("Pellegrini") && Ruolo.equals("D") ) {
+     		return "Pellegrini Lu.";	
+    	}
+     	
+     	if (Name.equals("anguissa a")) {
+     		return "Zambo Anguissa";
+     	}
+     	
+     	if (Name.equals("ederson -")) {
+     		return "Ederson D.s.";
+     	}
+     	
+     	if (Name.equals("henrique m")){
+     		return "Matheus Henrique";
+     	}
+     	
+     	if (Name.equals("arthur -")){
+     		return "Arthur Melo";
+     	}
+     	
+     	if (Name.equals("iling-junior s")){
+     		return "Iling Junior";
+     	}
+     	
+     	if (Name.equals("sulemana s")){
+     		return "Sulemana I.";
+     	}
+     
+     	if (Name.equals("pezzella g")){
+     		return "Pezzella Giu.";
+     	}
+     
+     	if(Name.equals("d’ambrosio d")){
+     		return "Dambrosio";
+     	}
+     	
+     	
+    	return splited[0];
+    		
+    	}
+    	
+    
+    
     
 }
