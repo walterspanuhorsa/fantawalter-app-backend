@@ -4,6 +4,8 @@
     <contextParameter comment="" internalId="_gpnNMTrFEe6Wc4rv8Gkw2A" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_aFFRUDtWEe6Wc4rv8Gkw2A" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_OjbL8DwaEe6GSrh-Y5ytDQ" name="orderBy" prompt="orderBy?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_SJFQ8DxPEe6b4by1Py7G0g" name="value_prev" prompt="value_prev?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_thTmUDxPEe6b4by1Py7G0g" name="pos_prev" prompt="pos_prev?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -48,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:JysDhEcG8JxIJPgqAg6C3Giz6paakKGYr8KWGsMM"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:RS+Cg+jlQToH8Ll1AzsSTB8OVXjjh3mibHIn5KwU"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -83,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:xpRF+cseDJiwV/1O7KobmXEAV6zh+zHtfPo8uOto"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aQgiVZONnWpLBBhgWPQfxvAdvPOHKYiaais28unN"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -131,13 +133,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ef+2K/LFf1VjtRIyxG2KrY18g3OgFa5+eSO3fowx"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0nC88tMUaelhajG7V7vs6v1A96NvEQmlpOz8KbRs"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id FROM &quot;+ context.table_name+ &quot;  WHERE R='A' and id is not null ORDER BY &quot;+ context.orderBy+&quot; DESC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id,  &quot;+ context.orderBy+&quot;   FROM &quot;+ context.table_name+ &quot;  WHERE R='A' and id is not null ORDER BY &quot;+ context.orderBy+&quot; DESC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -150,16 +152,19 @@
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
       <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#13;&#10;output_row.Id = input_row.Id;&#13;&#10;output_row.POSIZIONE = context.counter;&#10;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;output_row.Id = input_row.Id;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#10;&#10;if (input_row.value &lt; context.value_prev || context.counter == 1){&#10;&#13;&#10;//System.out.println (&quot;ENTRO NELL'IF&quot;);&#10;&#13;&#10;output_row.POSIZIONE = context.counter;&#10;context.pos_prev = context.counter;&#10;&#10;} else {&#10;//&#9;System.out.println (&quot;ENTRO NELL'ELSE&quot;);&#10;&#9;output_row.POSIZIONE = context.pos_prev;&#9;&#10;}&#10;&#10;context.value_prev = input_row.value;&#13;&#10;&#10;//System.out.println (input_row.Id + &quot; =&gt; attuale valore:&quot;+ input_row.value +&quot; | prev_value:&quot;+  context.value_prev + &quot; | POS: &quot; + context.counter);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -179,7 +184,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:48ucpCqAinGLKiFV22cPRkEgrSX0dcMHqRBsZbJt"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o67E345/7QfKGjWbrXoItkJRIexk0UKfF1UpW4f5"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -217,7 +222,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_2">
       <column comment="" key="true" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -242,13 +247,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XgjzAD57ElQfuzTyCqszJwDTnbbtv/iIZw8ETLSa"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kzAXtu+qSJ0F/SondT7YV+TE+r7CCyhoLHymlbP+"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  id, &#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 3   then Round(Qt_A*5)&#13;&#10;when POSIZIONE  &gt;= 4 and POSIZIONE  &lt;= 6   then Round(Qt_A*4.8) &#13;&#10;when POSIZIONE  &gt;= 7 and POSIZIONE  &lt;= 9   then Round(Qt_A*4.3)&#13;&#10;when POSIZIONE  &gt;= 10 and POSIZIONE  &lt;= 12 then Round(Qt_A*4)&#13;&#10;when POSIZIONE  &gt;= 13 and POSIZIONE  &lt;= 15 then Round(Qt_A*3.5)&#13;&#10;when POSIZIONE  &gt;= 16 and POSIZIONE  &lt;= 18 then Round(Qt_A*3)&#13;&#10;when POSIZIONE  &gt;= 19 and POSIZIONE  &lt;= 21 then Round(Qt_A*2.7)&#13;&#10;when POSIZIONE  &gt;= 22 and POSIZIONE  &lt;= 24 then Round(Qt_A*2.5)&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 27 then Round(Qt_A*2.0)&#13;&#10;when POSIZIONE  &gt;= 28 and POSIZIONE  &lt;= 30 then Round(Qt_A*1.9)&#13;&#10;when POSIZIONE  &gt;= 31 and POSIZIONE  &lt;= 33 then Round(Qt_A*1.8)&#13;&#10;when POSIZIONE  &gt;= 34 and POSIZIONE  &lt;= 36 then Round(Qt_A*1.1)&#13;&#10;when POSIZIONE  &gt;= 37  then Round(Qt_A*1)&#13;&#10;end FVM_CALCOLATO,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 8    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE   &lt;= 16   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 17 and POSIZIONE  &lt;= 24   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 32   then 'QUARTA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 33 and POSIZIONE  &lt;= 40   then 'QUINTA FASCIA' &#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SESTA FASCIA'&#13;&#10;end FASCIA&#13;&#10;from &quot;+ context.table_name+ &quot;&#13;&#10;where R = 'A' &#13;&#10;order by POSIZIONE  ASC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  id, &#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 3   then Round(Qt_A* (5 -(POSIZIONE-1)*0.2))&#13;&#10;when POSIZIONE  &gt;= 4 and POSIZIONE  &lt;= 6   then Round(Qt_A*(4.8 -(POSIZIONE-4)*0.2)) &#13;&#10;when POSIZIONE  &gt;= 7 and POSIZIONE  &lt;= 9   then Round(Qt_A*(4.3 -(POSIZIONE-7)*0.2))&#13;&#10;when POSIZIONE  &gt;= 10 and POSIZIONE  &lt;= 24 then Round(Qt_A*(4 -(POSIZIONE-10)*0.2))&#13;&#10;when POSIZIONE  &gt;= 25  then Round(Qt_A*1.1)&#13;&#10;end FVM_CALCOLATO,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 8    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE   &lt;= 16   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 17 and POSIZIONE  &lt;= 24   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 32   then 'QUARTA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 33 and POSIZIONE  &lt;= 40   then 'QUINTA FASCIA' &#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SESTA FASCIA'&#13;&#10;end FASCIA&#13;&#10;from &quot;+ context.table_name+ &quot;&#13;&#10;where R = 'A' &#13;&#10;order by POSIZIONE  ASC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -266,7 +271,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="FASCIA"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_2">
       <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -286,7 +291,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:44Y6miI3g+ab8iCX3PyaVRTyRxEwI+4Zd0wYosI2"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:u3+xrzeCpGl4s1MtCYDAFQ7jO9jJANM1bS27YFB5"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -329,7 +334,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_3">
       <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -346,7 +351,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;context.value_prev = 0;&#10;context.pos_prev = 0;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_2"/>
@@ -363,13 +368,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZbCNesREq8kZ8keYH5EcNObE8oiVY0/V0TloTRtg"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iCClaDhKS8IJh9QC43agEJTBWHLdnkGvflb60/4c"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id FROM &quot;+ context.table_name+ &quot;  WHERE R='C' and id is not null ORDER BY  &quot;+ context.orderBy+&quot; DESC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id,  &quot;+ context.orderBy+&quot;   FROM &quot;+ context.table_name+ &quot;  WHERE R='C' and id is not null ORDER BY &quot;+ context.orderBy+&quot; DESC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -382,16 +387,19 @@
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_3">
       <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="416">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#13;&#10;output_row.Id = input_row.Id;&#13;&#10;output_row.POSIZIONE = context.counter;&#10;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;output_row.Id = input_row.Id;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#10;&#10;if (input_row.value &lt; context.value_prev || context.counter == 1){&#10;&#10;//System.out.println (&quot;ENTRO NELL'IF&quot;);&#10;&#10;output_row.POSIZIONE = context.counter;&#10;context.pos_prev = context.counter;&#10;&#10;} else {&#10;//&#9;System.out.println (&quot;ENTRO NELL'ELSE&quot;);&#10;&#9;output_row.POSIZIONE = context.pos_prev;&#9;&#10;}&#10;&#10;context.value_prev = input_row.value;&#10;&#10;//System.out.println (input_row.Id + &quot; =&gt; attuale valore:&quot;+ input_row.value +&quot; | prev_value:&quot;+  context.value_prev + &quot; | POS: &quot; + context.counter);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
@@ -411,7 +419,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o52DJZpSo5yR3vsvsjY+4p+t4z8wN8Kn2UJ/msx+"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Uwq4Af/zcgJxp7ING8ww3jQtnhM0oGeCQoT48PPw"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -449,7 +457,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_4">
       <column comment="" key="true" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -481,13 +489,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iqnpEkLS0RScJg7xEgyGEEahf/6UpryeuoIu+srX"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LJYRiQxX7pGXk5hL9DXXbM0ID68G4KFRa2DGYw2j"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, &#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 3   then Round(Qt_A*3)&#13;&#10;when POSIZIONE  &gt;= 4 and POSIZIONE  &lt;= 6   then Round(Qt_A*2.5) &#13;&#10;when POSIZIONE  &gt;= 7 and POSIZIONE  &lt;= 21   then Round(Qt_A*2)&#13;&#10;when POSIZIONE  &gt;= 22 and POSIZIONE  &lt;= 24 then Round(Qt_A*1.7)&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 33 then Round(Qt_A*1.5)&#13;&#10;when POSIZIONE  &gt;= 34 and POSIZIONE  &lt;= 42 then Round(Qt_A*1.2)&#13;&#10;when POSIZIONE  &gt;= 43  then Round(Qt_A*1)&#13;&#10;end FVM_CALCOLATO,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 8    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE   &lt;= 16   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 17 and POSIZIONE  &lt;= 24   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 32   then 'QUARTA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 33 and POSIZIONE  &lt;= 40   then 'QUINTA FASCIA' &#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SESTA FASCIA'&#13;&#10;end FASCIA&#13;&#10;from &quot;+context.table_name+&quot; &#13;&#10;WHERE R='C'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, &#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 5   then Round(Qt_A*2 - ((POSIZIONE-1)*0.006))&#13;&#10;when POSIZIONE  &gt;= 6 and POSIZIONE  &lt;= 24   then Round(Qt_A*1.8 - ((POSIZIONE-6)*0.006)) &#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 42 then Round(Qt_A*1.6 - ((POSIZIONE-25)*0.006))&#13;&#10;when POSIZIONE  &gt;= 43  then Round(Qt_A*1.1- ((POSIZIONE-43)*0.012))&#13;&#10;end FVM_CALCOLATO,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 5    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 6 and POSIZIONE   &lt;= 24   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 40   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SCOMMESSE'&#13;&#10;end FASCIA&#13;&#10;from &quot;+context.table_name+&quot; &#13;&#10;WHERE R='C'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -505,7 +513,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="FASCIA"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_4">
       <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -525,7 +533,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zFrdISOeqziLm5mtsw1RdxWr7/R3Bu1oOp1cFw53"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mBmxxHbEV4ehPlQbXZbYPO2y7TYzd5Uk1/rM+gwz"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -568,7 +576,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_5">
       <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -585,7 +593,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;context.value_prev = 0;&#10;context.pos_prev = 0;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_4"/>
@@ -609,13 +617,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p5O/GW4V+31usqyyEcODhm0mXSBHf25wsVL40asv"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Dxt3wRwSclCnt07DwJvwA/2lGVzeoPaq5Q01xUV4"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id FROM &quot;+ context.table_name+ &quot;  WHERE R='D' and id is not null ORDER BY  &quot;+ context.orderBy+&quot; DESC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id,  &quot;+ context.orderBy+&quot;   FROM &quot;+ context.table_name+ &quot;  WHERE R='D' and id is not null ORDER BY &quot;+ context.orderBy+&quot; DESC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -628,16 +636,19 @@
     <elementParameter field="TABLE" name="TRIM_COLUMN">
       <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
       <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_5">
       <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="736">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#13;&#10;output_row.Id = input_row.Id;&#13;&#10;output_row.POSIZIONE = context.counter;&#10;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;output_row.Id = input_row.Id;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#10;&#10;if (input_row.value &lt; context.value_prev || context.counter == 1){&#10;&#10;//System.out.println (&quot;ENTRO NELL'IF&quot;);&#10;&#10;output_row.POSIZIONE = context.counter;&#10;context.pos_prev = context.counter;&#10;&#10;} else {&#10;//&#9;System.out.println (&quot;ENTRO NELL'ELSE&quot;);&#10;&#9;output_row.POSIZIONE = context.pos_prev;&#9;&#10;}&#10;&#10;context.value_prev = input_row.value;&#10;&#10;//System.out.println (input_row.Id + &quot; =&gt; attuale valore:&quot;+ input_row.value +&quot; | prev_value:&quot;+  context.value_prev + &quot; | POS: &quot; + context.counter);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_3">
@@ -657,7 +668,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SJR++5UV2B8eFvLSc/asRiSBw/wRszuIMb4ntQ7q"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WkUyEkx5m6+LWBrT8IQMPk1YfXbXcwOc1Xf6J0Xq"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -695,7 +706,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_6">
       <column comment="" key="true" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -720,13 +731,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YggFxXuorr0+0Bif1L/2YbJ6BSRkOzGKe2KRz2DM"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tLGIWxuQQnVS1vuWzPiMHAuPJfJDwoKoEq0CUqAv"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Id,&#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 4   then Round(Qt_A*2.1)&#13;&#10;when POSIZIONE  &gt;= 5 and POSIZIONE  &lt;= 8   then Round(Qt_A*1.6) &#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE  &lt;= 21   then Round(Qt_A*1.5)&#13;&#10;when POSIZIONE  &gt;= 22 and POSIZIONE  &lt;= 24 then Round(Qt_A*1.2)&#13;&#10;when POSIZIONE  &gt;= 25 then Round(Qt_A*1)&#13;&#10;end moltiplicato,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 8    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE   &lt;= 16   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 17 and POSIZIONE  &lt;= 24   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 32   then 'QUARTA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 33 and POSIZIONE  &lt;= 40   then 'QUINTA FASCIA' &#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SESTA FASCIA'&#13;&#10;end FASCIA&#13;&#10;from &quot;+context.table_name+&quot; &#13;&#10;WHERE R='D'&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Id,&#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 4   then Round(Qt_A*2.1 -  ((POSIZIONE-1)*0.006))&#13;&#10;when POSIZIONE  &gt;= 5 and POSIZIONE  &lt;= 18   then Round(Qt_A*1.4-  ((POSIZIONE-5)*0.006))&#13;&#10;when POSIZIONE  &gt;= 19 then Round(Qt_A*1.1-  ((POSIZIONE-19)*0.006))&#13;&#10;end moltiplicato,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 4    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 5 and POSIZIONE   &lt;= 18   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 19 and POSIZIONE  &lt;= 41   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 42 and POSIZIONE  &lt;= 76   then 'SCOMMESSE'&#13;&#10;end FASCIA&#13;&#10;from &quot;+context.table_name+&quot; &#13;&#10;WHERE R='D'&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -744,7 +755,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="FASCIA"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_6">
       <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -764,7 +775,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UH4U0cgvsIxqalRLw0nEF+a/OZg/2s4j4fGS1/QC"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kGfBRczbLrqrDpe7FoJeocKn0zyU8GUsmxZyl2xA"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -807,7 +818,7 @@
     <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
     <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_7">
       <column comment="" key="true" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -824,7 +835,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;context.value_prev = 0;&#10;context.pos_prev = 0;&#10;&#10;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -878,6 +889,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="Squadra"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -994,6 +1008,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="Squadra"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
@@ -1107,6 +1124,9 @@
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       <elementValue elementRef="TRACE_COLUMN" value="Squadra"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="value"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -1261,13 +1281,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_75d199d4-d4c1-4793-afcf-780ba127634e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iIXnDZZ3Th3bU69v8CbUCEmyuLqqB9AkGtwKJpUbyxrEOlhmiaoW9WxmhQv+PlNTH+OYVwggPG2r&#13;
-ScHS4l8RNA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1cf5e965-32c7-4d00-a637-3a062f617a1d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pB2NZ7k82nu4r8MK2kg1RXXnIPDQLAwunJiyglIRgPW9mmmSpE5YZoXfaRaypvFnaVL/8vse1ltl&#13;
-WtGzPUpR+g==</DigestValue></Reference></SignedInfo><SignatureValue>S72j1d7gYSual3ij0tCi/An3FP0FJJFQqXurtXpeGXiBtpgWlXkaM7H2smKc8qLIZsKGVu7cmppn&#13;
-rRYq/bewEMkDAobgXPfd+rsNbQzaI2qGbCUuVo0BDW58D9sQK7B6XWturvbwqZfY4vkem23jMV85&#13;
-n+Q84e3H/YsgmdytHTUYxUr2NTUoZCRp8D/qo/Evq4vu6RpEOXqTfAVenk/p6iTaiFZxrYvpjKHN&#13;
-5tapt2E1aYEC1TPTwM9vlgF16YoJWGWZrAGBHKlf+8MzT5sDmGYsYJ2Z+ckcDoiKthNPMRvu0so9&#13;
-xlkgfnm88dG1K64bP71jeUVeN84mPrHt+WpSBA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_66f36d03-f350-4d06-b2f4-f879394e08a8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>T5r3o6wSAgyXrImjT9lj+E7klCKVywVIoHkUVMbDY02zDGCsvAZJDA7aCZmnhiQ3j7bq7SqmtNrD&#13;
+7dHW6gc6hw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f980b27b-0e06-4701-88a5-b1af32d404f4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4xTs+/0BuqdKrp/2ij8QqmpMgGUKjF8hG1GCjJZts0krmIIPmEiHyjaXTnBIgoBTj9YzwN1oqwBi&#13;
+9RTvZVw8PQ==</DigestValue></Reference></SignedInfo><SignatureValue>Obb++b18eoyx/HObkgisyx2yugHqatYRzm4qsTf7W7k5D6iFg29SJnNNQ3onLwF4nCA8cSMZVgRD&#13;
+aQASlwv5AAxDNUdFebFXwJlKgM9TL0i98Gqkw0Vp5wrRSld6yU/2ivjUuJAY+mNka4wW7OdKeAuN&#13;
+nCMazHxGhXDa7SJsW87Zp9ITpov0UvK8sb+t2026um5chzABpjebZ7WRlH4nxISs76LnQWe7zJlr&#13;
+m4+zFjCUCdR1hovJyZaSaV4Xu+5chdUo53+ITRoj5nJgWBhscmflZtENKL1Urxk0ZiaDegy7nfa0&#13;
+y/OzSuTOF0bibWnk1CuzmbV9GxUmgBUm8EGusg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1289,4 +1309,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1cf5e965-32c7-4d00-a637-3a062f617a1d" Target="#_75d199d4-d4c1-4793-afcf-780ba127634e"><Timestamp>2023-08-16 15:51:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f980b27b-0e06-4701-88a5-b1af32d404f4" Target="#_66f36d03-f350-4d06-b2f4-f879394e08a8"><Timestamp>2023-08-24 20:59:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
