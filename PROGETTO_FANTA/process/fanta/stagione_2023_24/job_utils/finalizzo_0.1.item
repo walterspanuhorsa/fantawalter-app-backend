@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" internalId="_gpnNMDrFEe6Wc4rv8Gkw2A" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
     <contextParameter comment="" internalId="_gpnNMTrFEe6Wc4rv8Gkw2A" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
@@ -52,7 +52,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pu0SYhcMpv0GgSh7eMgkHH4TK4Eo+Su09wF41wcp"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Q8eYvCT9xBS3MiEVo9tVeIqIGu7GlPpeeKSTUQcr"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -87,7 +87,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:gJxsZOgAU2p5glViOwhWgoZ97vuyRJLwnhYAmBAu"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:OIVpP8H/LSZkBpkdrua8J1ISuQZMlT8vm2pVBFfL"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -135,13 +135,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UD05kXP3Vk75T6UeugQSg/iEkZrH2bLFiIEAEYS9"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9dTml6uyRwcT7PFMk0qIhonx9Zcql4Nr9Swpd1Cj"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select FCit.id, FCit.R, FCit.Nome, FCit.Squadra, &#13;&#10;FCit.FVM  as FVM_FCit,&#13;&#10;FCit.FVM_CALCOLATO as FVMC_FCit,&#13;&#10;club.FVM_CALCOLATO as FVMC_Club,&#13;&#10;pf.FVM_CALCOLATO  as FVMC_Pf,&#13;&#10;Fm.FVM_CALCOLATO as FVMC_Fm,&#13;&#10;gds.FVM_CALCOLATO  as FVMC_Gds,&#13;&#10;fs.FVM_CALCOLATO  as FVMC_Fs,&#13;&#10;pazz.FVM_CALCOLATO  as FVMC_Pazz,&#13;&#10;FCit.Qt_A  as QTA_FCit, &#13;&#10;club.Qt_A  as QTA_Club, &#13;&#10;pf.Qt_A as QTA_Pf,&#13;&#10;fm.Qt_A  as QTA_Fm,&#13;&#10;gds.Qt_A  as QTA_gds,&#13;&#10;fs.QT_A as QTA_Fs,&#13;&#10;pazz.QT_A as QTA_Pazz&#13;&#10;from fanta.listone_fantacalcioit_202324 FCit&#13;&#10;left join fanta.listone_fantaclub_202324 club &#13;&#10;&#9;on club.id = FCit.id&#13;&#10;left join fanta.listone_gds_202324 gds &#13;&#10;&#9;on gds.id = FCit.id&#13;&#10;left join fanta.listone_fantamaster_202324 Fm   &#13;&#10;&#9;on Fm.id = FCit.id&#13;&#10;left join listone_PianetaFanta_202324 pf &#13;&#10;&#9;on Pf.id = fcit.id&#13;&#10;left join listone_fantaSoccer_202324 fs &#13;&#10;&#9;on fs.id = fcit.id&#13;&#10;left join listone_fantaPazz_202324 pazz &#13;&#10;&#9;on pazz.id = fcit.id&#13;&#10;where FCit.POSIZIONE is not null and FCit.R &lt;&gt;'P'&#13;&#10;order by FCit.POSIZIONE  asc&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct FCit.id, FCit.R RUOLO,&#13;&#10;FCit.Nome, FCit.Squadra, &#13;&#10;case when stat.Pv is null then 0 else stat.Pv end  giocate,&#13;&#10;case when stat.Mv is null then 0 else stat.Mv end  mediavoto,&#13;&#10;case when stat.Fm is null then 0 else stat.Fm end  fantamedia,&#13;&#10;lc.Tit,&#13;&#10;lc.SICU,&#13;&#10;lc.INF,&#13;&#10;FCit.FVM_CALCOLATO as FVMC_FCit,&#13;&#10;club.FVM_CALCOLATO as FVMC_Club,&#13;&#10;pf.FVM_CALCOLATO  as FVMC_Pf,&#13;&#10;Fm.FVM_CALCOLATO as FVMC_Fm,&#13;&#10;gds.FVM_CALCOLATO  as FVMC_Gds,&#13;&#10;fs.FVM_CALCOLATO  as FVMC_Fs,&#13;&#10;pazz.FVM_CALCOLATO  as FVMC_Pazz,&#13;&#10;lc.Carmy_Prezzo,&#13;&#10;FCit.FVM  as FVM_FCit,&#13;&#10;ge.FVM as FVM_GE,&#13;&#10;lc.media_leghe MEDIE_LEGHE,&#13;&#10;lc.Note&#13;&#10;from fanta.listone_fantacalcioit_202324 FCit&#13;&#10;left join fanta.statistiche_giocatori_202324 stat &#13;&#10;&#9;on stat.id = FCit.id&#13;&#10;left join fanta.listone_fantaclub_202324 club &#13;&#10;&#9;on club.id = FCit.id&#13;&#10;left join fanta.listone_gds_202324 gds &#13;&#10;&#9;on gds.id = FCit.id&#13;&#10;left join fanta.listone_fantamaster_202324 Fm   &#13;&#10;&#9;on Fm.id = FCit.id&#13;&#10;left join listone_PianetaFanta_202324 pf &#13;&#10;&#9;on Pf.id = fcit.id&#13;&#10;left join listone_fantaSoccer_202324 fs &#13;&#10;&#9;on fs.id = fcit.id&#13;&#10;left join listone_fantaPazz_202324 pazz &#13;&#10;&#9;on pazz.id = fcit.id&#13;&#10;left join listone_medieaste_202324 ge&#13;&#10;&#9;on ge.id = fcit.id&#13;&#10;left join listone_carmy_202324 lc &#13;&#10;&#9;on lc.id =fcit.id&#13;&#10;where FCit.POSIZIONE is not null and FCit.R &lt;&gt;'P'&#13;&#10;order by FCit.POSIZIONE  asc&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -160,7 +160,17 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Squadra"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_FCit"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="giocate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mediavoto"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fantamedia"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SICU"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INF"/>
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_FCit"/>
       <elementValue elementRef="TRIM" value="false"/>
@@ -176,19 +186,15 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Pazz"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_FCit"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Carmy_Prezzo"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Club"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_FCit"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Pf"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_GE"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Fm"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEDIE_LEGHE"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Gds"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Fs"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Pazz"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Note"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
@@ -198,7 +204,12 @@
       <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="giocate" nullable="true" originalLength="8" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="mediavoto" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="fantamedia" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="TIT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="SICU" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="INF" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="FVMC_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="FVMC_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -206,30 +217,52 @@
       <column comment="" defaultValue="" key="false" length="11" name="FVMC_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Carmy_Prezzo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_GE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="MEDIE_LEGHE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Note" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="CHECK" name="DUMMY" show="false" value="true"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;//System.out.println(input_row.Nome +&quot; =&gt; &quot;+ input_row.FVM_FCit + &quot; &quot; + input_row.FVMC_FCit  + &quot; &quot; + input_row.FVMC_Club + &quot; &quot; +input_row.FVMC_Gds + &quot; &quot; + input_row.FVMC_Fm + &quot; &quot; +input_row.FVMC_Pf);&#10;&#10;Integer FVMC_FCit = Relational.ISNULL(input_row.FVMC_FCit)? input_row.FVM_FCit :  input_row.FVMC_FCit;&#10;Integer FVMC_Club = Relational.ISNULL(input_row.FVMC_Club)? input_row.FVM_FCit :  input_row.FVMC_Club;&#10;Integer FVMC_Gds = Relational.ISNULL(input_row.FVMC_Gds)? input_row.FVM_FCit :  input_row.FVMC_Gds;&#10;Integer FVMC_Fm = Relational.ISNULL(input_row.FVMC_Fm)? input_row.FVM_FCit :  input_row.FVMC_Fm;&#10;Integer FVMC_Pf = Relational.ISNULL(input_row.FVMC_Pf)? input_row.FVM_FCit :  input_row.FVMC_Pf;&#10;Integer FVMC_Fs = Relational.ISNULL(input_row.FVMC_Fs)? input_row.FVM_FCit :  input_row.FVMC_Fs;&#10;Integer FVMC_Pazz = Relational.ISNULL(input_row.FVMC_Pazz)? input_row.FVM_FCit :  input_row.FVMC_Pazz;&#10;&#10;&#10;Integer Carmy_Prezzo = Relational.ISNULL(input_row.Carmy_Prezzo)? input_row.FVM_FCit :  input_row.Carmy_Prezzo;&#10;Integer FVM_GE = Relational.ISNULL(input_row.FVM_GE)? input_row.FVM_FCit :  input_row.FVM_GE;&#10;Integer MEDIE_LEGHE = Relational.ISNULL(input_row.MEDIE_LEGHE)? input_row.FVM_FCit :  input_row.MEDIE_LEGHE;&#10;&#10;Integer FVM_FCit  = input_row.FVM_FCit;&#10;&#10;FVMC_FCit = fanta.returnFMVC(input_row.FVM_FCit , FVMC_FCit);&#10;FVMC_Club = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Club);&#10;FVMC_Gds = fanta.returnFMVC(input_row.FVM_FCit ,  FVMC_Gds);&#10;FVMC_Fm = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Fm);&#10;FVMC_Pf = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Pf);&#10;FVMC_Fs = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Fs);&#10;FVMC_Pazz = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Pazz);&#10;&#10;FVM_GE = fanta.returnFMVC(input_row.FVM_FCit , FVM_GE);&#10;MEDIE_LEGHE = fanta.returnFMVC(input_row.FVM_FCit , MEDIE_LEGHE);&#10;Carmy_Prezzo = fanta.returnFMVC(input_row.FVM_FCit , Carmy_Prezzo);&#10;&#10;&#10;//System.out.println(input_row.Nome +&quot; =&gt; &quot;+ FVM_FCit + &quot; &quot; + FVMC_FCit  + &quot; &quot; + FVMC_Club + &quot; &quot; +FVMC_Gds + &quot; &quot; + FVMC_Fm + &quot; &quot; +FVMC_Pf);&#10;&#10;Integer[] quotazioni= {FVM_FCit, FVMC_FCit, FVMC_Club, FVMC_Gds, FVMC_Fm,FVMC_Pf,FVMC_Fs,FVMC_Pazz, FVM_GE, MEDIE_LEGHE, Carmy_Prezzo };&#10;&#10;&#10;Arrays.sort(quotazioni);&#10;&#10;Integer[] modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;&#10;&#10;//elimino il valore più basso&#10;modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;&#10;//elimino il valore più alto&#10;modifiedArray = Arrays.copyOfRange(modifiedArray, 0, modifiedArray.length-1);&#10;modifiedArray = Arrays.copyOfRange(modifiedArray, 0, modifiedArray.length-1);&#10;&#10;quotazioni = modifiedArray;&#10;&#10;    double somma; int media;&#10;&#10;    somma=0;&#10;&#10;    for(int i=0; i&lt;=quotazioni.length-1; i=i+1) {&#10;    &#10;    //System.out.println(input_row.Nome + &quot; =&gt; &quot; +quotazioni[i]);&#10;      somma=somma+quotazioni[i];&#10;    }&#10;&#10;    media= (int) Math.round(somma/quotazioni.length);&#10;&#10;&#10;&#13;&#10;output_row.id = input_row.id;&#10;output_row.R = input_row.R;&#13;&#10;output_row.Nome = input_row.Nome;&#13;&#10;output_row.Squadra = input_row.Squadra;&#10;&#13;&#10;output_row.MEDIA_TRONCATA = media;&#10;output_row.FVM_FCit =FVM_FCit;&#10;output_row.FVM_GE = FVM_GE;&#10;output_row.MEDIE_LEGHE = MEDIE_LEGHE;&#10;output_row.Carmy_Prezzo = Carmy_Prezzo;&#10;&#10;output_row.giocate = input_row.giocate;&#10;output_row.mediavoto = input_row.mediavoto;&#10;output_row.fantamedia = input_row.fantamedia;&#10;&#10;&#10;output_row.TIT = input_row.TIT;&#10;output_row.SICU = input_row.SICU;&#10;output_row.INF = input_row.INF;&#10;output_row.Note = input_row.Note;&#10;&#10;output_row.FASCIA = null;&#10;output_row.POSIZIONE = null;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.Arrays;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1">
+      <column comment="" defaultValue="" key="false" length="11" name="id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="giocate" nullable="true" originalLength="8" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="mediavoto" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="fantamedia" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TIT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SICU" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Carmy_Prezzo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_GE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="MEDIE_LEGHE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Note" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="FASCIA" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MEDIA_TRONCATA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -239,184 +272,60 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Squadra"/>
       <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="giocate"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mediavoto"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fantamedia"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIT"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SICU"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INF"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Carmy_Prezzo"/>
+      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FVM_FCit"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_FCit"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_GE"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Club"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEDIE_LEGHE"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Pf"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Note"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Fm"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="POSIZIONE"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Gds"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FASCIA"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Fs"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Pazz"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_FCit"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Club"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Pf"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Fm"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Gds"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Fs"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Pazz"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEDIA_TRONCATA"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_2">
+    <metadata connector="FLOW" name="tLogRow_1">
       <column comment="" defaultValue="" key="false" length="11" name="id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="giocate" nullable="true" originalLength="8" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="mediavoto" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="fantamedia" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TIT" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SICU" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="INF" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="INT" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Carmy_Prezzo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;//System.out.println(input_row.Nome +&quot; =&gt; &quot;+ input_row.FVM_FCit + &quot; &quot; + input_row.FVMC_FCit  + &quot; &quot; + input_row.FVMC_Club + &quot; &quot; +input_row.FVMC_Gds + &quot; &quot; + input_row.FVMC_Fm + &quot; &quot; +input_row.FVMC_Pf);&#10;&#10;Integer FVMC_FCit = Relational.ISNULL(input_row.FVMC_FCit)? input_row.FVM_FCit :  input_row.FVMC_FCit;&#10;Integer FVMC_Club = Relational.ISNULL(input_row.FVMC_Club)? input_row.FVM_FCit :  input_row.FVMC_Club;&#10;Integer FVMC_Gds = Relational.ISNULL(input_row.FVMC_Gds)? input_row.FVM_FCit :  input_row.FVMC_Gds;&#10;Integer FVMC_Fm = Relational.ISNULL(input_row.FVMC_Fm)? input_row.FVM_FCit :  input_row.FVMC_Fm;&#10;Integer FVMC_Pf = Relational.ISNULL(input_row.FVMC_Pf)? input_row.FVM_FCit :  input_row.FVMC_Pf;&#10;Integer FVMC_Fs = Relational.ISNULL(input_row.FVMC_Fs)? input_row.FVM_FCit :  input_row.FVMC_Fs;&#10;Integer FVMC_Pazz = Relational.ISNULL(input_row.FVMC_Pazz)? input_row.FVM_FCit :  input_row.FVMC_Pazz;&#10;Integer FVM_FCit  = input_row.FVM_FCit;&#10;&#10;FVMC_FCit = fanta.returnFMVC(input_row.FVM_FCit , FVMC_FCit);&#10;FVMC_Club = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Club);&#10;FVMC_Gds = fanta.returnFMVC(input_row.FVM_FCit ,  FVMC_Gds);&#10;FVMC_Fm = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Fm);&#10;FVMC_Pf = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Pf);&#10;FVMC_Fs = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Fs);&#10;FVMC_Pazz = fanta.returnFMVC(input_row.FVM_FCit , FVMC_Pazz);&#10;&#10;//System.out.println(input_row.Nome +&quot; =&gt; &quot;+ FVM_FCit + &quot; &quot; + FVMC_FCit  + &quot; &quot; + FVMC_Club + &quot; &quot; +FVMC_Gds + &quot; &quot; + FVMC_Fm + &quot; &quot; +FVMC_Pf);&#10;&#10;Integer[] quotazioni= {FVM_FCit, FVMC_FCit, FVMC_Club, FVMC_Gds, FVMC_Fm,FVMC_Pf,FVMC_Fs,FVMC_Pazz };&#10;&#10;&#10;Arrays.sort(quotazioni);&#10;&#10;Integer[] modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;&#10;&#10;&#10;modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;&#10;modifiedArray = Arrays.copyOfRange(modifiedArray, 0, modifiedArray.length-1);&#10;&#10;quotazioni = modifiedArray;&#10;&#10;    double somma; int media;&#10;&#10;    somma=0;&#10;&#10;    for(int i=0; i&lt;=quotazioni.length-1; i=i+1) {&#10;    &#10;    //System.out.println(input_row.Nome + &quot; =&gt; &quot; +quotazioni[i]);&#10;      somma=somma+quotazioni[i];&#10;    }&#10;&#10;    media= (int) Math.round(somma/quotazioni.length);&#10;&#10;&#10;output_row.MEDIA_TRONCATA = media;&#13;&#10;output_row.id = input_row.id;&#13;&#10;output_row.R = input_row.R;&#13;&#10;output_row.Nome = input_row.Nome;&#13;&#10;output_row.Squadra = input_row.Squadra;&#13;&#10;&#10;output_row.QTA_FCit = input_row.QTA_FCit;&#13;&#10;output_row.QTA_Club = input_row.QTA_Club;&#13;&#10;output_row.QTA_Gds = input_row.QTA_Gds;&#13;&#10;output_row.QTA_Fm = input_row.QTA_Fm;&#10;output_row.QTA_Pf = input_row.QTA_Pf;&#10;output_row.QTA_Fs = input_row.QTA_Fs;&#10;output_row.QTA_Pazz = input_row.QTA_Pazz;&#10;&#13;&#10;output_row.FVM_FCit = input_row.FVM_FCit;&#13;&#10;output_row.FVMC_FCit = input_row.FVMC_FCit;&#13;&#10;output_row.FVMC_Club = input_row.FVMC_Club;&#13;&#10;output_row.FVMC_Gds = input_row.FVMC_Gds;&#13;&#10;output_row.FVMC_Fm = input_row.FVMC_Fm;&#10;output_row.FVMC_Pf = input_row.FVMC_Pf;&#10;output_row.FVMC_Fs = input_row.FVMC_Fs;&#10;output_row.FVMC_Pazz = input_row.FVMC_Pazz;&#10;&#10;&#10;&#10;output_row.FASCIA = null;&#10;output_row.POSIZIONE = null;&#10;&#13;&#10;"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.util.Arrays;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJavaRow_1">
-      <column comment="" defaultValue="" key="false" length="11" name="id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_GE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="MEDIE_LEGHE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Note" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="FASCIA" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MEDIA_TRONCATA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="928" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
-    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_k7pTsD6iEe6b4by1Py7G0g-tMap_1-PREVIEW.bmp"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
-    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="insert_report">
-      <column comment="" defaultValue="" key="false" length="11" name="id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="FASCIA" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MEDIA_TRONCATA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
-      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-      <outputTables name="insert_report" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.id" name="id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.R" name="R" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Nome" name="Nome" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Squadra" name="Squadra" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="" name="POSIZIONE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="" name="FASCIA" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.MEDIA_TRONCATA" name="MEDIA_TRONCATA" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVM_FCit" name="FVM_FCit" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVMC_FCit" name="FVMC_FCit" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVMC_Club" name="FVMC_Club" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVMC_Pf" name="FVMC_Pf" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVMC_Fm" name="FVMC_Fm" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVMC_Gds" name="FVMC_Gds" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVMC_Fs" name="FVMC_Fs" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.FVMC_Pazz " name="FVMC_Pazz" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.QTA_FCit" name="QTA_FCit" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.QTA_Club" name="QTA_Club" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.QTA_Pf" name="QTA_Pf" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.QTA_Fm" name="QTA_Fm" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.QTA_Gds" name="QTA_Gds" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.QTA_Fs" name="QTA_Fs" nullable="true" type="id_Integer"/>
-        <mapperTableEntries expression="row2.QTA_Pazz " name="QTA_Pazz" nullable="true" type="id_Integer"/>
-      </outputTables>
-      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="R" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Nome" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FVM_FCit" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FVMC_FCit" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FVMC_Club" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FVMC_Pf" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FVMC_Fm" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FVMC_Gds" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FVMC_Fs" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FVMC_Pazz" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="QTA_FCit" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="QTA_Club" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="QTA_Pf" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="QTA_Fm" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="QTA_Gds" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="QTA_Fs" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="QTA_Pazz" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="POSIZIONE" nullable="true" type="id_Integer"/>
-        <mapperTableEntries name="FASCIA" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MEDIA_TRONCATA" nullable="true" type="id_Integer"/>
-      </inputTables>
-    </nodeData>
-  </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="96">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1248" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_8"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -426,9 +335,9 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:E0YZ8drARfZ8SNBPp/iL8OpC/2phPWfyVdByS3eX"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RkcXyBziU6vEJ/uiPc879buizPRsJTUttI4bHbRj"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name "/>
-    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="TRUNCATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
@@ -467,6 +376,61 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="giocate"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mediavoto"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fantamedia"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TIT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SICU"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="INF"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Carmy_Prezzo"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_FCit"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_GE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MEDIE_LEGHE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Note"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="POSIZIONE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -478,81 +442,6 @@
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MEDIA_TRONCATA"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_FCit"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_FCit"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Club"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Pf"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Fm"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Gds"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Fs"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVMC_Pazz"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_FCit"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Club"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Pf"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Fm"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Gds"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Fs"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="QTA_Pazz"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -571,48 +460,40 @@
       <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="giocate" nullable="true" originalLength="8" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="mediavoto" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="fantamedia" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TIT" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="SICU" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="INF" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Carmy_Prezzo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_GE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="MEDIE_LEGHE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Note" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="FASCIA" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MEDIA_TRONCATA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" defaultValue="" key="false" length="11" name="id" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="giocate" nullable="true" originalLength="8" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="mediavoto" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="7" name="fantamedia" nullable="true" originalLength="8" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="TIT" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="SICU" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="INF" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="Carmy_Prezzo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="FVM_GE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="MEDIE_LEGHE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Note" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="FASCIA" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MEDIA_TRONCATA" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVM_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="FVMC_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_FCit" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Club" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pf" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fm" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Gds" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Fs" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="11" name="QTA_Pazz" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -643,7 +524,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9wOhh48ThiFMFF2St+uF70LGRLdBG5zRPihg+7ke"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nxCCXCEUY0gtfEmRGE/C+yv7p7S9CI1qZJhgzrRA"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -694,7 +575,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:sOnULagQSQgsESIw4Xo2m6/6GJQt59ROZTgujI4b"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:2vh8uiAuH9eyrLJzKNAUoixTgOGb+JiKuqMBZUYW"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -764,13 +645,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:loal7bTFDTCDC654ePSExDZelqj6xUXmIdzZlAcF"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1DYdAOwRYKvsBVhlD5xB5lq54F7cUXIEnHNq3RLv"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id,  &quot;+ context.orderBy+&quot;   FROM &quot;+ context.table_name+ &quot;  WHERE R='C' and id is not null ORDER BY &quot;+ context.orderBy+&quot; DESC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT id,  &quot;+ context.orderBy+&quot;   FROM &quot;+ context.table_name+ &quot;  WHERE R like 'C%' and id is not null ORDER BY &quot;+ context.orderBy+&quot; DESC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -815,7 +696,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:smksWv6ch3aCVpwm8omQZDo5Q2B7BKLzbPQkxcHi"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IUtDcmeuEdsU207lapWu+0f3AlHDGNA6U4Zlsuyw"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -885,7 +766,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YdwpaGYGnUOb+pPEShZ7ftp/0dD1rmMefm+psIxm"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m/fPlo5dqaLWHF3nu0qnflul17TxsSZUIi+GzV7N"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -936,7 +817,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uRVib0tpIAUDyLZbMGN4k65SA8KZpzNCzHtWYgiD"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tRtIXpK9MgF72teq8B1SEicT94LaqhWVGSp6NMsw"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -1006,13 +887,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VB+5mPf24hmmW/Q0ke4PVO+yEdz5e6LHukoZdKsj"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:EedQ+2G0gueQEsgqfe/wGfC+v51S8JQfCV7eya9w"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  id, &#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 8    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE   &lt;= 16   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 17 and POSIZIONE  &lt;= 24   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 32   then 'QUARTA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 33 and POSIZIONE  &lt;= 40   then 'QUINTA FASCIA' &#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SESTA FASCIA'&#13;&#10;end FASCIA&#13;&#10;from &quot;+ context.table_name+ &quot;&#13;&#10;where R = 'A' &#13;&#10;order by POSIZIONE  ASC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  id, &#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 8    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE   &lt;= 16   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 17 and POSIZIONE  &lt;= 24   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 32   then 'QUARTA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 33 and POSIZIONE  &lt;= 40   then 'QUINTA FASCIA' &#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SCOMMESSE'&#13;&#10;end FASCIA&#13;&#10;from &quot;+ context.table_name+ &quot;&#13;&#10;where R = 'A' &#13;&#10;order by POSIZIONE  ASC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1047,7 +928,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1DaN5NbrovnCfaHK8AudVLOtuyVWX62VEUnoQWK3"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m7VTx9J5HZl+qZ3caES2XfFT0M35238eVD/mpZtb"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -1117,13 +998,13 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q8qoXe/RjN0EkKnXB1cJv8aTX2QXpZ07MfJMbtt+"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uH8nDLaTn2NiVZn0vo6lbGO8ReQKHDvJVzoQnCO+"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  id, &#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 5    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 6 and POSIZIONE   &lt;= 24   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 40   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SCOMMESSE'&#13;&#10;end FASCIA&#13;&#10;from &quot;+ context.table_name+ &quot;&#13;&#10;where R = 'C' &#13;&#10;order by POSIZIONE  ASC&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  id, &#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 5    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 6 and POSIZIONE   &lt;= 24   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 40   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SCOMMESSE'&#13;&#10;end FASCIA&#13;&#10;from &quot;+ context.table_name+ &quot; &#13;&#10;where R like 'C%' &#13;&#10;order by POSIZIONE  ASC&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1158,7 +1039,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Of9VU7QXXe0/Uh33pw7ZeijnL/9JuTObeShOzySm"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9XI+KGUW9FtwMSM5odK/1rYsvUTnWC2P3GaYqgBh"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -1228,7 +1109,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:F6glM+9Gf/JghHnOKO/BDGsWrRPXSdZih50HZFxZ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RzW7n1hk+KCTm4bYDmxS88RwCwaaXuJr2PSChgzV"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1269,7 +1150,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:X0Xlvd6daw6H1IQKSUKXR/SuO7SPgxoELq8NQfYU"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JkUILJljDTGvSurGWFy5ldxeEVXksMkxaJc/njFX"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -1320,210 +1201,20 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="416">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_9"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7E428BfiEe29Bt9V2S3gow"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:nxePXFkbEcGjWuDnx2gAWTp9/JBMDtF041flN+Rg"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select  id, &#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 3   then Round(Qt_A* (5 -(POSIZIONE-1)*0.2))&#13;&#10;when POSIZIONE  &gt;= 4 and POSIZIONE  &lt;= 6   then Round(Qt_A*(4.8 -(POSIZIONE-4)*0.2)) &#13;&#10;when POSIZIONE  &gt;= 7 and POSIZIONE  &lt;= 9   then Round(Qt_A*(4.3 -(POSIZIONE-7)*0.2))&#13;&#10;when POSIZIONE  &gt;= 10 and POSIZIONE  &lt;= 24 then Round(Qt_A*(4 -(POSIZIONE-10)*0.2))&#13;&#10;when POSIZIONE  &gt;= 25  then Round(Qt_A*(2.0  -(POSIZIONE-1)*0.2))&#13;&#10;end FVM_CALCOLATO,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 8    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 9 and POSIZIONE   &lt;= 16   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 17 and POSIZIONE  &lt;= 24   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 32   then 'QUARTA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 33 and POSIZIONE  &lt;= 40   then 'QUINTA FASCIA' &#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SESTA FASCIA'&#13;&#10;end FASCIA&#13;&#10;from &quot;+ context.table_name+ &quot;&#13;&#10;where R = 'A' &#13;&#10;order by POSIZIONE  ASC&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_CALCOLATO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FASCIA"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBInput_9">
-      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FVM_CALCOLATO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="FASCIA" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="736">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_11"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7E428BfiEe29Bt9V2S3gow"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zgkj8gqopIUQI+0b3wD2YnoZxcGsyiRWwUsFEtCF"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, &#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 5   then Round(Qt_A*2 - ((POSIZIONE-1)*0.006))&#13;&#10;when POSIZIONE  &gt;= 6 and POSIZIONE  &lt;= 24   then Round(Qt_A*1.8 - ((POSIZIONE-6)*0.006)) &#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 42 then Round(Qt_A*1.6 - ((POSIZIONE-25)*0.006))&#13;&#10;when POSIZIONE  &gt;= 43  then Round(Qt_A*1.1- ((POSIZIONE-43)*0.012))&#13;&#10;end FVM_CALCOLATO,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 5    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 6 and POSIZIONE   &lt;= 24   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 25 and POSIZIONE  &lt;= 40   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 41 and POSIZIONE  &lt;= 49   then 'SCOMMESSE'&#13;&#10;end FASCIA&#13;&#10;from &quot;+context.table_name+&quot; &#13;&#10;WHERE R='C'&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_CALCOLATO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FASCIA"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBInput_11">
-      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FVM_CALCOLATO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="FASCIA" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="1056">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_13"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7E428BfiEe29Bt9V2S3gow"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VWPHwd7UaBmkKe7XMaZTf1dcuGCuk6sJ5zjJUX3B"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
-    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
-    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Id,&#13;&#10;case when&#13;&#10;     POSIZIONE  &gt;= 1 and POSIZIONE  &lt;= 4   then Round(Qt_A*2.1 -  ((POSIZIONE-1)*0.006))&#13;&#10;when POSIZIONE  &gt;= 5 and POSIZIONE  &lt;= 18   then Round(Qt_A*1.4-  ((POSIZIONE-5)*0.006))&#13;&#10;when POSIZIONE  &gt;= 19 then Round(Qt_A*1.1-  ((POSIZIONE-19)*0.006))&#13;&#10;end moltiplicato,&#13;&#10; case &#13;&#10;when POSIZIONE  &gt;= 1 and POSIZIONE   &lt;= 4    then 'TOP'&#13;&#10;when POSIZIONE  &gt;= 5 and POSIZIONE   &lt;= 18   then 'SEMITOP' &#13;&#10;when POSIZIONE  &gt;= 19 and POSIZIONE  &lt;= 41   then 'TERZA FASCIA'&#13;&#10;when POSIZIONE  &gt;= 42 and POSIZIONE  &lt;= 76   then 'SCOMMESSE'&#13;&#10;end FASCIA&#13;&#10;from &quot;+context.table_name+&quot; &#13;&#10;WHERE R='D'&quot;"/>
-    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
-    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
-    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
-    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
-    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
-    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FVM_CALCOLATO"/>
-      <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FASCIA"/>
-      <elementValue elementRef="TRIM" value="false"/>
-    </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br&gt;&lt;b&gt;mysql_fanta&lt;/b&gt;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBInput_13">
-      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FVM_CALCOLATO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="20" name="FASCIA" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <connection connectorName="FLOW" label="row17" lineStyle="0" metaname="tDBInput_7" offsetLabelX="0" offsetLabelY="0" source="tDBInput_7" target="tLogRow_2">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="FVMC_Fm"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTA_Fm"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="VALORE_MEDIO"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTA_Pf"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FVMC_Pf"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FVMC_Fs"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTA_Fs"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTA_Pazz"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FVMC_Pazz"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_7" offsetLabelX="0" offsetLabelY="0" source="tDBInput_7" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row17"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_7" offsetLabelX="0" offsetLabelY="0" source="tDBInput_7" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tJavaRow_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="FVMC_Fs"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTA_Fs"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="QTA_Pazz"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FVMC_Pazz"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="FLOW" label="insert_report" lineStyle="0" metaname="insert_report" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_8">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="QTA_Pazz"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="FVMC_Pazz"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-    </elementParameter>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tDBOutput_8">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="insert_report"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBInput_7">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
@@ -1988,28 +1679,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_9"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_11"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_13"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_df0e66af-8317-46b0-b404-4d4e6a040c46"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>l9m6diwNC9wB2RHAgu3HhrXK/cGmwVttcikYpkGwWdVL5i+yyvBTC5IGhF8ImIcD242Jy9Hairep&#13;
-OpyK1D5bZQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d829abe8-1d7a-4631-8b58-e329b272d21e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FEBKsKGfGVc2DD6wTtneAD38ybqpliREHYfXI5CSjkUdNTfOyBMcKl2QeTBGAotaAeGhCbMZLqTT&#13;
-k3QUVhIo2A==</DigestValue></Reference></SignedInfo><SignatureValue>ptRwH24MhNS3oPlGaeC49P3N812/PSdoGB0Hauntg/G8fgnqKqkZuAkBfMX9YAHsNBhuB3Kw3LpD&#13;
-IiuRrQZBO4fZTEBdD1SeLCoDL7y5nuEcEwrQSv7BAknd6f1Nrxo8WAAsriif35l3jpyFwOa1kAF9&#13;
-CkVaBc+UIUxP7w1C2pNvPpDSEZ0SjfwGFabAd5KG/v5JfLNHsiApNTMQSeuFYrvKWUnpQO8XwlmE&#13;
-ZVMidX9jsEk2AVHaK9mlYGd8NfughcxAQZi+tVcKMOiJ2SrJQD63NMUeWGyF8DOG1rmgf7H/Tt9J&#13;
-pO2o4FY8JCMTKHlq1K9opSYL/LAsFQdxCpE1MQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e4e83c7a-3139-4642-bcfc-371f3f89ed77"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1afr3u5Bhxl3HNiTLbg6WD68WSjMEhRB139vopWQ7Qi5yl0LOOinFjnybYPxuQUQ0Cs+labyYstM&#13;
+LEfqkaPbEQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f242fcab-3091-4abe-8349-e834c8b44061"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8N/G9y6L+YxzezdSSVzzo0ar3Xl6ffQef/Ao/Qxb2KgMNBx5kyUB0kF0rz0uOayzXp3pwKbPu+im&#13;
+3pRS3Dn0jA==</DigestValue></Reference></SignedInfo><SignatureValue>F8osX09wi435+2PHb9sGCBpb6mO8LlFjczoKiEors3sHMaGAAuRlm2187GAqDVHN95045pC3TExK&#13;
+GwR4+8CwrQi3FWEWNhmcwF9rM1rkj8tmfIehwJmC4kOHQXsHraJuEoXQw5hBPMwuAV44TDZKFNAN&#13;
+hlz+RE2IYDZclih15k2L7eWyNI4+zYu9FZZD4M0rDiD6beML+iSf0e/gkyxeQwG1P2qHx3A8+8dC&#13;
+7a+arshk0vu7sSwGnAO/ugS2ajFweIc5t/+TbwYqpCnAksiuZNzYZEm3aW2scyYZl87tLCjDuKTN&#13;
+jIEWe+Wrd4Wf6nJAMnaF4DSRMh0L3WgcVtV5Rw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2031,4 +1707,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d829abe8-1d7a-4631-8b58-e329b272d21e" Target="#_df0e66af-8317-46b0-b404-4d4e6a040c46"><Timestamp>2023-08-24 18:11:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f242fcab-3091-4abe-8349-e834c8b44061" Target="#_e4e83c7a-3139-4642-bcfc-371f3f89ed77"><Timestamp>2023-09-06 09:46:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

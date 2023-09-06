@@ -101,9 +101,9 @@ public class fanta {
     	
     	Name = Name.toLowerCase().replaceAll("\'","");
     	
-    	if ( Name.contains("martinez"))
+    	/*if ( Name.contains("martinez"))
     		System.out.println (Name + "|" + Ruolo + "|" + Squadra);
-    		
+    	*/	
     		
     	String[] splited = Name.split("\\s+");
     	splited[0] = splited[0].substring(0, 1).toUpperCase() + splited[0].substring(1);
@@ -332,7 +332,7 @@ public class fanta {
     		return "Zapata D.";
     	}
        	
-       	if (Name.contains("gudmundsson") && Ruolo.equals("A") ) {
+       	if (Name.contains("gudmundsson") ) {
     		return "Gudmundsson A.";
     	}
        	
@@ -851,5 +851,350 @@ Mateus Lusuardi | frosinone
      	return splited[0];
     }
     
+    public static String returnNameMedieAsta (String Name, String Ruolo) {
+    	
+    	Name = Name.toLowerCase().replaceAll("\'","");
+    	
+    	if ( Name.contains("martinez") && Ruolo.equals("A")) {
+    		return "Martinez L.";
+    	}
+    	
+    	if ( Name.contains("luis") && Ruolo.equals("C")) {
+    		return "Luis Alberto";
+    	}
+    		
+    	String[] splited = Name.split("\\s+");
+    	splited[0] = splited[0].substring(0, 1).toUpperCase() + splited[0].substring(1);
+    	
+    	
+    	//System.out.println (Name + "=> " + splited[1]);
+    	
+    	if (Name.contains("rodriguez")   && Ruolo.equals("D")) {
+     		return "Rodriguez R.";
+     	}
+    	
+    	if (Name.contains("moro")   ) {
+     		return "Moro N.";
+     	}
+    	
+    	if( Name.contains("di francesco f") ) {
+    		return "Di Francesco F.";
+    	}
+    	
+    	if ( Name.contains("martinez") && Ruolo.equals("D")) {
+    		return "Martinez Quarta";
+    	}
+    	
+    	if ( Name.contains("kaio") && Ruolo.equals("A")) {
+    		return "Kaio Jorge";
+    	}
+    	
+    	
+    	
+    	if (splited[0].contains("Leao") || splited[0].contains("Rafael")) {
+    		return "Rafael Leao";
+    	}
+    	
+    	if (Name.contains("dany") ){
+    		return "Mota";
+    	}
+    	
+
+    	if (Name.contains("anderson f") || Name.contains("felipe")) {
+    		return "Felipe Anderson";
+    	}
+    	 
+     	if (splited[0].contains("Pellegrini") && Ruolo.contains("C") ) {
+     		return "Pellegrini Lo.";
+    	}
+     	
+     	if (splited[0].contains("Pellegrini") && Ruolo.contains("D") ) {
+     		return "Pellegrini Lu.";	
+    	}
+     	
+     	if (Name.contains("anguissa") ) {
+     		return "Zambo Anguissa";
+     	}
+     	
+     	if (Name.contains("ederson")) {
+     		return "Ederson D.s.";
+     	}
+     	
+     	if (Name.contains("henrique m")){
+     		return "Matheus Henrique";
+     	}
+     	
+     	if (Name.contains("arthur")){
+     		return "Arthur Melo";
+     	}
+     	
+     	if (Name.contains("iling")){
+     		return "Iling Junior";
+     	}
+     	
+     	if (Name.contains("sulemana")){
+     		return "Sulemana I.";
+     	}
+     
+     	if (Name.contains("pezzella") && Ruolo.contains("D")){
+     		return "Pezzella Giu."; 
+     	}
+     
+     	if(Name.contains("d’ambrosio d")){
+     		return "Dambrosio";
+     	}
+     	
+     	if(Name.contains("toure") && Ruolo.equals("A")){
+     		return "Toure E.";
+     	}
+
+     	if(Name.contains("beltran")){
+     		return "Beltran L.";
+     	}
+     	
+     	if(Name.contains("shpendi")){
+     		return "Shpendi S.";
+     	}
+     	
+     	if(Name.contains("corfitzen j")){
+     		return "Corfitzen";
+     	}
+     	
+     	
+     	if(Name.contains("romero l")){
+     		return "Romero L.";
+     	}
+     	
+     	if(Name.contains("domingos quina q")){
+     		return "Quina";
+     	}
+     	
+     	if(Name.contains("jesus")){
+     		return "Juan Jesus";
+     	}
+     	
+     	if(Name.contains("ranieri l")){
+     		return "Ranieri L.";
+     	}
+     	
+     	if(Name.contains("ruan t")){
+     		return "Tressoldi";
+     	}
+     	
+     	if(Name.contains("terracciano")){
+     		return "Terracciano F.";
+     	}
+     	
+     	if(Name.contains("sanches")){
+     		return "Renato Sanches";
+     	}
+     	
+     	if(Name.contains("akpa")){
+     		return "Akpa Akpro";
+     	}
+     	
+     	if(splited[0].equals("Alvarez")) {
+     		return "Alvarez A.";
+     		
+     	}
+     	
+     	if(Name.contains("caviglia")) {
+     		return "Nicolussi Caviglia";
+     	}
+     	
+     	if(Name.contains("gonzalez")) {
+     		if(Ruolo.equals("D")) {
+     		return "Gonzalez F.";
+     		}
+     		if(Ruolo.equals("C")) {
+     		return "Gonzalez J.";
+     		}
+     		if(Ruolo.equals("A")) {
+     		return "Gonzalez N.";
+     		}
+     	}
+     	
+     	
+     	if(Name.contains("carboni")) {
+     		if(Ruolo.equals("D")) {
+     		return "Carboni A.";
+     		}
+     		if(Ruolo.equals("C")) {
+     		return "Carboni V.";
+     		}
+     	}
+     	
+     	if(Name.contains("carlos")) {
+     		return "Carlos Augusto";
+     	}
+     	
+     	if(Name.contains("pablo")) {
+     		return "Mari";
+     	}
+     	
+     	if(Name.contains("berardi") && Ruolo.equals("P")) {
+     		return "Berardi A.";
+     	}
+     	
+     	if( Name.contains("diego") && Ruolo.equals("D")) {
+     		return "Llorente D.";
+     	}
+     	
+     	if( Name.contains("mbala") && Ruolo.equals("A")) {
+     		return "Nzola";
+     	}
+     	
+    	if( Name.contains("romagnoli a") ) {
+       		return  "Romagnoli";
+       	}
+    	
+    	if( Name.contains("romagnoli s") ) {
+       		return  "Romagnoli S.";
+       	}
+    	
+    	if( Name.equals("vignato e.")) {
+       		return  "Vignato";
+       	}
+    	
+    	if( Name.equals("vignato s.") ) {
+       		return  "Vignato S.";
+       	}
+    	
+    	if (Name.contains("hernandez") && Ruolo.equals("D")) {
+    		return "Hernandez T.";
+    	}
+    	
+ 
+     	
+    	if (Name.contains("perez") && Ruolo.equals("D") ) {
+    		return "Perez N.";
+    	}
+
+    	if (Name.contains("llorente") && Ruolo.equals("D")) {
+    		return "Llorente D.";
+    	}
+    	
+       	if (Name.contains("kamara") && Ruolo.equals("D") ) {
+    		return "Kamara H.";
+    	}
+       	
+       	if (Name.contains("pedersen") && Ruolo.equals("D") ) {
+    		return "Pedersen M.";
+    	}
+     	
+       	if (Name.contains("ferrari") && Ruolo.equals("D")) {
+    		return "Ferrari G.";
+    	}
+       	
+       	if (Name.contains("lopez")  ) {
+    		return "Lopez M.";
+    	}
+       	
+       	if (Name.contains("ricci")  ) {
+    		return "Ricci S.";
+    	}
+       	
+       	
+       	
+       	if (Name.contains("henderson")  ) {
+    		return "Henderson L.";
+    	}
+       	
+       	if (Name.contains("ranocchia")  ) {
+    		return "Ranocchia F.";
+    	}
+       	
+       	if (Name.contains("camara") && Ruolo.equals("C") ) {
+    		return "Camara E.";
+    	}
+       	
+       	if (Name.contains("ake") ) {
+    		return "Ake M.";
+    	}
+       	
+       	if (Name.contains("zapata") && Ruolo.equals("A") ) {
+    		return "Zapata D.";
+    	}
+       	
+       	if (Name.contains("gudmundsson") ) {
+    		return "Gudmundsson A.";
+    	}
+       	
+       	if (Name.contains("coda") && Ruolo.equals("A") ) {
+    		return "Coda M.";
+    	}
+       	
+       	if (Name.contains("valencia") && Ruolo.equals("A") ) {
+    		return "Valencia D.";
+    	}
+       	
+       	if (Name.contains("francesco") && Ruolo.equals("A") ) {
+    		return "Di Francesco F.";
+    	}
+       	
+       	if (Name.contains("mario") && Ruolo.equals("D") ) {
+    		return "Mario Rui";
+    	}
+       	
+       	
+       	if (Name.contains("loftus") ) {
+       		//System.out.println (Name + "|" + Ruolo + "|");
+       		
+    		return "Loftus-Cheek";
+    	}
+       	
+       	if (Name.contains("henrique") && Ruolo.equals("C") ) {
+    		return "Matheus Henrique";
+    	}
+       	
+    	if((Name.equals("toure b") || Name.contains("ballo")) ){
+     		return "Ballo-Toure";
+     	}
+    	if(Name.contains("coppola") && Ruolo.equals("D")){
+     		return "Coppola D.";
+     	}
+    	
+       	if( Name.equals("ranieri") && Ruolo.equals("D")) {
+       		return  "Ranieri L.";
+       	}
+       	
+    	if( Name.equals("shpendi") && Ruolo.equals("A")) {
+       		return  "Shpendi S.";
+       	}
+    	
+      	if (Name.contains("romero")  && Ruolo.equals("D") ) {
+     		return "Romero L.";
+     	}
+      	
+      	if (Name.contains("malinov")  ) {
+     		return "Malinovskyi";
+     	}
+      	
+       	if(Name.equals("coulibaly l.")){
+     		return "Coulibaly L.";
+     	}
+       	
+       	if(Name.equals("coulibaly")){
+     		return "Coulibaly M.";
+     	}
+       	
+     	if (Name.contains("sandro") && Ruolo.equals("D")  ) {
+     		return "Alex Sandro";
+     		
+     	}
+       	
+     	if (splited[0].equals("El") || splited[0].equals("Di") || splited[0].equals("De") || splited[0].equals("Van")) {
+    		return splited[0] + " " +  splited[1].substring(0, 1).toUpperCase() + splited[1].substring(1);
+    		
+    	}
+    	
+
+    	
+    	//System.out.println (Name + "|" + Ruolo + "|");
+     	
+    	return splited[0];
+      	
+
+    }
     
 }

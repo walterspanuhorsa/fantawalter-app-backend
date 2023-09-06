@@ -1,9 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" internalId="_gpnNMDrFEe6Wc4rv8Gkw2A" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" internalId="_gpnNMTrFEe6Wc4rv8Gkw2A" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_aFFRUDtWEe6Wc4rv8Gkw2A" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_YJCbUD6LEe6b4by1Py7G0g" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="PRD">
+    <contextParameter comment="" internalId="_jtSq8EaJEe6QpuS7c7RT_g" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;/opt/Talend/&quot;"/>
+    <contextParameter comment="" internalId="_jtSq8UaJEe6QpuS7c7RT_g" name="param" prompt="param?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;ambiente_prd&quot;"/>
+    <contextParameter comment="" internalId="_jtSq8kaJEe6QpuS7c7RT_g" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSq80aJEe6QpuS7c7RT_g" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSq9EaJEe6QpuS7c7RT_g" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSq9UaJEe6QpuS7c7RT_g" name="orderBy" prompt="orderBy?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSq9kaJEe6QpuS7c7RT_g" name="value_prev" prompt="value_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSq90aJEe6QpuS7c7RT_g" name="pos_prev" prompt="pos_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSq-EaJEe6QpuS7c7RT_g" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" internalId="_jtSq-UaJEe6QpuS7c7RT_g" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;C:/Users/walter.spanu/OneDrive - Horsa spa/Progetti/ZZ_HORSA/CARTELLA PERSONALE/FantaProgetto/STAGIONE 2023_24/file_sorgenti/&quot;"/>
+    <contextParameter comment="" internalId="_jtSq-kaJEe6QpuS7c7RT_g" name="param" prompt="param?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;ambiente_dev&quot;"/>
+    <contextParameter comment="" internalId="_jtSq-0aJEe6QpuS7c7RT_g" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSq_EaJEe6QpuS7c7RT_g" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSq_UaJEe6QpuS7c7RT_g" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSq_kaJEe6QpuS7c7RT_g" name="orderBy" prompt="orderBy?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSq_0aJEe6QpuS7c7RT_g" name="value_prev" prompt="value_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSrAEaJEe6QpuS7c7RT_g" name="pos_prev" prompt="pos_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSrAUaJEe6QpuS7c7RT_g" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" internalId="_jtSrAkaJEe6QpuS7c7RT_g" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;/src/Lezioni_realco/&quot;"/>
+    <contextParameter comment="" internalId="_jtSrA0aJEe6QpuS7c7RT_g" name="param" prompt="param?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;ambiente_prd&quot;"/>
+    <contextParameter comment="" internalId="_jtSrBEaJEe6QpuS7c7RT_g" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSrBUaJEe6QpuS7c7RT_g" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSrBkaJEe6QpuS7c7RT_g" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSrB0aJEe6QpuS7c7RT_g" name="orderBy" prompt="orderBy?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_jtSrCEaJEe6QpuS7c7RT_g" name="value_prev" prompt="value_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSrCUaJEe6QpuS7c7RT_g" name="pos_prev" prompt="pos_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_jtSrCkaJEe6QpuS7c7RT_g" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -48,7 +75,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Wn1VOgMgPzClj7QsEX+ywrnYz9Yqk2/FRxye8clA"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Q1e4uVJRjuhQ9I5Kint3lpTdebTAmcBoGis5BYfi"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -83,7 +110,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cMy8UIaBt7B/Yb5KN6Ol8UmMhvAmn59jF+u3DhsY"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iwHNCWPLm0CyxH3edKY6xLrgctb/6tOhXlW/mTmH"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -122,8 +149,8 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/walter.spanu/OneDrive - Horsa spa/Progetti/ZZ_HORSA/CARTELLA PERSONALE/FantaProgetto/STAGIONE 2023_24/Quotazioni_Fantamaster_Stagione_2023_24_20230817.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:I3SwB90/ufriuwtLzNiB9Stky5SXSXLlLzRBhsuN"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.filePath +context.file_name"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:dKxTAz3lbYfIgMwsLixJF+XQ/KCtbwNPWtr/bkTM"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="false"/>
     <elementParameter field="TABLE" name="SHEETLIST">
       <elementValue elementRef="SHEETNAME" value="&quot;Tutti&quot;"/>
@@ -398,7 +425,7 @@
       <column comment="" key="false" length="20" name="Source" nullable="true" originalLength="20" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="Relational.ISNULL(row16.Id )" name="call_lib" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row16.Id " name="id" nullable="true" type="id_Integer"/>
@@ -455,7 +482,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TescbuIJkuYHnUlI/lLgZAA5esrWTtrq6AB4Cdtm"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gTrAdLrdjq3Hsen3OZE+5qtQWGooGUt+YRh+k/VH"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -500,7 +527,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bj9dgSbRdxaDHGS/bbodRvMixVhix8Rc/uajsRRs"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FlFcueR30nX7Hd+84TNXNt0AX85woUrf2dzuU5BA"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -631,7 +658,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0rxiCJKRGRSCvcVnEjlwHTYkjUeu5A8h1gmIi20Y"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TWpdgNEWs/JNfhV4qDsJx/wC2Z3cUmBkkGwN+z/p"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -752,9 +779,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="160">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;&#10;context.file_name = &quot;Quotazioni_Fantacalcio&quot;;&#10;&#10;//context.fantacalcioTable = &quot;listone_fantacalcioit_202324_&quot;+ TalendDate.getDate(&quot;YYYYMMDD&quot;);&#10;&#10;context.counter = 0;&#10;&#10;System.out.println(&quot;CREO LA TABELLA: &quot;+ context.table_name);&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;&#10;context.file_name = &quot;Quotazioni_Fantamaster_2023_24_&quot;+TalendDate.getDate(&quot;YYYYMMDD&quot;)+&quot;.xlsx&quot;;&#10;&#10;context.fantacalcioTable = &quot;listone_fantacalcioit_202324&quot;;&#10;context.table_name=&quot;listone_fantamaster_202324&quot;;&#10;&#10;context.counter = 0;&#10;&#10;System.out.println(&quot;CREO LA TABELLA: &quot;+ context.table_name);&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -772,7 +799,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fLNNa2uK1r6cCbHQ160lRUN1FZBPhZkXc4omI/sQ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BzXkhchfbKZSBFWH2/zUR0anX5xKLxpM1n47dL9g"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -861,7 +888,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hQYwSy+Pwu0hcG4JQYLD3BzGIRLNIfHKNbRm9vWi"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Mm7+H0Hj/JR0ZHPM8QHbVZph/YKfrvDKTO9pHyUJ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -925,7 +952,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tNPKXlxOQTyVbF0g01xh8/5niOXA+LgaN+RFC5QA"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BGV2hvrqzIBWnrZLMMnjlckoENvkDT5w+m1ebO2R"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1014,7 +1041,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fN0ztCWKXdrJQ4QXh6xBAMn42UHFo1pYjoMhUWlj"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:XnbHZ55CQq0/58irM9uMxHTJNqJXNdc6K7R4KJLh"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -1152,7 +1179,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:E4h5KvRQ4p8ShjABXbJ5J7wyM2mRKaV9wsEEAXqy"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5zde7e8S2b7EniLuKI5+2e+X4e8edZv4D5mrE63y"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -1197,7 +1224,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:INZcKwjYAVyilm4S9/8KezadZllA9epKZW6KMY+b"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZTxcrnj2sW2XvTRgUgDTIkLtBu/J+vVOGhzxMLp4"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -1262,6 +1289,50 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
+  <node componentName="tFileFetch" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileFetch_1"/>
+    <elementParameter field="CLOSED_LIST" name="PROTO" value="https"/>
+    <elementParameter field="CHECK" name="POST" value="false"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;https://apicdn.fantamaster.it/export/?format=excel&amp;sort=value&quot;"/>
+    <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="SMB_URI" show="false" value="&quot;smb://host/dir/remoteFileName.txt&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.filePath"/>
+    <elementParameter field="CHECK" name="MAKEDIRS" value="false"/>
+    <elementParameter field="TEXT" name="FILENAME" value="context.file_name"/>
+    <elementParameter field="CHECK" name="ADD_HEADER" value="false"/>
+    <elementParameter field="TABLE" name="HEADERS" show="false"/>
+    <elementParameter field="TEXT" name="SMB_DOMAIN" show="false" value="&quot;domain&quot;"/>
+    <elementParameter field="TEXT" name="SMB_USERNAME" show="false" value="&quot;username&quot;"/>
+    <elementParameter field="PASSWORD" name="SMB_PASSWORD" show="false" value="enc:system.encryption.key.v1:5E7c28qVep7C80pILzP1aiAaBo2DcJ90Q2srcE4wsSGs3Ee0Zck="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TABLE" name="COMMON_PARAMS" show="false"/>
+    <elementParameter field="CHECK" name="READ_COOKIE" value="false"/>
+    <elementParameter field="CHECK" name="SAVE_COOKIE" value="false"/>
+    <elementParameter field="FILE" name="COOKIE_DIR" show="false" value="&quot;C:/cookie&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="COOKIE_POLICY" show="false" value="DEFAULT"/>
+    <elementParameter field="CHECK" name="SINGLE_COOKIE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ENCODE_URI" value="false"/>
+    <elementParameter field="OPENED_LIST" name="COMMON_PARAMS_CHARSET" show="false" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="CHECK" name="PRINT" value="false"/>
+    <elementParameter field="TEXT" name="TIMEOUT" value="30000"/>
+    <elementParameter field="CHECK" name="UPLOAD" show="false" value="false"/>
+    <elementParameter field="TABLE" name="FILE_PARAMS" show="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" show="false" value="&quot;127.0.0.1&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" show="false" value="&quot;8080&quot;"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" show="false" value="enc:system.encryption.key.v1:+GQsJv52ucXvFwRAP+nyq5KcZygC6U174m6x9t4b"/>
+    <elementParameter field="CHECK" name="PROXY_NTLM" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_DOMAIN" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="&quot;IVIanowar&quot;"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:KVCllAhiImiU4NThaQ+RUp/PPOrzQXn4QNwT9sPKZG14yjURADc="/>
+    <elementParameter field="CHECK" name="REDIRECT" value="false"/>
+    <elementParameter field="CHECK" name="REDIRECT_302_AS_303" show="false" value="false"/>
+    <elementParameter field="CHECK" name="TRUST_ALL_SERVER" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileFetch_1"/>
+  </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputExcel_1" target="tSchemaComplianceCheck_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Trequart"/>
@@ -1313,7 +1384,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row16"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileInputExcel_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tFileFetch_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJavaRow_2">
@@ -1523,6 +1594,9 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_7" offsetLabelX="0" offsetLabelY="0" source="tDBInput_7" target="tRunJob_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileFetch_1" offsetLabelX="0" offsetLabelY="0" source="tFileFetch_1" target="tFileInputExcel_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
   <note opaque="true" posX="256" posY="0" sizeHeight="64" sizeWidth="961" text="quotazioni prese su: https://www.fantamaster.it/listone-quotazioni-fantacalcio-serie-a/&#13;&#10;">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
@@ -1564,13 +1638,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a37a463f-ac3c-4476-8d2b-6e0f34a731b6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xibjKjO+Etk7Rio/r2d4kSDxMN/q6fQkVqttv9SodmziiVJix5RwjKc14EGHhthmeXhspBv0qOS8&#13;
-sQ80k5haDg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_354ce209-2885-4aef-bd1e-e8ab99ca2e67"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VlZoHjJrvBsVaKJjkCGnIDDwLki/JL+2+1gN9nIF4cLK+YUNns5c2BMjVEpo/IaKaRASEcX97TQm&#13;
-B1fA2tBX7g==</DigestValue></Reference></SignedInfo><SignatureValue>ooa9m7eqfXc9YFawGf0axvcb7k0nDK/cc4xkwAje/CAsX4hAe0lsboWZGOGP4Ypua1NWNrPuAk/t&#13;
-STEadEGDHX8MAsMvexMI/2B7t9WekHJ3SSXngGyoQRNlk5Zjfsbq7Zh6pv5ByYeR6AyZu3TZTAaC&#13;
-aGF9VN4PT7G3SiK9Fs9HRsOmLrP42vR5p3KZn8RRb6U5cuokPokwfm7aDKHGEzuQ9UZXlRT7ijhd&#13;
-GncRglksz5UEsqo9gr3FAUcQOEYH5iqdiKwcEudRHelkvZNgb6SSacTJ6VOXmbtygnXH84ZgKHKp&#13;
-+7snDoteJjyci+5EOdA+bnywtqBYddqrhuD21A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileFetch_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0dd08083-9973-4045-9bb7-a63faa38ab34"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Iv+CFSdnOg3UUwWNLm+avfc4n8OXqeqNWkQ6qmPkXs2ea56apsoBJ0Q4hp+SdMiL5vdsXl2yYoU6&#13;
+2zJCotIu9w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_28f0d39d-12f9-46af-babf-21d22e587df8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>L4sJOjaChjACYPluX7B31X7diOkAmnFhMuiJtBu/Cg+xfey/Ioj3ptOt8bhoEURLGBIYU9UIfdeJ&#13;
+SyUOvjhx8g==</DigestValue></Reference></SignedInfo><SignatureValue>kDspOnNdnM0K1updRFn0FiUxzwm9LULMexLsQh6cLvEDDTsBIAVLvWTMvGsrurtfmkX4Vcf8kFd9&#13;
+UiWSlKXrV5850iz27NaBtTxgHm8HP1G7xLIOPhdThqKJmnpYUnX0dCzlpR2ps19JOuHD4WsCeh6Y&#13;
+KUIHKBvnlf7b0G1xIgsCdufixUBJmrSWGRDQwmi+EPHNzMU+ZOG7jArUFfZ+HjuNV4bh5zDoZtqA&#13;
+/jz2tdUK31sXrTMauqoxwozygEpIuVusM0aW6RzQXQ1YN7RwkYtoMgWl+rkCTl9+tCT28DLqThUq&#13;
+0yEuAa+nP0WvZcCE0mDlO2yRys+e7U4tUbI6kw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1592,4 +1671,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_354ce209-2885-4aef-bd1e-e8ab99ca2e67" Target="#_a37a463f-ac3c-4476-8d2b-6e0f34a731b6"><Timestamp>2023-08-25 17:54:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_28f0d39d-12f9-46af-babf-21d22e587df8" Target="#_0dd08083-9973-4045-9bb7-a63faa38ab34"><Timestamp>2023-08-29 16:38:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
