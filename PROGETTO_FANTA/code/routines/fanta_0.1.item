@@ -111,8 +111,21 @@ public class fanta {
     	
     	//System.out.println (Name + "=> " + splited[1]);
     	
+    	
+    	if (splited[0].equals("Leao") || splited[0].equals("Rafael")) {
+    		return "Rafael Leao";
+    	}
+    	
+    	if (Name.contains("tzidiak")   && Ruolo.equals("D")) {
+     		return "Chatzidiakos";
+     	}
+    	
     	if (Name.contains("rodriguez")   && Ruolo.equals("D")) {
      		return "Rodriguez R.";
+     	}
+    	
+    	if (Name.contains("pedersen")   && Ruolo.equals("D")) {
+     		return "Pedersen";
      	}
     	
     	if (Name.contains("moro")   ) {
@@ -329,6 +342,7 @@ public class fanta {
     	}
        	
        	if (Name.contains("zapata") && Ruolo.equals("A") ) {
+       		//System.out.println("SONO DENTRO ZAPATA" ); 
     		return "Zapata D.";
     	}
        	

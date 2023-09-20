@@ -411,6 +411,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.designer.docker.migrationtask.UpdateJobPomPropertiesMigrationTask",
+    "breaks" : "7.0.1",
+    "version" : "7.0.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.designer.esb.components.rs.provider.migration.ConsumesTypeMigrationTask",
     "breaks" : "5.3.0",
     "version" : "5.4.0",
@@ -686,6 +691,11 @@
     "version" : "5.3.0",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.hcatalog.model.migration.PushHCatalogIntoHadoopClusterMigrationTask",
+    "breaks" : "5.3.0",
+    "version" : "5.3.0",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.repository.hdfs.model.migration.PushHDFSIntoHadoopClusterMigrationTask",
     "breaks" : "5.3.0",
     "version" : "5.3.0",
@@ -704,6 +714,16 @@
     "id" : "org.talend.repository.localprovider.model.migration.ChangeXmiSerialization",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.mdm.repository.migration.MdmAddVersionMigrationTask",
+    "breaks" : "6.0.0",
+    "version" : "6.0.0",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.mdm.repository.migration.UnifyPasswordEncryption4MDMConnectionMigrationTask",
+    "breaks" : "5.6.0",
+    "version" : "5.6.0",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.metadata.migration.AccessMigrationTask",
@@ -2724,6 +2744,41 @@
     "id" : "org.talend.repository.routelets.migration.RouteletProcessTypeMigrationTask",
     "breaks" : "6.1.0",
     "version" : "6.1.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.sap.migration.SAPADSOCategoryMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.sap.migration.SAPADSOConnectionTypeItemMigrationTask",
+    "breaks" : "8.0.1",
+    "version" : "8.0.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.sap.migration.SAPComponentSchemaIdMigrationTask",
+    "breaks" : "5.1.1",
+    "version" : "5.6.0",
+    "status" : "ok"
+  }, {
+    "id" : "org.talend.repository.sap.migration.SAPDatePatternComponentMigrationTask",
+    "breaks" : "5.6.0",
+    "version" : "5.6.3",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.sap.migration.SAPDatePatternItemMigrationTask",
+    "breaks" : "5.6.0",
+    "version" : "5.6.3",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.sap.migration.SAPItemMigrationTask",
+    "breaks" : "5.1.1",
+    "version" : "5.6.0",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.sap.repository.migration.UnifyPasswordEncryption4SapConnectionMigrationTask",
+    "breaks" : "5.6.0",
+    "version" : "5.6.0",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.sdk.component.studio.metadata.migration.EncryptTckMetadataMigrationTask",
