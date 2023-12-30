@@ -50,7 +50,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:aw367Gbh22V87j5AKd0dTQK54hVaZBZI20qlg+JD"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:ZP6gy8x700jdSC7iJewwzgyizF712iTtPLhXjO38"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -72,7 +72,7 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
-    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="JDBCOutput"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
     <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
     <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
@@ -85,7 +85,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0D7klb74ylEYXf3ln9HAVCL+nvAj98urb7WmShym"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:0go/m63xW2RdoPWGdk3SG4DgOjJMoKDFofeAIQdi"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -133,7 +133,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:B0yzdCbBuHV6LHAUkcSMVEu8Dt4+BF6jo+7ksa6Z"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5x146gB4fXGEUOpAlZnGurrEqwZ6CDgEZMy5xnPN"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -164,7 +164,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;output_row.Id = input_row.Id;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#10;&#10;if (input_row.value &lt; context.value_prev || context.counter == 1){&#10;&#13;&#10;//System.out.println (&quot;ENTRO NELL'IF&quot;);&#10;&#13;&#10;output_row.POSIZIONE = context.counter;&#10;context.pos_prev = context.counter;&#10;&#10;} else {&#10;//&#9;System.out.println (&quot;ENTRO NELL'ELSE&quot;);&#10;&#9;output_row.POSIZIONE = context.pos_prev;&#9;&#10;}&#10;&#10;context.value_prev = input_row.value;&#13;&#10;&#10;//System.out.println (input_row.Id + &quot; =&gt; attuale valore:&quot;+ input_row.value +&quot; | prev_value:&quot;+  context.value_prev + &quot; | POS: &quot; + context.counter);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;&#10;output_row.Id = input_row.Id;&#10;&#10;context.counter = context.counter +1;&#10;&#10;&#10;&#10;if (input_row.value &lt; context.value_prev || context.counter == 1){&#10;&#13;&#10;//System.out.println (&quot;ENTRO NELL'IF&quot;);&#10;&#13;&#10;output_row.POSIZIONE = context.counter;&#10;context.pos_prev = context.counter;&#10;&#10;} else {&#10;//&#9;System.out.println (&quot;ENTRO NELL'ELSE&quot;);&#10;&#9;output_row.POSIZIONE = context.pos_prev;&#9;&#10;}&#10;&#10;context.value_prev = input_row.value;&#13;&#10;&#10;System.out.println (input_row.Id + &quot; =&gt; attuale valore:&quot;+ input_row.value +&quot; | prev_value:&quot;+  context.value_prev + &quot; | POS: &quot; + output_row.POSIZIONE);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -184,7 +184,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SK0domp4v6cLWQ/GHv7azidCmKOUpNBSsUBJZKP+"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Jl8PcOILFbDFgmCNrZqK5aLFk7NjuDG2aYZ0IFBP"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -198,10 +198,10 @@
     <elementParameter field="LABEL" name="NOTE" show="false" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" show="false" value="100"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="1"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="1"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -247,7 +247,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OedBdeqqfYrTb9sM79qOgde6vcVMx6lGlm5o61so"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:m2wkKf3DKEjRNqqCauNLvgjPkecT6aWQ92vOKKqR"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -291,7 +291,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Nw0BZf7YHPwyma7CxCYNOWH/0oS47/uNujNfGwVK"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:3JDGFVwdCxgVOd8njosgFWhydrgSF7SZ5c0MnqWc"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -368,7 +368,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:M5lr1fIU4RhQt4sxprKi5viFUbSlwssxG2jeHI5g"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:j5T37tE0ZEVd22YlnZbxXFdzTkz+WXKMPVeevYLj"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -419,7 +419,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HFEtowYO4qKsjxj+3QseEoaqv6ESqKgGlKeHp5+g"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gurvUtDJsh3MpwDoSr5Z/Ly6hfVGidWwi6GOK4Rz"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -489,7 +489,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5ooKGZh8kRmiCcROWJs+4SNQT1Wzmk3OJ44aAh5j"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fmAEio+fWcs75Sa49ChXC3F8WDCaBublp4rnxbuM"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -533,7 +533,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:q6xphnHP4uXjmFSZPPway8B4Wisv4WTq4m9Hi2Pu"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gs4bm6zHwKauUn4oDrmie2KrAsui2fcdMEP9xj1G"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -617,7 +617,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1rigeOUzkNJDGfjV+5FlzxpCHbHgYDRK44+PS0+n"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NWA6qwErXqww/ev2USml4CBRG4V7IBvCAI8p0PzF"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -668,7 +668,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Tll2aj5dQY4XuXgVI+GhtQZNidSk6oGWR7ebYvSR"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:LQ+agLllCQLaYRSW2usofCHH4ApTrcoZMMXv60Jh"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -731,7 +731,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:CwOyiopUgV44EBMBAygphSmeLzC8nG3+RIN1vqoF"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:48pDnstXyzaDSJntnheghs+CS2uZ/rrESoX1/Tlu"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -775,7 +775,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1YgU0aRf9+vjcY66g63t72xrhYAJ5v3sEHmvdOZN"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:p/qRF24mQm+s+kichaVvPS8kNm9ohl/A99c7Yw7Y"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -835,7 +835,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;context.value_prev = 0;&#10;context.pos_prev = 0;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;context.counter = 0;&#10;context.value_prev = 0;&#10;context.pos_prev = 0;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -1293,13 +1293,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e1d2a7b9-2223-431f-8782-83575a6080df"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VLqEyIF0wiXyq0K+tsKayNKld2Ta4F6PuDrD1RsHFmwiHETeDq4LREOh29QR5MrML7/T7WnxY/gt&#13;
-qcbUXhHpmw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_63b264e4-f2b8-4cc3-aa70-a6411e62330d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Xr339FwWBIrXSO/9JSD96zLJwrR1sur1hThWHem+MEQNbvFCotiQ5S25oj9Wrl8IxoSiw7OdHcCN&#13;
-CXIhMJ4nng==</DigestValue></Reference></SignedInfo><SignatureValue>SSmWhajGGyAN7JayCwJS4DtdXeETRcpB3bUHYdohWVJ/dq+jkV1Er1ihfVLSXVXvObXPVcJhFBqA&#13;
-EFDozF7nzapRGd+y1XUMa1gN4BjVbdpBwailc2x8R+it1u35+XOf4+4No7qtQCykMFLmHDNSZXf1&#13;
-unyw6M0Ey8zGZ3Xb6sbsJy8PpbP1cdqdlFg2LVQuTtdQq/kJ81TJaWzT4542I9LxqNxrKZRSZLou&#13;
-1OlP4M0D8aM5YBHsluFmyjW/WFJheMQNu9kU2wp2Wi0GoiJXHc94NlgU4lxQPTcPCRzn0kT35Cy+&#13;
-uCL455QqjRqoTpXkxNFGM3X4acp0ZPuy6Pmjiw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b33a0e47-e0f8-4d01-86c7-f2218d5c4a0c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bjT0IUM1cl6X/LNW/MoE74kXd+aaRdvYMp3xNpFe5CF75L+z8GxMA2axoORpHF2O3EHEiVzz/9Gl&#13;
+xqpB03zuEg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ab03a10b-f86f-46e4-b279-65aa1c6c4d27"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ja0f48C2QurOf/AdJZ/XFKAWGCALNYWGK9lJyKnk9zAFU9my3xex2eS1wIHXifMd3/pt+gyxIr90&#13;
+3XHzhxuDAQ==</DigestValue></Reference></SignedInfo><SignatureValue>MsCPf6h/x0jLMHiCS7/dPTWxgGY1ZjODegdffdvpe8r/xObOBhAaK+MPJ8kVcGQuCI5rlJ7uKlgn&#13;
+jquRQqsg3UeC04rQ8CD2gZd+n9EpVqa0P+TQfpGR4csM1AlTM34nH6Kv1+fKyyT5PVJsELkjtV7X&#13;
+2lEapgabKL+KK1HNe+WdyENF6cJbhukzrJP2v9hFFjI+2QmktgCj7ivC1+bsVRyiUe3kt50z5+dn&#13;
+W9XDrZefkT9Fg76MCkYRX2QTpTaf4dNSWXqqtK3ow093VnWSJ6yLZbplchzlvj2Z0VjVCCmApzPo&#13;
+tVBhQGAZZY6oirnmrlMGur1geon5QmTMKlnnCw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1321,4 +1321,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_63b264e4-f2b8-4cc3-aa70-a6411e62330d" Target="#_e1d2a7b9-2223-431f-8782-83575a6080df"><Timestamp>2023-09-18 10:33:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ab03a10b-f86f-46e4-b279-65aa1c6c4d27" Target="#_b33a0e47-e0f8-4d01-86c7-f2218d5c4a0c"><Timestamp>2023-12-30 09:29:44</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
