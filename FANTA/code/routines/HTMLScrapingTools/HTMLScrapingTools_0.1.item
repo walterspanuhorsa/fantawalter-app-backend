@@ -1,0 +1,71 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class HTMLScrapingTools {
+
+
+    /**
+     * findLinks
+     * 
+     * This method is used to return any links found in the HTML body supplied. It returns an ArrayList of HashMaps
+     * 
+     * @param body
+     * @return
+     */
+    public static ArrayList<HashMap<String,String>> findLinks(String body) {
+    	
+    	ArrayList<HashMap<String,String>> returnVal = new ArrayList<HashMap<String,String>>();
+    	
+    	Document doc = Jsoup.parse(body);
+    	
+    	
+    	Elements links = doc.select("a");
+    	
+    	if(links.size()>0) {
+    	
+    		java.util.Iterator<Element> it = links.iterator();
+    	
+    		while(it.hasNext()) {
+    			HashMap<String,String> tmpHash = new HashMap<String,String>();
+    			Element tmpEl = it.next();
+    			
+    			tmpHash.put("href", tmpEl.attr("href"));
+    			tmpHash.put("text", tmpEl.text());
+    			tmpHash.put("title", tmpEl.ownText());
+    			
+    			returnVal.add(tmpHash);
+    	
+    		}
+    	}
+    	
+    	return returnVal;
+    
+    }
+
+
+}
