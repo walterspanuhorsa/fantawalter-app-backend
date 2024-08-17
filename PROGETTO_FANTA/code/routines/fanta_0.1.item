@@ -95,6 +95,19 @@ public class fanta {
     	return  returnNameGds(Name,Ruolo,Squadra);
     }
     
+    public static String returnNomePulito(String Name) {
+    	
+    	Name = Name.toLowerCase().replaceAll("\'","");
+    	
+    	/*if ( Name.contains("martinez"))
+    		System.out.println (Name + "|" + Ruolo + "|" + Squadra);
+    	*/	
+    		
+    	String[] splited = Name.split("\\s+");
+    	return splited[0].substring(0, 1).toUpperCase() + splited[0].substring(1);
+    	
+    }
+    
     public static String returnNameGds (String Name, String Ruolo, String Squadra) {
     	
     	

@@ -101,7 +101,7 @@
         <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       </metadata>
@@ -109,14 +109,14 @@
         <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       </metadata>
       <metadata connector="FLOW" label="rejected" name="no_iniziale">
         <column comment="" key="false" length="-1" name="nome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -129,7 +129,7 @@
           <mapperTableEntries expression="row1.id " name="id" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="row1.newColumn + &quot; &quot; +row1.newColumn1 + &quot; &quot; +row1.newColumn2 " name="Nome" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row1.newColumn3 " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="Integer.parseInt(row1.newColumn4)" name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="Integer.parseInt(row1.newColumn4)" name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="&quot;nome column + column1&quot;" name="step" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row1.ruolo " name="ruolo" nullable="true" type="id_String"/>
         </outputTables>
@@ -137,14 +137,14 @@
           <mapperTableEntries expression="row1.id " name="id" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="row1.newColumn+ &quot; &quot; + row1.newColumn1" name="Nome" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row1.newColumn2 " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="Integer.parseInt(row1.newColumn3)" name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="Integer.parseInt(row1.newColumn3)" name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="&quot;nome solo column&quot;" name="step" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row1.ruolo " name="ruolo" nullable="true" type="id_String"/>
         </outputTables>
         <outputTables activateExpressionFilter="true" expressionFilter="(!Relational.ISNULL(row1.newColumn) &amp;&amp; !row1.newColumn.equals(&quot;&quot;) &amp;&amp;&#10;!Relational.ISNULL(row1.newColumn1) &amp;&amp; !row1.newColumn1.equals(&quot;&quot;)  &amp;&amp;&#10;(Relational.ISNULL(row1.newColumn3) ||  row1.newColumn3.equals(&quot;&quot;)))" name="no_iniziale" sizeState="INTERMEDIATE">
           <mapperTableEntries expression="row1.newColumn " name="nome" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row1.newColumn1 " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="Integer.parseInt(row1.newColumn2) " name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="Integer.parseInt(row1.newColumn2) " name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="row1.id" name="id" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="row1.ruolo" name="ruolo" nullable="true" type="id_String"/>
           <mapperTableEntries expression="&quot;no_iniz&quot;" name="step" nullable="true" type="id_String"/>
@@ -257,7 +257,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
@@ -268,14 +268,14 @@
           <mapperTableEntries expression="out4.Nome" name="Nome" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row2.nome_lungo " name="Squadra" nullable="true" type="id_String"/>
           <mapperTableEntries expression="out4.ruolo " name="R" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="out4.Quotazione" name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="out4.QT_A " name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="out4.step" name="step" nullable="true" type="id_String"/>
         </outputTables>
         <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out4" sizeState="INTERMEDIATE">
           <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
           <mapperTableEntries name="Nome" nullable="true" type="id_String"/>
           <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries name="step" nullable="true" type="id_String"/>
           <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
         </inputTables>
@@ -304,7 +304,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       </metadata>
@@ -316,7 +316,7 @@
           <mapperTableEntries expression="out3.Nome" name="Nome" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row3.nome_lungo " name="Squadra" nullable="true" type="id_String"/>
           <mapperTableEntries expression="out3.ruolo " name="R" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="out3.Quotazione" name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="out3.QT_A" name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries expression="out3.step" name="step" nullable="true" type="id_String"/>
           <mapperTableEntries name="id_fantacalcio" nullable="true" type="id_Integer"/>
         </outputTables>
@@ -324,7 +324,7 @@
           <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
           <mapperTableEntries name="Nome" nullable="true" type="id_String"/>
           <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries name="step" nullable="true" type="id_String"/>
           <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
         </inputTables>
@@ -345,7 +345,7 @@
       <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wP7OJudAf0AujU7EqDhpleQcF0JnpqzbkNxy77oH"/>
-      <elementParameter field="DBTABLE" name="TABLE" value="&quot;gazzetta_listone&quot;"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
       <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
       <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -385,7 +385,7 @@
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
         <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="Quotazione"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="QT_A"/>
         <elementValue elementRef="UPDATE_KEY" value="false"/>
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
@@ -408,7 +408,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       </metadata>
       <metadata connector="REJECT" name="REJECT">
@@ -416,7 +416,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -433,7 +433,7 @@
       <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iAzAy2zdqFwyDJczbUtWb5JLQCOxNguRcKitGhEv"/>
-      <elementParameter field="DBTABLE" name="TABLE" value="&quot;gazzetta_listone&quot;"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
       <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
       <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -473,7 +473,7 @@
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
         <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="Quotazione"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="QT_A"/>
         <elementValue elementRef="UPDATE_KEY" value="false"/>
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
@@ -501,7 +501,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       </metadata>
@@ -510,7 +510,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -535,7 +535,7 @@
         <elementValue elementRef="LENGTH" value="10"/>
         <elementValue elementRef="SCHEMA_COLUMN" value="Squadra"/>
         <elementValue elementRef="LENGTH" value="10"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="Quotazione"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="QT_A"/>
         <elementValue elementRef="LENGTH" value="10"/>
         <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
         <elementValue elementRef="LENGTH" value="10"/>
@@ -552,7 +552,7 @@
       <metadata connector="FLOW" label="rejected" name="tLogRow_1">
         <column comment="" key="false" length="-1" name="nome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -578,7 +578,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       </metadata>
@@ -590,14 +590,14 @@
           <mapperTableEntries expression="no_iniz.nome" name="Nome" nullable="true" type="id_String"/>
           <mapperTableEntries expression="row4.nome_lungo " name="Squadra" nullable="true" type="id_String"/>
           <mapperTableEntries expression="no_iniz.ruolo" name="R" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="no_iniz.Quotazione" name="Quotazione" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="" name="step" nullable="true" type="id_String"/>
+          <mapperTableEntries expression="no_iniz.QT_A" name="QT_A" nullable="true" type="id_Integer"/>
+          <mapperTableEntries expression="no_iniz.step" name="step" nullable="true" type="id_String"/>
           <mapperTableEntries name="id_fantacalcio" nullable="true" type="id_Integer"/>
         </outputTables>
         <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="no_iniz" sizeState="INTERMEDIATE">
           <mapperTableEntries name="nome" nullable="true" type="id_String"/>
           <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries name="Quotazione" nullable="true" type="id_Integer"/>
+          <mapperTableEntries name="QT_A" nullable="true" type="id_Integer"/>
           <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
           <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
           <mapperTableEntries name="step" nullable="true" type="id_String"/>
@@ -620,7 +620,7 @@
       <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
       <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5IWVO+q4nzdgH6N4N+uHvqgwSqkvD6ucKCf0ggXm"/>
-      <elementParameter field="DBTABLE" name="TABLE" value="&quot;gazzetta_listone&quot;"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
       <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
       <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -660,7 +660,7 @@
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
         <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="Quotazione"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="QT_A"/>
         <elementValue elementRef="UPDATE_KEY" value="false"/>
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
@@ -688,7 +688,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       </metadata>
@@ -697,7 +697,7 @@
         <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
         <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -802,6 +802,9 @@
         <elementValue elementRef="TRACE_COLUMN" value="ruolo"/>
         <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="QT_A"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
@@ -902,13 +905,13 @@
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_85b5bbf7-6660-4aa1-8ab4-02671fa227df"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mc95DKPkPXcl2Ww+u3Mi1s/wxXLumFiyzycj1U+5PpKjpqs1yqAJkvUV0z2N/oYlclMykOCUFOui&#13;
-ChdldMBZfg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_71122688-191f-48a6-b824-d016f95b3427"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aJwIPMz4+5MRmWMMneiKexBn0mB3iGwI1/Nh/YXV3KAYjplStTuEjYu53bU9VAIGm2dfW3gpqtvb&#13;
-EoV5NZNSCw==</DigestValue></Reference></SignedInfo><SignatureValue>e7o+C2/rLUUZ2wlsBoVvZqFOu/PZOknZGIeFmvZ6pTPKIFF9yw/0T1Lfrpfj87wXgcNMcI4DJ7YG&#13;
-/mdFyyAeCqTVxWwvQ3d2Ci3kk5wfs9uNpXf+WRsIbanOOWZUnZCzmYT096EKSfDeeo0B3Jm8OHg+&#13;
-mU8aiyJaV/ov/XUAVbqkYLlqApTtSq2FN9BsTjo7VPZHcBtzHWgCCijhrQum4c3fseudZpfvqoR6&#13;
-XgNZ7duA5X3B1yDAuET6uzWwnZ8C+acTA8WVxP4WGuN1ztuPJDp+7HYfpfJ+avEOdT0+OE4ySVmj&#13;
-+V+RvuZAmBpkLB3tADq9kyz62uIyhRaKpLxkaA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fc26a9de-92d3-4ee2-8d63-1c4e9cc81723"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wWSkDaV40AmZFiJN+3fUm1KRlfY+YN7L/+ACjJXIB/PqbwGTwNWxr9BLwk7HXYhe2J/yOvnK9tEh&#13;
+FzxCzoEiww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b36b6048-2b5c-4351-90a1-e7f9baeede99"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2I37DJQoVSM8gNJWxj77wszFQUFIVa14rmahslWaHnkan06wfkZGad95dzFFfQpmrSS6DgDgKBXQ&#13;
+EwKtQz9WYA==</DigestValue></Reference></SignedInfo><SignatureValue>F4YaF2nNLEkYYiP+2Y5o1X8eGFLpyDgr1onZw9ntuF7zoVwDKTrd6Qsx5t1V6WL33MyKqWfJCPt8&#13;
+AEdvyE9Fs/gUQJgZ3t58UfjXuv6sJO50NDBwQ8NtMnXRXEaOQArzxOsb72rUwU6niPTgLrUQBAW/&#13;
+qvkx3Bo1s+s1gh7YyiR0oiWp3FxPkyLDtVPr5S+Sm7Tg41zkCrJsIXTd8vnfjzvKLUWeRx2WQ1L0&#13;
+U5Fjhgv0SdTaBdIkave6Ozeq9Qbp/W21hkogilqlIq38He7llhFGbe600rm9QRYwnc5Qi+giGD7Q&#13;
+hvNxvPCQN0b9LJhxZCDp1qHNqyDgwsE1vmrz5Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -930,4 +933,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_71122688-191f-48a6-b824-d016f95b3427" Target="#_85b5bbf7-6660-4aa1-8ab4-02671fa227df"><Timestamp>2024-08-13 18:17:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b36b6048-2b5c-4351-90a1-e7f9baeede99" Target="#_fc26a9de-92d3-4ee2-8d63-1c4e9cc81723"><Timestamp>2024-08-16 07:29:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

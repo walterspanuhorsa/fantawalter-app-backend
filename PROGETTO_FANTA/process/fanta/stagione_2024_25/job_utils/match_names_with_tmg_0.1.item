@@ -136,7 +136,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from fanta.listone_fantacalcioit_202425 where R='&quot;+context.ruolo+&quot;' &quot;&#13;&#10;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from fanta.listone_fantacalcioit where R='&quot;+context.ruolo+&quot;' &quot;&#13;&#10;&#13;&#10;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -580,7 +580,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;id, Nome,  squadra, R, Quotazione from &quot;+context.table_name +&quot;  where R='&quot;+context.ruolo+&quot;'&quot;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select &#13;&#10;id, Nome,  squadra, R, QT_A from &quot;+context.table_name +&quot;  where R='&quot;+context.ruolo+&quot;'&quot;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -599,7 +599,7 @@
       <elementValue elementRef="TRIM" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="R"/>
       <elementValue elementRef="TRIM" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Quotazione"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QT_A"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
@@ -609,7 +609,7 @@
       <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="100" name="Quotazione" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="200">
@@ -642,7 +642,7 @@
         <mapperTableEntries expression="row2.Nome " name="Nome" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.squadra " name="Squadra" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row2.R " name="R" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row2.Quotazione " name="Qt_A" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row2.QT_A " name="Qt_A" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.id " name="id_source" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
@@ -650,7 +650,7 @@
         <mapperTableEntries name="Nome" nullable="true" type="id_String"/>
         <mapperTableEntries name="squadra" nullable="true" type="id_String"/>
         <mapperTableEntries name="R" nullable="true" type="id_String"/>
-        <mapperTableEntries name="Quotazione" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="QT_A" nullable="true" type="id_Integer"/>
       </inputTables>
     </nodeData>
   </node>
@@ -715,7 +715,7 @@
       <column comment="" key="true" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="update" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.id" name="id" nullable="true" type="id_Integer"/>
@@ -824,8 +824,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="context.ruolo=&quot;A&quot;;&#10;context.table_name=&quot;gazzetta_listone&quot;;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/* &#10;&#10;context.ruolo=&quot;A&quot;;&#10;context.table_name=&quot;fantagazzetta_listone&quot;;&#10;&#10;/* */"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -931,7 +930,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tJava_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
   <subjob>
@@ -960,13 +958,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7461fff2-23ee-4fc3-b4d2-b1a0a2c7ddb8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eu4FfebXTPbkA/UYaDAKERxKrDxBjEJLc7vmgP8FspVYvMEuc9NSGjzcsgVUdnLsY2YE2oGAwMpm&#13;
-/l0nUUTdUQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d19a85f6-1d45-465d-9911-c862d6275b85"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wwiYluZxmG8I9O40fsVIHwLJStxNQQbOGsUqwrzciotF9MLTOdxIPCirBEaeFgOcwtE+7feBgyJ7&#13;
-wXBYEVBmQg==</DigestValue></Reference></SignedInfo><SignatureValue>WRemit0lSM185G+JWqdaqstHFRH2GPdFERlKpAEKTHCGhPGDInEqk53t2QrlF8MLrTPBBe9lFPKb&#13;
-26SZytFXFG0lZKxlMSrw4+Fi8y7RP7lVstI+6nfq+FAiPhR8A7pchjsEQ+aVhxh1HJ9PZnGTWXOS&#13;
-E+hnUpZSIeT+eYDXLclqQkioFe+9joCr9WP01fMgRwET0ISd1Ejtg7/leM9PQwJfxCBX8Q5XvzPw&#13;
-oAC8Fsl7KzZi7ul6P0Zk7FWnO0wy+v/NGaB/zVsH4LI+QCtLG5S3jqpTdKMRk3r3O2Jc7CzQSujD&#13;
-nmk5F/rtvoo9iB5HccYselbusaQuzChVmnikxg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_34a8b3d7-1bae-47ac-8f05-a1b74533ef45"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Yez2EHDFZ95Pk262z66icA9bRoYP34BL8xvKwRWPPuYfDCW/81aqEkxvqH/d/6CKW7wqoEama9f9&#13;
+BZTkR/y7RA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b9a93136-fbeb-4a70-afbe-f0447f3f71a6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HNWw0xl8pkhKBB98cgbbgRbGzKd8jGzzAyFPk9vmFb0B2s9QTfXU0df5zixRZ17rnnEe6uxPS6hB&#13;
+fklNork/XA==</DigestValue></Reference></SignedInfo><SignatureValue>jZsEpXm3P43qVIIN+LV2hgfM5LgZsn5PxQDs/x/33jC+dqS/fk1X/6rokjNtE1FzULYPFaR72B/c&#13;
+O8QPK5JnzUX4+Nz1JT+DxtwgZRSBYud+RELdPC6zIME71xmeB5MPO5k8qAUn9vQjv48gj4Y3ud0c&#13;
+8Yhdpa7OmG9nJxCrbg0wJtxZgJlN8bl3nMD6XD1vwPesboUtT1dwGMc8zDdUi3sh2lfVzhCehHJn&#13;
+muqurV4s1/fqVpKakN1stcj1IUrq0+PsLZFgq9OEERw/mHhtm5eXlwHl7TTOn6+ePhU50wGFAIel&#13;
+6au3iRhNTRLXFMkuuYHau5EwQy3gA9mn07cRfA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -988,4 +986,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d19a85f6-1d45-465d-9911-c862d6275b85" Target="#_7461fff2-23ee-4fc3-b4d2-b1a0a2c7ddb8"><Timestamp>2024-08-13 18:20:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b9a93136-fbeb-4a70-afbe-f0447f3f71a6" Target="#_34a8b3d7-1bae-47ac-8f05-a1b74533ef45"><Timestamp>2024-08-16 10:30:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
