@@ -348,15 +348,13 @@
       <column comment="" key="false" length="-1" name="Qt_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Ruolo_Mod__Av" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Somma_bonus_malus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Media_pagella" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Media" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FVM_CALCOLATO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="30" name="FASCIA" nullable="true" originalLength="30" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables activateExpressionFilter="true" expressionFilter="!Relational.ISNULL( row1.ID ) &amp;&amp; Relational.ISNULL( row1.Fuori_lista ) &amp;&amp; !row1.Ruolo.equals(&quot;M&quot;) " name="output" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row1.ID " name="Id" nullable="true" type="id_Integer"/>
@@ -366,8 +364,6 @@
         <mapperTableEntries expression="row1.Quotazione " name="Qt_A" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="!Relational.ISNULL(row1.Ruolo_Mod__Av) &amp;&amp; row1.Ruolo_Mod__Av.equals(&quot;T&quot;) ? &quot;SI&quot; : &quot;NO&quot;" name="Ruolo_Mod__Av" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row1.Somma_bonus_malus " name="Somma_bonus_malus" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Media_pagella " name="Media_pagella" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row1.Media " name="Media" nullable="true" type="id_String"/>
         <mapperTableEntries name="POSIZIONE" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="id_fantacalcio" nullable="true" type="id_Integer"/>
         <mapperTableEntries name="FVM_CALCOLATO" nullable="true" type="id_Integer"/>
@@ -457,16 +453,6 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Media_pagella"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Media"/>
-      <elementValue elementRef="UPDATE_KEY" value="false"/>
-      <elementValue elementRef="DELETE_KEY" value="false"/>
-      <elementValue elementRef="UPDATABLE" value="true"/>
-      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="POSIZIONE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
@@ -503,8 +489,6 @@
       <column comment="" key="false" length="-1" name="Qt_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Ruolo_Mod__Av" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Somma_bonus_malus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Media_pagella" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Media" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FVM_CALCOLATO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -518,8 +502,6 @@
       <column comment="" key="false" length="-1" name="Qt_A" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Ruolo_Mod__Av" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="10" name="Somma_bonus_malus" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Media_pagella" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Media" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="POSIZIONE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="FVM_CALCOLATO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
@@ -838,7 +820,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileFetch_1"/>
     <elementParameter field="CLOSED_LIST" name="PROTO" value="https"/>
     <elementParameter field="CHECK" name="POST" value="false"/>
-    <elementParameter field="TEXT" name="URI" value="&quot;https://s3-eu-west-1.amazonaws.com/fantaclub.votiquotazioni/fc_quotazioni_serie-a_01.xls?v=1723273967502&quot;"/>
+    <elementParameter field="TEXT" name="URI" value="&quot;https://s3-eu-west-1.amazonaws.com/fantaclub.votiquotazioni/fc_quotazioni_serie-a_02.xls?v=1723273967502&quot;"/>
     <elementParameter field="CHECK" name="USE_CACHE" value="false"/>
     <elementParameter field="TEXT" name="SMB_URI" show="false" value="&quot;smb://host/dir/remoteFileName.txt&quot;"/>
     <elementParameter field="DIRECTORY" name="DIRECTORY" value="context.filePath"/>
@@ -1221,7 +1203,7 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
-  <note opaque="true" posX="880" posY="120" sizeHeight="64" sizeWidth="961" text="quotazioni prese su: https://www.fantamaster.it/listone-quotazioni-fantacalcio-serie-a/&#13;&#10;">
+  <note opaque="true" posX="680" posY="320" sizeHeight="64" sizeWidth="521" text="quotazioni prese su:&#13;&#10;https://s3-eu-west-1.amazonaws.com/fantaclub.votiquotazioni/fc_quotazioni_serie-a_02.xls?v=1724352126025&#13;&#10;">
     <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
     <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
     <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
@@ -1273,13 +1255,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6a4b7e6a-6986-421e-a739-e387b184c47a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/lQ2g8cmfNLvBwf1O1v/UBJ2NHFndPOjMohLUjOHEzsRceLDLZ+rcJwEbQjaefQkrpILSFUHypWg&#13;
-awUB9cSMjQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e8c7dc22-9afa-4d48-bae9-fbef956ee57c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VjaPW5uqsSf03qAqcoEDnQAuhUHunjWxG+h9DKmIJs7F2GlqvLbch2PT4Bj6lUPQcOVvimbXpFoH&#13;
-cXMAz9LYLg==</DigestValue></Reference></SignedInfo><SignatureValue>JLcvybeey2GqO+cVp18PWykoYnD72Qn5hMX+2hC102wMdq9KTPA/ejpdI1czQFLFL5WyrFRUJLVm&#13;
-gqpvRbZk54QoiIUnHd7pqma1hJh2Sc7gsjgxb9Vsuyr9skUWWKMWmAexanl5KyUc4o6OuMQfDOxj&#13;
-opZ4LgKvQJfjUmjNd2FamtxBtgxKA0jEBXS2uD8jJW+yQWi7D99U+/MBMnmE8SpO0seLGg4VB3yu&#13;
-m3A5Q++w/3snAMsENOQfmRaE0SS3gyQguHHo8t27GKXaFmFnLd7ZEKVTwsCtO7ViMnA/xyz58Wze&#13;
-IrcD7+aKGlAFsLPjSXuPbxapqTxYagTpeTpsdg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8f9c0764-e7cf-4f72-b9ec-3ee69e7ab85e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>i6vmXDVA+DQD2aJVvYqv3mJmP5hJB0EMVgDC0W5AQ5a4Ba8I870KjHrTiLx/27vYmO3A95asPnWE&#13;
+rhMNafcb0w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_950dfbd3-553c-4c7f-88da-3f5e24a54633"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PdKz7Ib04fPtqanHnh8UEriGRdbABagkemlX3VmCkrYL5W6l/wLbl3if9j4/6IbuzJxj0kn37JYK&#13;
+Kb50faUtpA==</DigestValue></Reference></SignedInfo><SignatureValue>NY6uFsror86QE8H0pxdnw8NalPAc+t7iq3PleXfU8gKQRVHpuKEBbewqDvGo0MO8G0dUIbHkQWbx&#13;
+AXfEhTgC4t6QjKgVqDzMCLPWAGiIwJS0u/UgrCq63ELkeDQ3oUPzJpoaGsWy1RR/LXZMgq2iNZkx&#13;
+g5aYW1X76In4yuZ0PJokY8A8PRDAiBxLpIFvevhkD3v1NbpnA0oi8wAdUrWcb6lPyJvOP+344xhz&#13;
+0HdhYnA5geAWMuDwgAbS5IQqgLOMK334Ev1kFnzhz5RhsszNMEfdiwYOmJOSjnyvXiQdlA8yV0YD&#13;
+LQP/F/IO87gujuuF2eKdQE24jePCvtE0TCJgiw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1301,4 +1283,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e8c7dc22-9afa-4d48-bae9-fbef956ee57c" Target="#_6a4b7e6a-6986-421e-a739-e387b184c47a"><Timestamp>2024-08-16 09:37:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_950dfbd3-553c-4c7f-88da-3f5e24a54633" Target="#_8f9c0764-e7cf-4f72-b9ec-3ee69e7ab85e"><Timestamp>2024-08-22 18:44:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
