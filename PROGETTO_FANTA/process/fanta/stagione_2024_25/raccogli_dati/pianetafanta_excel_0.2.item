@@ -12,6 +12,12 @@
     <contextParameter comment="" internalId="_1aqg0FsIEe-4dNOpYzjMgQ" name="moltiplicatore" prompt="moltiplicatore?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_1aqg0VsIEe-4dNOpYzjMgQ" name="ruolo" prompt="ruolo?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
     <contextParameter comment="" internalId="_1aqg0lsIEe-4dNOpYzjMgQ" name="source" prompt="source?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_aAY8gGEoEe-NJp8XjsdvaA" name="mysql_fanta_Login" prompt="mysql_fanta_Login?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_aAY8gWEoEe-NJp8XjsdvaA" name="mysql_fanta_AdditionalParams" prompt="mysql_fanta_AdditionalParams?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_aAY8gmEoEe-NJp8XjsdvaA" name="mysql_fanta_Password" prompt="mysql_fanta_Password?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_aAY8g2EoEe-NJp8XjsdvaA" name="mysql_fanta_Database" prompt="mysql_fanta_Database?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="fanta"/>
+    <contextParameter comment="" internalId="_aAY8hGEoEe-NJp8XjsdvaA" name="mysql_fanta_Port" prompt="mysql_fanta_Port?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_aAY8hWEoEe-NJp8XjsdvaA" name="mysql_fanta_Server" prompt="mysql_fanta_Server?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="localhost"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -449,12 +455,12 @@
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:V6Az0MsTFnl1iZC8hxliCXS2KDTg0kOoYJjUmWtF"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zu/WolXF4srJvXZUvINS67lEWK3ZCsTUh5WK00oZFVyMYvmNTvF7A8+wUDmrlI6Hye/21Ezu2Os="/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -465,7 +471,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
@@ -539,11 +545,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:TuLWOWwvlKjH2YfsSui9Ssipt42/JNqvzdkbj9/C"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0gXsDMXgsMOi7j5eGk9kqk4fH/5XydW56Cho/mq3zMYOCDUhvovl/EYBDEL3wHsLZAhwJz43deI="/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -552,7 +558,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" show="false" value="true"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" show="false" value="100"/>
@@ -602,12 +608,12 @@
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1dt/1Q5HGhEg0u/z704P9SokSPtX83dOxdggv5kr"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:y09rtkZlc8LM49J4KcGU/a2eNczeiPXXwrixBfHRPs5VFcb6mBJdINoMEsq3bBiEnmi6IY2K5w0="/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -618,7 +624,7 @@
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
@@ -692,11 +698,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AbqNjtd+WK/5/FTMbgxv9ahVK30o+RFanzBggIu0"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8F/hSrpRByyLBCwjBKH7KZ22q+ki0y3XOVlH1oXFSZRvoI9kRNIzccsQtnX6k11GHdtVhvozC54="/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
@@ -705,7 +711,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" show="false" value="true"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" show="false" value="100"/>
@@ -756,13 +762,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7E428BfiEe29Bt9V2S3gow"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jblrKYNGCB45x0BlOy4+YLyvHeUCoXuXrRMDgtNr"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8Q65Jx/VNUALcc6vI28wsyIZPx6CWxVqxy3Rk3ALf1zGXNhpliyplZjEM30ZGM7EZALYOk4NoGY="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -893,10 +899,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBInput_3">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
-  </connection>
   <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJavaRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="Qt_A"/>
@@ -945,6 +947,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tDBInput_3">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tDBOutput_3">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -1128,7 +1134,7 @@
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
@@ -1153,13 +1159,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1a80ebac-ea2e-4603-bc02-6669884f8992"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o+QpwqrisCX4l8rUZhbnagyRiG3JKCJp5HxiIkxPji8c90s41by/uOc7VsM+isUTSX60kITG2Ovu&#13;
-/sXxSGOTVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_58fb0081-c6b7-4bd5-b6c1-0bef174c1ebe"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9zpyXG8J4D3K/ZZn61f1+FHivdC5NjQ/QihwBLrfDTvUMlWTozcCK7eBEVv+wvCkdTBaR9WBeVQa&#13;
-/1X0yTfkRA==</DigestValue></Reference></SignedInfo><SignatureValue>o1c47fkmrtNOZZoWcrLju20aKqoZcqUb/+EhrNxGOQHfS8O6Bzdj8yHqAcxCw/+yw96mb1l1bVFo&#13;
-0KcNzqhPTDqI5dR/L0xJ0UVwj89LXDSVHwenmMSs3flnWC0pPVyNi2ApPNnPCYgafYlF4ntVBc9f&#13;
-P/OGBbc3J4lNfjTksAm8CeMe8DGhLqhoPpoZ0BVtN4QRME0DdUD19YaHP0zyDnHXPKt9orJX1Nkv&#13;
-G9+jU+wEOGsQaZIdizxqbVhhvT6jDpWYnqlA1WmzmJ7NO/CCuudO7RD657sGFVHw+KZ/8WFGFKxq&#13;
-ZsnezXyXzdBT7l8/R30zT5ff+HDZERHDD8JZBg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_6f454200-9ca9-48ad-945b-82c1296612c3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ZJwbUzuxl0VV1Sc7AQZV9nO2ej4+fjeMnZmgCG3XkR1brFtnSuv44kYILux97MOLfW2y+5T/wNY9&#13;
+QsC06LTaaQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_765f00ba-4213-4dc2-b707-707cf3a1b4bd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/NSb4sY3ns8PIRVT2YWM8XV12ZB9DUwCb7O/Yj/YNbD7r/wuDiPro4kW11AZNTVJ77cmIk8mFPke&#13;
+/tXgSrfchw==</DigestValue></Reference></SignedInfo><SignatureValue>RfN66OjVF+pjW+rtUX7HGPjXrVtqroYXNcVuewmJeF4poa3eRGCR3Cghtyisicr59LwNe9nYn1/L&#13;
+78H2M5X6Yl2pV6vh1bXsXfFEv0G0hHhFjhRjgffG6ERzcJrkPg1lp/MD6fGsdoumWXsfUH/Z9F6P&#13;
+0rIgpTJq2DdydncSxiiu/rAGWNPejoyAfW+FbhV7BocyM/u98h26Bhy/Y2sde11iz+XeL7b1B2pQ&#13;
+n3xeuoW1wJKJ9gVXVWLYo8rYPaHKwkRSIuKCpVukC7kp1djbig+mZQfwlT8J9MBp0tKlg5lNJGOJ&#13;
+k/oGvb6JmVpLGAbTMzJUeTZfzQLH/vm7exvNRg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1181,4 +1187,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_58fb0081-c6b7-4bd5-b6c1-0bef174c1ebe" Target="#_1a80ebac-ea2e-4603-bc02-6669884f8992"><Timestamp>2024-08-22 18:29:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_765f00ba-4213-4dc2-b707-707cf3a1b4bd" Target="#_6f454200-9ca9-48ad-945b-82c1296612c3"><Timestamp>2024-08-23 08:19:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

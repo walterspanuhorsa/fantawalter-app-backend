@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
-  <TalendMetadata:DatabaseConnection AdditionalParams="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="com.mysql.cj.jdbc.Driver" FileFieldName="" NullChar="" Password="" Port="3306" ProductId="MYSQL" SID="fanta" SQLMode="false" ServerName="localhost" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mysql://localhost:3306/fanta?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" UiSchema="" Username="root" dataPackage="__LQPYBfiEe29Bt9V2S3gow" dbVersionString="MYSQL_8" id="_7E428BfiEe29Bt9V2S3gow" label="mysql_fanta" name="mysql_fanta" supportNLS="false" xmi:id="__KgogBfiEe29Bt9V2S3gow">
+  <TalendMetadata:DatabaseConnection AdditionalParams="context.mysql_fanta_AdditionalParams" ContextId="_X8P6gGEoEe-NJp8XjsdvaA" ContextMode="true" DatabaseType="MySQL" DatasourceName="" DbmsId="mysql_id" DriverClass="com.mysql.cj.jdbc.Driver" FileFieldName="" NullChar="" Password="context.mysql_fanta_Password" Port="context.mysql_fanta_Port" ProductId="MYSQL" SID="context.mysql_fanta_Database" SQLMode="false" ServerName="context.mysql_fanta_Server" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:mysql://localhost:3306/fanta?noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1" UiSchema="" Username="context.mysql_fanta_Login" contextName="FANTA202425" dataPackage="__LQPYBfiEe29Bt9V2S3gow" dbVersionString="MYSQL_8" id="_7E428BfiEe29Bt9V2S3gow" label="mysql_fanta" name="mysql_fanta" supportNLS="false" xmi:id="__KgogBfiEe29Bt9V2S3gow">
     <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="__KgogRfiEe29Bt9V2S3gow"/>
     <taggedValue tag="package filter" value="" xmi:id="__KyVUBfiEe29Bt9V2S3gow"/>
     <taggedValue tag="Status" value="" xmi:id="__KyVURfiEe29Bt9V2S3gow"/>
@@ -9,12 +9,13 @@
     <taggedValue tag="Author" value="" xmi:id="__KyVVRfiEe29Bt9V2S3gow"/>
     <taggedValue tag="otherParameter" xmi:id="__KyVVhfiEe29Bt9V2S3gow"/>
     <taggedValue tag="DB ProductName" value="MySQL" xmi:id="__LF3UBfiEe29Bt9V2S3gow"/>
-    <taggedValue tag="DB ProductVersion" value="10.4.11-MariaDB" xmi:id="__LF3URfiEe29Bt9V2S3gow"/>
+    <taggedValue tag="DB ProductVersion" value="10.4.32-MariaDB" xmi:id="__LF3URfiEe29Bt9V2S3gow"/>
     <taggedValue tag="DB IdentifierQuoteString" value="`" xmi:id="__LF3UhfiEe29Bt9V2S3gow"/>
     <queries xmi:id="_hrrGcBlXEe29Bt9V2S3gow">
       <query id="_hrrtgBlXEe29Bt9V2S3gow" label="SelectAll" value="select anagrafica_giocatori.Cod_,anagrafica_giocatori.Ruolo,anagrafica_giocatori.Nome,anagrafica_giocatori.squadre &#10;from anagrafica_giocatori" xmi:id="_hrrtgRlXEe29Bt9V2S3gow"/>
     </queries>
-    <parameters key="CONN_PARA_KEY_USERNAME" value="root" xmi:id="__KgoghfiEe29Bt9V2S3gow"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="context.mysql_fanta_Login" xmi:id="__KgoghfiEe29Bt9V2S3gow"/>
+    <parameters key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value="" xmi:id="_WlCP8GEoEe-NJp8XjsdvaA"/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog dataManager="__KgogBfiEe29Bt9V2S3gow" name="fanta" xmi:id="__LQPYBfiEe29Bt9V2S3gow">
     <ownedElement id="_AnrKEBfjEe29Bt9V2S3gow" label="anagrafica_giocatori" name="anagrafica_giocatori" tableType="TABLE" xmi:id="_AnrKERfjEe29Bt9V2S3gow" xsi:type="relational:TdTable">
@@ -844,13 +845,13 @@
       </feature>
     </ownedElement>
   </orgomg.cwm.resource.relational:Catalog>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_4bca654d-1c26-431b-8fa1-3409a0c132bf"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ublc9xFJCDfoDul7eesr2sfgxnNWCWqsaki/Lln85oWr7wY8MatqTNFy8/pA9TKitc3unwEVZv5h&#13;
-7N4MVgmwYA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cf626708-aef8-47b3-b86c-72a34a2439f2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>v2cEPFUUQRKu3U4y5oCrsElx3YzFh0cp23uwLyVwWfjRqyitOt3DcJ7Y7YR69vaSBuLHuDZmGB6F&#13;
-NW1Q48Ah+Q==</DigestValue></Reference></SignedInfo><SignatureValue>F8sHJE3whp6xGSissTVInM94EPO7vLdGoiEOe1gVnoiQ8o6vKfo41Oec90G75zWZkfgPAk1Xm91O&#13;
-WHJkCOgT8jLK8hZ5IqZTRcXLiWVoCuG4CFDKWPHk/qaY+GkHSrUBKDZuW4o6evBxYuI+IyY96XeY&#13;
-iPD1qW4U/gWIWoTn+zeVDQOEizi57DNXIbzTC1cEX8FAhaA0oF69i9lFlbYOWIJCzWeYPJFTeU9f&#13;
-Gk8DfYUIdIaODaih0PFC871k/Tu1CkL4FkTi9IRRkzkrZtGhOBix2i4GWIWbIfPV4O/e2JQzC8LV&#13;
-6EbmcXS1kXvdA//azl4yJEpvhD2nCRlMSIWCTw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3078afcb-db64-4933-a82d-2e3e835c91e1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>jFdPLdztj2gLqNQkmweO17uBGm6gRlYVK9AXowyx3b2AOnJOxrSQEuIpFkt03ArNhcKbjLAT928g&#13;
+mrhhmf1D+w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_08024b48-d5a3-44fb-9f15-05a0b06d165e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SiJRMjd4GhRqTmOy1fk7j2xtelKmyQKGcAL4PrHdoSxuWqdk8kDDFUw/uIwM/u045aLXMkL92HPr&#13;
+lNKD5tXdCg==</DigestValue></Reference></SignedInfo><SignatureValue>Nk9JwZP773sFv/qM5s//0AgxHqceH4+l9W/djLIS6FI3PZ9t4TJM/0e/tS0/1+FoaMcqLHLcc/oM&#13;
+tiU3Xy1lJU+LlCnaOJ+DOLmgK8PBlvZj6X6EYUUqEkt2wbsoEmFLem9BE1rFp/ZMj3o+H25dYCfm&#13;
+Xv331bo5zS5GXIAehzMUHSy77bO0VeNy69aYlR2D7krxYJiubxm90Tu+L/tnGqN1tMf4KJWPUDeM&#13;
+TyOSRedcx/9qU7SXleMkM7t49YUOkQe3FsUxNVIAP0VfWkoAI8bFhcOogT37m7rqVniPiTRqoot6&#13;
+BDdhqljNFPOQRcDgNjNgjtOFTR7Gu74c/FWXOg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -872,4 +873,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cf626708-aef8-47b3-b86c-72a34a2439f2" Target="#_4bca654d-1c26-431b-8fa1-3409a0c132bf"><Timestamp>2024-08-05 07:59:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_08024b48-d5a3-44fb-9f15-05a0b06d165e" Target="#_3078afcb-db64-4933-a82d-2e3e835c91e1"><Timestamp>2024-08-23 08:28:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

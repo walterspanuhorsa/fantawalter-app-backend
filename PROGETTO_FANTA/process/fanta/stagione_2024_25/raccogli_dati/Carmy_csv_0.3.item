@@ -4,6 +4,12 @@
     <contextParameter comment="" internalId="_gpnNMTrFEe6Wc4rv8Gkw2A" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_aFFRUDtWEe6Wc4rv8Gkw2A" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
     <contextParameter comment="" internalId="_i7hGcD6LEe6b4by1Py7G0g" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_aEMecGEoEe-NJp8XjsdvaA" name="mysql_fanta_Login" prompt="mysql_fanta_Login?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_aEMecWEoEe-NJp8XjsdvaA" name="mysql_fanta_AdditionalParams" prompt="mysql_fanta_AdditionalParams?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_aEMecmEoEe-NJp8XjsdvaA" name="mysql_fanta_Password" prompt="mysql_fanta_Password?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_aEMec2EoEe-NJp8XjsdvaA" name="mysql_fanta_Database" prompt="mysql_fanta_Database?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="fanta"/>
+    <contextParameter comment="" internalId="_aEMedGEoEe-NJp8XjsdvaA" name="mysql_fanta_Port" prompt="mysql_fanta_Port?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_aEMedWEoEe-NJp8XjsdvaA" name="mysql_fanta_Server" prompt="mysql_fanta_Server?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="localhost"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -113,13 +119,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7E428BfiEe29Bt9V2S3gow"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:r554qqi9tSCIfh4XVYRAVu85+cv1Q6lC0ALokP8I"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/6+LskWv2+1ZAXTD9UakCRyGpuiWpJGxtzEks4x5EroG8ba6+m2YA1Wi9w2sSyjl8ESQ3SVQCOc="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -299,7 +305,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_cagwAEDaEe6IZfXO3XyL5Q-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_7FtzgEf1Ee6QpuS7c7RT_g-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -642,7 +648,7 @@
     <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
   </note>
   <subjob>
-    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_2"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
@@ -677,13 +683,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_cca46b75-ae4f-4533-a3a5-5cdcf0fc4baa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CxjH0I7I+CPd/F2yn3WPauZ8+WWb9zcz2gKGTpRQJTLVzklmCCY/MKlIXwLlbmw22+kuu/2W/eST&#13;
-m10YezW7hQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f445b949-ba24-4297-9c35-e404acebe08a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Lo/yTgy+25QpDokM2XHOrWulJUaILVtR+rNT5HVmkXpWAmrXpVa9zzxz4c7lwLOP/WBlQTnMCoCi&#13;
-DdNOXy+Q9Q==</DigestValue></Reference></SignedInfo><SignatureValue>D5wEPNdDz0TN+BSD9cDxhJvBufH00+rzwTmoApwa8XI99sq4ji/3ewGZdlo+VE0mhvSSCiW/XwcI&#13;
-saKIHFeEAc1btuZaKisc6umz33W92Cy2bN+53ZnpGLQ024CsPvrFK2GqOjFsvCNMrn7NDaNjvVDV&#13;
-d2/khw5OvVfhM/2R2MwfnWRwCI/P+g7Gv/BNRD/2GzrwotHpva8G/uVmTZovjaKoIv0qexaR3QQc&#13;
-KcVEswQyocRJpASA6LAjaKtp20XMFX9uIhdsimUNMuTu8opUWT+P9ovJusq3MOxuKTTa1mFTQM8B&#13;
-NZBRl+JJxke/rm1Fsx2f3CCRoB8GPzRCJRGCEg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_10635986-1df6-4cc0-bafe-f7bd01373d11"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Eyupdm42kSnfXUipdloGOWFilXI+v5t0V/loPoUAA0xHUpY6oKPHeLz8Sxt4uvzqp2d8ZpHbmq6x&#13;
+bkni5tSVBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_019de8cf-0ff7-4529-b8e3-0469559785fd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gQWNXgWJi25fCf5Z4T8ETvhh1lJG4f9mHGhbnzmrmdh/JoixA+RNMLg0smS3i+tBLjxzOpaTTbcN&#13;
+Pzs6lUyFFQ==</DigestValue></Reference></SignedInfo><SignatureValue>oM+kGUm6qbb9c2/iHRqYROlpFn8Pfm4WJQTRM6siuRlONEHoID1tyYvE4rlTe/5kzfBNzlCs3+a2&#13;
+Tcle5Ga7Jp/eiImU7W6M/LKNkoAp31a7uR9O+BYgwCtjH1KlcWahaMZ6AnVJVmhhRNnxxFf5W8BK&#13;
+22LaigbqFsPt7muwbC0txJIF+2BxcJ0MG4WeICJxYe4UvAlLYQzf+6gMfMY0p/NzAJ0/ELikExMb&#13;
+wF2e76qU6cQPiYD0D1pI9VdFMeAz2QfGubw7LNvOWwEmFwdT/W89VfS8lELTLGLIM8O28JhH5YXE&#13;
+jVx1RvI8WbyMO3kj/1rnvQF7G5hjYVM0L/zN1A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -705,4 +711,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f445b949-ba24-4297-9c35-e404acebe08a" Target="#_cca46b75-ae4f-4533-a3a5-5cdcf0fc4baa"><Timestamp>2024-08-22 06:56:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_019de8cf-0ff7-4529-b8e3-0469559785fd" Target="#_10635986-1df6-4cc0-bafe-f7bd01373d11"><Timestamp>2024-08-23 08:19:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

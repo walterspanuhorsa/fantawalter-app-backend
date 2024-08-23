@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default">
+  <context confirmationNeeded="false" hide="false" name="Default">
     <contextParameter comment="" internalId="_7_4BEKyNEeykeNOHFtTmrw" name="fantasquadra" prompt="fantasquadra?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_aIUwgGEoEe-NJp8XjsdvaA" name="mysql_fanta_Login" prompt="mysql_fanta_Login?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_aIUwgWEoEe-NJp8XjsdvaA" name="mysql_fanta_AdditionalParams" prompt="mysql_fanta_AdditionalParams?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_aIUwgmEoEe-NJp8XjsdvaA" name="mysql_fanta_Password" prompt="mysql_fanta_Password?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_aIUwg2EoEe-NJp8XjsdvaA" name="mysql_fanta_Database" prompt="mysql_fanta_Database?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="fanta"/>
+    <contextParameter comment="" internalId="_aIUwhGEoEe-NJp8XjsdvaA" name="mysql_fanta_Port" prompt="mysql_fanta_Port?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_aIUwhWEoEe-NJp8XjsdvaA" name="mysql_fanta_Server" prompt="mysql_fanta_Server?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="localhost"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -45,7 +51,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QIEpdvTaNWX+ogkC9QvPldyx3cabYfSxMmA4j6dy"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:18RqIvfGlR3qr6PoP4X6jHKRicG+MUA1ES0s4M2m"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -80,7 +86,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lQyBA/QVoqfQNSv1SItHThm9u1+H7f8QzS+sWMrT"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DrIh+7OL0J5S5HOpZ+uwP8miR/jOxtMDDQtAZNcX"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -99,21 +105,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_EP4UgFS2EeuNVb_Yr8goDA" name="DQTechnical"/>
-    <routinesParameter id="_EPf6AFS2EeuNVb_Yr8goDA" name="DataMasking"/>
-    <routinesParameter id="_ENmckFS2EeuNVb_Yr8goDA" name="DataOperation"/>
-    <routinesParameter id="_EPq5IFS2EeuNVb_Yr8goDA" name="DataQualityDependencies"/>
-    <routinesParameter id="_EPlZkFS2EeuNVb_Yr8goDA" name="DataQuality"/>
-    <routinesParameter id="_EPy08FS2EeuNVb_Yr8goDA" name="DqStringHandling"/>
-    <routinesParameter id="_EOZt0FS2EeuNVb_Yr8goDA" name="Mathematical"/>
-    <routinesParameter id="_EOgbgFS2EeuNVb_Yr8goDA" name="Numeric"/>
-    <routinesParameter id="_EOplcFS2EeuNVb_Yr8goDA" name="Relational"/>
-    <routinesParameter id="_EPaacFS2EeuNVb_Yr8goDA" name="SQLike"/>
-    <routinesParameter id="_EOvsEFS2EeuNVb_Yr8goDA" name="StringHandling"/>
-    <routinesParameter id="_EO2ZwFS2EeuNVb_Yr8goDA" name="TalendDataGenerator"/>
-    <routinesParameter id="_EO75UFS2EeuNVb_Yr8goDA" name="TalendDate"/>
-    <routinesParameter id="_EPIGkFS2EeuNVb_Yr8goDA" name="TalendStringUtil"/>
-    <routinesParameter id="_EPB_8FS2EeuNVb_Yr8goDA" name="TalendString"/>
   </parameters>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_2"/>
@@ -212,7 +203,7 @@
       <column comment="" key="false" length="-1" name="Costo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="dybala_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;Dybala coi lupi&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -237,11 +228,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4QSiJizcLuMDzv1rcTN2cU+gmd0O6w0+vCnTLaiS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wf5JQ4pL43QHtwUfgA2ST95lhp6T13k2NI0mdG+DyPbe0t5/KIYpQrd0DwwOdVs+yTAFxpmMz1g="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -250,7 +241,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -410,7 +401,7 @@
       <column comment="" key="false" length="-1" name="Costo1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="cosangeles_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;Cosangeles&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -435,11 +426,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8pt32grig//oQWSPOlT189a/oK5jjfoyLGtE4JMF"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AkTjdHhBLfYuQDj40RgiVJhw76X+ivun4tJir74bCfC1YAmdgHHpVrmoo6ldPWEMyj+4EwvIMZI="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -448,7 +439,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -608,7 +599,7 @@
       <column comment="" key="false" length="-1" name="Costo1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="FELLazio_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;FEL Lazio&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -633,11 +624,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:B9WEttfJDxbK1GOCSjzMGVTbO56fkcB8dmSiGe8t"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:a/37UqfOBanc3PAN94r+S+dg7rVqU7lYRSVS/JOPhhX6q9v6EEG5at2J4+EOm20KdrZsHZqWspc="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -646,7 +637,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -806,7 +797,7 @@
       <column comment="" key="false" length="-1" name="Costo1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Mugiwara_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;Mugiwara No Ichimi&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -831,11 +822,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:updlA+kJiCG7ioFRo2WVKphwx3aYelmKhov9ojNi"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:210NZi1N/WcVWKDxS6GdcJprwzQ1/QJsZPDg04vGsm5OFCRGHkOriNv96ews03wovI2KUwfTBv8="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -844,7 +835,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -1004,7 +995,7 @@
       <column comment="" key="false" length="-1" name="Costo1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Parametri_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;Parametri Zero&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -1029,11 +1020,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Fiu6+hjrkhHoKCVHHVo6dVSg+SOvJ/+CUyAbaDBK"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0938L2oKFto7EzvLzfolVECwgoa0xv2c/cHTG16DAoKxQKeprmrz45joHqUno8b70pVdRfVCSUs="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1042,7 +1033,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -1202,7 +1193,7 @@
       <column comment="" key="false" length="-1" name="Costo1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Partizan_degrado_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;Partizan Degrado&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -1227,11 +1218,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:cOY9vg2w6XJOp8Vn6KG/L6CbrNX+a96pr7CuYgqI"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:rJLIaB7wW7VJWH9/oxQQTSEhXc7yqriY24G+l9LPG1iI8d01u5UPoB8dSxdXxpEDCIWkPXrOFCo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1240,7 +1231,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -1400,7 +1391,7 @@
       <column comment="" key="false" length="-1" name="Costo1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="Mogadiscio_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;Atletico Mogadiscio&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -1425,11 +1416,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Sqiy2H2v+KKvOOBa7q7qj7Y1LY9yFBhGRTGcCFKP"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YYZHVMAjtlFqI+DF0IsPbEQdhk6en2aLjc3kejq+Gb14ghq2mbOtrLXlf6wDsesCBzSPSFPhIkk="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1438,7 +1429,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -1598,7 +1589,7 @@
       <column comment="" key="false" length="-1" name="Costo1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="ottocentoA_insert" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="&quot;800A&quot;" name="fantasquadra" nullable="true" type="id_String"/>
@@ -1623,11 +1614,11 @@
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-    <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JroU8F+KPlTAwu3q8cXR+pqgcgnOa8HCFhPNqRaB"/>
+    <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:oVuvDwcyL/ex1j9e8Pe8ZKWsu3ysDcgrh2wXkymZvRS/p/YlOO4DH4AZkFv13Hw26+SJqQpbRkg="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Rose_fantasquadre_2023_24&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -1636,7 +1627,7 @@
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
     <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
     <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
     <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
@@ -2032,13 +2023,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_08f82991-90aa-42bd-ae95-bbd50aa9fd4d"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q736w8rdQ16UztHs/YzxW3IUU1JKrcXEnAxRVIdp8oqW8ZwNfUT7OzsMMprvwN2n/c0tATlO4jq9&#13;
-JO4DU+8snw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4c3273e4-a1f3-474c-8e43-ad8c94ebca21"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DagF9CxkruU++5H1ot/AaXEtCRm+XVNLpJk/+vZYhv3tgbb7TBM71lN7FGvdEdTTTNjWtjWC6h9E&#13;
-FJrSMzCv1g==</DigestValue></Reference></SignedInfo><SignatureValue>kfivLFjHM0dTob/QNAhSYvLf620YoAdFQ30+bbU2VgoQsT8SUv2UfN57oK2IwOu82POLYxbRO/vZ&#13;
-RfySJ+OPVvJBoA3P0DXKW5s2JA5JQGPznJSM3qejy+WP+QlOSX23Acaa2SzRtmqbqZHysXEX2ivU&#13;
-+5D6HLjnIYq0lMmL2Yff/h35UJyTz01JrA2rpUYYRLYt31TNQ+JxhyQsLajFmLDjTf23RAVi3veq&#13;
-az9ej8RuWxZV0hGgX4Lov3FuPOtdAp40lU8e0R8YqEmLkZuwwkMlUCygI5LuRLrgFx8c3zCikyXh&#13;
-gpZR/Q3ARsJGWeU0KaeL+0TcMYtnDyoTJdToYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5f64eef9-8aa8-485b-b36d-cc8c0eeb1445"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iUHrnUdnCidVFBs2PWQtWg6DSFVDTRlcCmGyMeFvIg2dT0bAWk5DJS3lRvx/0T9XxvMzy6HjjPxp&#13;
+fD+0kpC2cg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ba018baf-003a-49f8-a0bf-88fa5aac0987"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Nb8VMvGz2sSDc0RT2dY+VxbhWbD8vJSByCXa9vRAuZ3/Arw7wCaox30BecSrSCb4d/MUm3ih4nHc&#13;
+eyRfk3QCSQ==</DigestValue></Reference></SignedInfo><SignatureValue>IjPkUnURdp2sWqnCIE2ra+zyaahXq4s+MCRH4MTBvvMnTtj9z/fQ0jTQ1E5PNqdzCW30sIZ4aPum&#13;
+K/8tcTuQ4mvkCG5MtJ96CbB3nALVao7jfY8xIDrfrML81RgKuEXMWXQ1AfE/PcymPUro/JK0sALd&#13;
+UmrdlIFKOZ7b9q6lsAS4LDs0/ifNKWuzWZXdzJpRghLdUdE77ekHQrtjD09ZAZYFaYK9TDCD21nd&#13;
+D1DsEPKH/LrLfaaIUXB9G36cDcRhgoOuch5j/MinfzDRcU/rdxUm2YSX1FJX/yfIU7QlkGXuuph/&#13;
+g5qjt7QJZe+S/HObxJvGmUmc3wrk61H9XdWwjQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2060,4 +2051,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4c3273e4-a1f3-474c-8e43-ad8c94ebca21" Target="#_08f82991-90aa-42bd-ae95-bbd50aa9fd4d"><Timestamp>2024-07-31 15:11:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ba018baf-003a-49f8-a0bf-88fa5aac0987" Target="#_5f64eef9-8aa8-485b-b36d-cc8c0eeb1445"><Timestamp>2024-08-23 08:19:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

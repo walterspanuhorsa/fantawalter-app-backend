@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
   <model:JobletProcess defaultContext="Default" jobType="Standard">
-    <context confirmationNeeded="false" name="Default"/>
+    <context confirmationNeeded="false" hide="false" name="Default">
+      <contextParameter comment="" internalId="_Z6koYGEoEe-NJp8XjsdvaA" name="mysql_fanta_Server" prompt="mysql_fanta_Server?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="localhost"/>
+      <contextParameter comment="" internalId="_Z6koYWEoEe-NJp8XjsdvaA" name="mysql_fanta_AdditionalParams" prompt="mysql_fanta_AdditionalParams?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+      <contextParameter comment="" internalId="_Z6koYmEoEe-NJp8XjsdvaA" name="mysql_fanta_Password" prompt="mysql_fanta_Password?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_Password" value=""/>
+      <contextParameter comment="" internalId="_Z6koY2EoEe-NJp8XjsdvaA" name="mysql_fanta_Login" prompt="mysql_fanta_Login?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="root"/>
+      <contextParameter comment="" internalId="_Z6koZGEoEe-NJp8XjsdvaA" name="mysql_fanta_Database" prompt="mysql_fanta_Database?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="fanta"/>
+      <contextParameter comment="" internalId="_Z6koZWEoEe-NJp8XjsdvaA" name="mysql_fanta_Port" prompt="mysql_fanta_Port?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="3306"/>
+    </context>
     <parameters>
       <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -66,21 +73,6 @@
       <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
       <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
       <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-      <routinesParameter id="_EP4UgFS2EeuNVb_Yr8goDA" name="DQTechnical"/>
-      <routinesParameter id="_EPf6AFS2EeuNVb_Yr8goDA" name="DataMasking"/>
-      <routinesParameter id="_ENmckFS2EeuNVb_Yr8goDA" name="DataOperation"/>
-      <routinesParameter id="_EPq5IFS2EeuNVb_Yr8goDA" name="DataQualityDependencies"/>
-      <routinesParameter id="_EPlZkFS2EeuNVb_Yr8goDA" name="DataQuality"/>
-      <routinesParameter id="_EPy08FS2EeuNVb_Yr8goDA" name="DqStringHandling"/>
-      <routinesParameter id="_EOZt0FS2EeuNVb_Yr8goDA" name="Mathematical"/>
-      <routinesParameter id="_EOgbgFS2EeuNVb_Yr8goDA" name="Numeric"/>
-      <routinesParameter id="_EOplcFS2EeuNVb_Yr8goDA" name="Relational"/>
-      <routinesParameter id="_EPaacFS2EeuNVb_Yr8goDA" name="SQLike"/>
-      <routinesParameter id="_EOvsEFS2EeuNVb_Yr8goDA" name="StringHandling"/>
-      <routinesParameter id="_EO2ZwFS2EeuNVb_Yr8goDA" name="TalendDataGenerator"/>
-      <routinesParameter id="_EO75UFS2EeuNVb_Yr8goDA" name="TalendDate"/>
-      <routinesParameter id="_EPIGkFS2EeuNVb_Yr8goDA" name="TalendStringUtil"/>
-      <routinesParameter id="_EPB_8FS2EeuNVb_Yr8goDA" name="TalendString"/>
       <routinesParameter id="_TjPmULHUEey5P___xwdxQA" name="fanta"/>
     </parameters>
     <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="224" posY="128">
@@ -90,12 +82,12 @@
       <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-      <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
-      <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" value="&quot;fanta&quot;"/>
+      <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
+      <elementParameter field="TEXT" name="PORT" value="context.mysql_fanta_Port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.mysql_fanta_Database"/>
       <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-      <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:lv99zOJY1FoN7uCTDCIb1+fzWkmC6UDGFpAW6KG7"/>
+      <elementParameter field="TEXT" name="USER" value="context.mysql_fanta_Login"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:stK6WrckpRpSBciJdJZ5kQhk9xVfzN2c00AqQw3JWi16GEvGHThtR2pbwU6T6v7qlZvQ6zEWgAE="/>
       <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
       <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -106,7 +98,7 @@
       <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
       <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
       <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_fanta_AdditionalParams"/>
       <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
@@ -203,7 +195,7 @@
         <column comment="" key="false" length="20" name="Source" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
         <outputTables name="output_jl" sizeState="INTERMEDIATE">
           <mapperTableEntries expression="row1.id" name="id" nullable="true" type="id_Integer"/>
@@ -289,13 +281,13 @@
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f0cd2127-1568-4710-aa31-ee4d33f9f380"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>d4Ut1uwbYWV6P0R+eUbpdd42YlYlm87pUYPkjHKoiRWujOfveNc6pdxOhsQ3w/BNbkcmIWnesoi4&#13;
-KLxFnZmdaw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b80b3433-c09a-4dd9-8897-7c41481fa72e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>m0KEnvr8D5oUCEnxdwG9vBFPWKGpxm3CeNVFRXhMLT8Bc1aRe56e0Tatfbk47UkuDl6fmUsc0e2k&#13;
-OWVoNSuxeg==</DigestValue></Reference></SignedInfo><SignatureValue>HLKsG+OoJ4+5avMl6G6JdzPNv6pQZReABk1iuRRnsBIDUINtAfaIJAk5wskB9diLPC6sveprk1lC&#13;
-tkagXwCsQNXJScEtgL/fhRUkazCWwJeVus1crLGZNBuPT11oqNqm8ZVkCYmxgDvPsSq/MVqCh7o7&#13;
-T31UQO1UGM2D15JGn9h4qoPcm17m+aPbbJb3yseZAIG5sv8FUd3Wcp4wudLM/qNXIQQo8sABk4xK&#13;
-KhfCdZUkRpWgx3QgFEn4dTl/wctAuh8dyuE2ZyTPlKpXMO157MEutQpDf5ZzFYX12E6nhbC4RbnS&#13;
-be9XlgHp11YhDG4NvMp7kSoqPwObbngB9EIr2w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1a20eedb-67e6-4640-95c2-57d43f45cec6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vXgRAC/UIDPcLB0Tk6qXd2ml9yS4EAqOUd4DYMSjfOgwPqUEM9D+rWUkUUjOdtMt+nUXvrDQ/+7y&#13;
+sXotenMzyg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b0a0e231-788e-47d6-b18b-780c31ca80a2"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7irYneA34/JmpHvurrSnyv91xPykMCFIM/oyJvPbbD4k/5sZTCV+RIyrwuei9c2SFnu2rZ1G8bKe&#13;
+00Lm3h0jvA==</DigestValue></Reference></SignedInfo><SignatureValue>Sn+WUke3XZJX2tEIwkL0DSZn7W0yPNpgx8CNFVvtKz6NfacseAHMrbbMzELCqlDDDNIM0Svkf1gF&#13;
+RxdkQy4rvU1NQsv6GV6YSDv/vS1XawQemtEVjkZ+bLv1+TDNmao9hkLGPbQo4xIbojuAy6l206Ap&#13;
+LWnRFlZEn0dT30FeERbvm9k2TIKD9JiSCb6g+cCSXrZv1/hMW+hmzR+D49gEazdepASXofgJAx9Y&#13;
+TOHCuqn/3uExPa5479FPXVwPrAFAPNo+6KgR/nzlRqvLvY55O2noPvn+OKIE5xQW7v6fbjjN1pcj&#13;
+VOm8Um+0F0J/b+Ts1zIQd8l8lbhx510uCnl/wQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -317,4 +309,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b80b3433-c09a-4dd9-8897-7c41481fa72e" Target="#_f0cd2127-1568-4710-aa31-ee4d33f9f380"><Timestamp>2023-12-30 09:29:40</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b0a0e231-788e-47d6-b18b-780c31ca80a2" Target="#_1a20eedb-67e6-4640-95c2-57d43f45cec6"><Timestamp>2024-08-23 08:19:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
