@@ -372,9 +372,9 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="200">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;//popolo l'array&#10;Integer[] quotazioni= {input_row.FVM_PMA_FL,  input_row.FVM_Carmy,  input_row.FVM_Profeta,  input_row.FVM_Canta,  input_row.FVM_Recosta,  input_row.FVM_SOS,input_row.FVM_LD };&#10;&#10;&#10;//riordino l'array&#10;Arrays.sort(quotazioni);&#10;&#10;//creo un array di lavoro&#10;Integer[] modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;&#10;output_row.MAX = quotazioni[quotazioni.length-1];&#10;output_row.MIN = quotazioni[0];&#10;&#10;&#10;//elimino i due valori più bassi&#10;modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;&#10;//elimino i due valori più alti&#10;modifiedArray = Arrays.copyOfRange(modifiedArray, 0, modifiedArray.length-1);&#10;modifiedArray = Arrays.copyOfRange(modifiedArray, 0, modifiedArray.length-1);&#10;&#10;quotazioni = modifiedArray;&#10;&#10;    double somma; int media;&#10;&#10;    somma=0;&#10;&#10;    for(int i=0; i&lt;=quotazioni.length-1; i=i+1) {&#10;    &#10;    //System.out.println(input_row.Nome + &quot; =&gt; &quot; +quotazioni[i]);&#10;      somma=somma+quotazioni[i];&#10;    }&#10;    &#10;&#9;//produco la media arrotondando il valore ottenuto&#10;    media= (int) Math.round(somma/quotazioni.length);&#10;    &#10;    &#10;    &#10;output_row.Nome = input_row.Nome;&#10;&#10;output_row.MEDIA_TRONCATA = media;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;//popolo l'array&#10;Integer[] quotazioni= {input_row.FVM_PMA_FL,  input_row.FVM_Carmy,  input_row.FVM_Profeta,  input_row.FVM_Canta,  input_row.FVM_Recosta,  input_row.FVM_SOS,input_row.FVM_LD };&#10;&#10;&#10;//riordino l'array&#10;Arrays.sort(quotazioni);&#10;&#10;//creo un array di lavoro&#10;Integer[] modifiedArray = Arrays.copyOfRange(quotazioni, 1, quotazioni.length);&#10;&#10;output_row.MAX = quotazioni[quotazioni.length-1];&#10;output_row.MIN = quotazioni[0];&#10;&#10;&#10;modifiedArray = quotazioni;&#10;&#10;//elimino i due valori più bassi&#10;&#10;&#10;modifiedArray = Arrays.copyOfRange(modifiedArray, 2, quotazioni.length);&#10;&#10;//elimino i due valori più alti&#10;modifiedArray = Arrays.copyOfRange(modifiedArray, 0, modifiedArray.length-2);&#10;&#10;quotazioni = modifiedArray;&#10;&#10;    double somma; int media;&#10;&#10;    somma=0;&#10;&#10;    for(int i=0; i&lt;=quotazioni.length-1; i=i+1) {&#10;    &#10;    //System.out.println(input_row.Nome + &quot; =&gt; &quot; +quotazioni[i]);&#10;      somma=somma+quotazioni[i];&#10;    }&#10;    &#10;    &#10;    &#10;    &#10;&#9;//produco la media arrotondando il valore ottenuto&#10;    media= (int) Math.round(somma/quotazioni.length);&#10;    &#10;    &#10;    //System.out.println(&quot;SOMMA: &quot;+somma + &quot; | LENGTH: &quot; +   modifiedArray.length  + &quot;MEDIA:&quot; + media);&#10;    &#10;    &#10;    &#10;output_row.Nome = input_row.Nome;&#10;&#10;output_row.MEDIA_TRONCATA = media;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.*; &#10;import java.lang.*; &#10;import java.util.*; &#10;&#10;import java.lang.reflect.Field;  "/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1">
@@ -419,7 +419,7 @@
       <column comment="" key="false" length="-1" name="MIN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="200">
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="200">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_7"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
@@ -792,6 +792,8 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DUMMY" show="false" value="true"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -1095,13 +1097,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_63979f37-9952-45c7-9a97-db046440bbfd"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gvrssgxEwGUKXUXV1isQfvzBcupAmdGQrLJeralv+NJJjhY9WlnSYvEgorjn3vf5J72ymvgnYLIs&#13;
-csUZYx4DzQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_659a4820-ff1d-4d9c-b6e6-7d16727bba42"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>F0JS6zYnACFPMjTEDHqsNuAWsdCMWuj/5L6v6jLtq+5Ron973J8oeQ9e54pH+hmPjc3flCyY7f3j&#13;
-myz4ycmv3Q==</DigestValue></Reference></SignedInfo><SignatureValue>J1OjiBgEqbajr68c7qWmUL5+uPHg9s8U4WD9jb4q6DtndM8DhKIdgFzMvHnyq/IiK4BYmbWPT+y0&#13;
-69pAGDn06Pw9ddukcStPOo1dYWZL6qvuPE7I4znRfDouL2nPrC8FmHQhA91w3zXCvzttAnhSszYh&#13;
-eCOxYwC6S1zoU+Cc/UrqmX//xSy1fMgqTMMdx+pFweXmHuVAOyCzF548LyLcze881KLLY2Ml/ArE&#13;
-yH7crQGoH2GQ22b7loSJofZwEriyDeR3SVwaezZmZ8l9iYYDjgnhFW7rGGQLHWH8911xHDhWmAb1&#13;
-IF3kPCQe0wy/AruixlnFibl1kNXguFt+QE1QVQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5a424b2f-a5c6-4d28-b789-0316b2d85514"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UxlVkwCu1QggJLdrSJ9tAs28xKMhuLjq5TEhKx4TqYbDKAStZviB+X63o6ni1qtvCNFj3IupKcBc&#13;
+gMMFv5yQWg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3899aa84-fdf9-48cd-9ca4-d825c2418193"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mv5jIN8myor7iiFPPTKJPqKR+Pjk5r8reVeO6A9k0bUMKWRvXAzWn9UDFrVuv4XdUyBE/NxxTqgL&#13;
+0vD5QTnB5w==</DigestValue></Reference></SignedInfo><SignatureValue>jY7e1AIr+vrCU4at2XDXH3aAXklEld4CjP72wopbo/869ZkLfyI5PzTNw8T5ASuKl28cHdCYcLb8&#13;
+EN8JlIppG2wdETmXKeaiy9+LDqF5RNayG+gL6tbInwMLFhluM7Mh74xzyiIoz0pLlhtZwNjRKJzY&#13;
+eO/C63muYcqK9Ve1P5kurp015guBpBTXpWgRTk4W83b9gKkkuDcNMwrdbdpbeWLEGrGzA5az7Urc&#13;
+DGRSDzJxbV+QGiollGDYxxMzxIeIV7vJ0HNxlJzfiA4vrGg8D5YLyeoJx4K8mgzEA4TaAWQ41b8Q&#13;
+vSHZ7gVh5KrvrxfNdvqW6EDl4HuWyZHkE81WLQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1123,4 +1125,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_659a4820-ff1d-4d9c-b6e6-7d16727bba42" Target="#_63979f37-9952-45c7-9a97-db046440bbfd"><Timestamp>2024-08-25 07:18:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3899aa84-fdf9-48cd-9ca4-d825c2418193" Target="#_5a424b2f-a5c6-4d28-b789-0316b2d85514"><Timestamp>2024-08-28 09:15:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

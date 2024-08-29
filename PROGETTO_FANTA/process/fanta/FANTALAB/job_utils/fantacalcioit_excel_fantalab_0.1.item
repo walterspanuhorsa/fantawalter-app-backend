@@ -1,32 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" hide="false" name="Default">
-    <contextParameter comment="" internalId="_HqhmoGCzEe-4dNOpYzjMgQ" name="local_path_file_giornata" prompt="local_path_file_giornata?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value="&quot;/tmp/fanta/&quot;"/>
-    <contextParameter comment="" internalId="_HqhmoWCzEe-4dNOpYzjMgQ" name="value" prompt="value?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_HqhmomCzEe-4dNOpYzjMgQ" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_Hqhmo2CzEe-4dNOpYzjMgQ" name="loopExit" prompt="loopExit?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_HqhmpGCzEe-4dNOpYzjMgQ" name="nome_squadra" prompt="nome_squadra?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value="&quot;ATALANTA&quot;"/>
-    <contextParameter comment="" internalId="_HqhmpWCzEe-4dNOpYzjMgQ" name="inserisci" prompt="inserisci?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Boolean" value=""/>
-    <contextParameter comment="" internalId="_HqhmpmCzEe-4dNOpYzjMgQ" name="giornata" prompt="giornata?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
-    <contextParameter comment="" internalId="_Hqhmp2CzEe-4dNOpYzjMgQ" name="nome_squadra_casa" prompt="nome_squadra_casa?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_HqhmqGCzEe-4dNOpYzjMgQ" name="nome_squadra_trasf" prompt="nome_squadra_trasf?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0wGCzEe-4dNOpYzjMgQ" name="moltiplicatore" prompt="moltiplicatore?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0wWCzEe-4dNOpYzjMgQ" name="ruolo" prompt="ruolo?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0wmCzEe-4dNOpYzjMgQ" name="param" prompt="param?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;ambiente_dev&quot;"/>
-    <contextParameter comment="" internalId="_Hqi0w2CzEe-4dNOpYzjMgQ" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0xGCzEe-4dNOpYzjMgQ" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;/tmp/fanta&quot;"/>
-    <contextParameter comment="" internalId="_Hqi0xWCzEe-4dNOpYzjMgQ" name="value_prev" prompt="value_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
-    <contextParameter comment="" internalId="_Hqi0xmCzEe-4dNOpYzjMgQ" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0x2CzEe-4dNOpYzjMgQ" name="orderBy" prompt="orderBy?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0yGCzEe-4dNOpYzjMgQ" name="source" prompt="source?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0yWCzEe-4dNOpYzjMgQ" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_Hqi0ymCzEe-4dNOpYzjMgQ" name="pos_prev" prompt="pos_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
-    <contextParameter comment="" internalId="_Hqi0y2CzEe-4dNOpYzjMgQ" name="url" prompt="url?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
-    <contextParameter comment="" internalId="_MvLdkGN3Ee-NJp8XjsdvaA" name="mysql_fanta_Login" prompt="mysql_fanta_Login?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="root"/>
-    <contextParameter comment="" internalId="_MvLdkWN3Ee-NJp8XjsdvaA" name="mysql_fanta_AdditionalParams" prompt="mysql_fanta_AdditionalParams?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
-    <contextParameter comment="" internalId="_MvLdkmN3Ee-NJp8XjsdvaA" name="mysql_fanta_Password" prompt="mysql_fanta_Password?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_Password" value=""/>
-    <contextParameter comment="" internalId="_MvLdk2N3Ee-NJp8XjsdvaA" name="mysql_fanta_Database" prompt="mysql_fanta_Database?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="fantalab"/>
-    <contextParameter comment="" internalId="_MvLdlGN3Ee-NJp8XjsdvaA" name="mysql_fanta_Port" prompt="mysql_fanta_Port?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="3306"/>
-    <contextParameter comment="" internalId="_MvLdlWN3Ee-NJp8XjsdvaA" name="mysql_fanta_Server" prompt="mysql_fanta_Server?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="localhost"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="fanta" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" hide="false" name="fanta">
+    <contextParameter comment="" internalId="_Zj1u0GUXEe-NJp8XjsdvaA" name="local_path_file_giornata" prompt="local_path_file_giornata?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value="&quot;/tmp/fanta/&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u0WUXEe-NJp8XjsdvaA" name="value" prompt="value?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u0mUXEe-NJp8XjsdvaA" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_Zj1u02UXEe-NJp8XjsdvaA" name="loopExit" prompt="loopExit?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_Zj1u1GUXEe-NJp8XjsdvaA" name="nome_squadra" prompt="nome_squadra?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value="&quot;ATALANTA&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u1WUXEe-NJp8XjsdvaA" name="inserisci" prompt="inserisci?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Boolean" value=""/>
+    <contextParameter comment="" internalId="_Zj1u1mUXEe-NJp8XjsdvaA" name="giornata" prompt="giornata?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_Zj1u12UXEe-NJp8XjsdvaA" name="nome_squadra_casa" prompt="nome_squadra_casa?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u2GUXEe-NJp8XjsdvaA" name="nome_squadra_trasf" prompt="nome_squadra_trasf?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u2WUXEe-NJp8XjsdvaA" name="mysql_fanta_Login" prompt="mysql_fanta_Login?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_Zj1u2mUXEe-NJp8XjsdvaA" name="mysql_fanta_AdditionalParams" prompt="mysql_fanta_AdditionalParams?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_Zj1u22UXEe-NJp8XjsdvaA" name="mysql_fanta_Password" prompt="mysql_fanta_Password?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_Zj1u3GUXEe-NJp8XjsdvaA" name="mysql_fanta_Database" prompt="mysql_fanta_Database?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="fantalab"/>
+    <contextParameter comment="" internalId="_Zj1u3WUXEe-NJp8XjsdvaA" name="mysql_fanta_Port" prompt="mysql_fanta_Port?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_Zj1u3mUXEe-NJp8XjsdvaA" name="mysql_fanta_Server" prompt="mysql_fanta_Server?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_Zj1u32UXEe-NJp8XjsdvaA" name="moltiplicatore" prompt="moltiplicatore?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u4GUXEe-NJp8XjsdvaA" name="ruolo" prompt="ruolo?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u4WUXEe-NJp8XjsdvaA" name="param" prompt="param?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;ambiente_dev&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u4mUXEe-NJp8XjsdvaA" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u42UXEe-NJp8XjsdvaA" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;/tmp/fanta&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u5GUXEe-NJp8XjsdvaA" name="value_prev" prompt="value_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Zj1u5WUXEe-NJp8XjsdvaA" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u5mUXEe-NJp8XjsdvaA" name="orderBy" prompt="orderBy?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u52UXEe-NJp8XjsdvaA" name="source" prompt="source?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u6GUXEe-NJp8XjsdvaA" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u6WUXEe-NJp8XjsdvaA" name="pos_prev" prompt="pos_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Zj1u6mUXEe-NJp8XjsdvaA" name="url" prompt="url?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" hide="false" name="fantalab">
+    <contextParameter comment="" internalId="_Zj1u62UXEe-NJp8XjsdvaA" name="local_path_file_giornata" prompt="local_path_file_giornata?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value="&quot;/tmp/fanta/&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u7GUXEe-NJp8XjsdvaA" name="value" prompt="value?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u7WUXEe-NJp8XjsdvaA" name="counter" prompt="counter?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_Zj1u7mUXEe-NJp8XjsdvaA" name="loopExit" prompt="loopExit?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_Zj1u72UXEe-NJp8XjsdvaA" name="nome_squadra" prompt="nome_squadra?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value="&quot;ATALANTA&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u8GUXEe-NJp8XjsdvaA" name="inserisci" prompt="inserisci?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Boolean" value=""/>
+    <contextParameter comment="" internalId="_Zj1u8WUXEe-NJp8XjsdvaA" name="giornata" prompt="giornata?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_Zj1u8mUXEe-NJp8XjsdvaA" name="nome_squadra_casa" prompt="nome_squadra_casa?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u82UXEe-NJp8XjsdvaA" name="nome_squadra_trasf" prompt="nome_squadra_trasf?" promptNeeded="false" repositoryContextId="_I3-PINgjEeyG_fCVpQN-fg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u9GUXEe-NJp8XjsdvaA" name="mysql_fanta_Login" prompt="mysql_fanta_Login?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_Zj1u9WUXEe-NJp8XjsdvaA" name="mysql_fanta_AdditionalParams" prompt="mysql_fanta_AdditionalParams?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="noDatetimeStringSync=true&amp;enabledTLSProtocols=TLSv1.2,TLSv1.1,TLSv1"/>
+    <contextParameter comment="" internalId="_Zj1u9mUXEe-NJp8XjsdvaA" name="mysql_fanta_Password" prompt="mysql_fanta_Password?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_Zj1u92UXEe-NJp8XjsdvaA" name="mysql_fanta_Database" prompt="mysql_fanta_Database?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="fantalab"/>
+    <contextParameter comment="" internalId="_Zj1u-GUXEe-NJp8XjsdvaA" name="mysql_fanta_Port" prompt="mysql_fanta_Port?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_Zj1u-WUXEe-NJp8XjsdvaA" name="mysql_fanta_Server" prompt="mysql_fanta_Server?" promptNeeded="false" repositoryContextId="_X8P6gGEoEe-NJp8XjsdvaA" type="id_String" value="localhost"/>
+    <contextParameter comment="" internalId="_Zj1u-mUXEe-NJp8XjsdvaA" name="moltiplicatore" prompt="moltiplicatore?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u-2UXEe-NJp8XjsdvaA" name="ruolo" prompt="ruolo?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u_GUXEe-NJp8XjsdvaA" name="param" prompt="param?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;ambiente_dev&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u_WUXEe-NJp8XjsdvaA" name="file_name" prompt="file_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1u_mUXEe-NJp8XjsdvaA" name="filePath" prompt="filePath?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value="&quot;/tmp/fanta&quot;"/>
+    <contextParameter comment="" internalId="_Zj1u_2UXEe-NJp8XjsdvaA" name="value_prev" prompt="value_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Zj1vAGUXEe-NJp8XjsdvaA" name="fantacalcioTable" prompt="fantacalcioTable?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1vAWUXEe-NJp8XjsdvaA" name="orderBy" prompt="orderBy?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1vAmUXEe-NJp8XjsdvaA" name="source" prompt="source?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1vA2UXEe-NJp8XjsdvaA" name="table_name" prompt="table_name?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_Zj1vBGUXEe-NJp8XjsdvaA" name="pos_prev" prompt="pos_prev?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_Integer" value=""/>
+    <contextParameter comment="" internalId="_Zj1vBWUXEe-NJp8XjsdvaA" name="url" prompt="url?" promptNeeded="false" repositoryContextId="_FAIKYEeVEeyOR85CHXKzqg" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -800,10 +829,8 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="40">
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7E428BfiEe29Bt9V2S3gow"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="TEXT" name="HOST" value="context.mysql_fanta_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
@@ -825,7 +852,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="40">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;&#10;&#10;String[] aSource = jobName.split(&quot;_&quot;);&#10;&#10;context.source = aSource[0];&#10;&#10;&#10;context.file_name = &quot;Quotazioni_Fantacalcio_Stagione_*&quot;;&#10;&#10;context.table_name = &quot;listone_fantacalcioit&quot;;&#10;&#10;&#10;context.fantacalcioTable  = &quot;listone_fantacalcioit&quot;;&#10;&#10;&#10;&#10;context.filePath = &quot;/tmp/fantalab/&quot;;&#10;&#10;&#10;context.counter = 0;&#10;&#10;System.out.println(&quot;FILE DATI: &quot;+ context.filePath +context.file_name);&#10;&#10;System.out.println(&quot;TABELLA DI RIFERIMENTO: &quot;+ context.table_name);&#10;&#10;/*&#10;float qta = (float)474;&#10;float divisore = (float)2.257;&#10;&#10;System.out.println(Math.round(qta/divisore));*/"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="/*context.filePath = &quot;/tmp/fantalab/INPUT/&quot;;&#10;&#10;context.mysql_fanta_Database =&quot;fantalab&quot;;&#10;*/&#10;&#10;&#10;String[] aSource = jobName.split(&quot;_&quot;);&#10;&#10;context.source = aSource[0];&#10;&#10;&#10;context.file_name = &quot;Quotazioni_Fantacalcio_Stagione_*&quot;;&#10;&#10;context.table_name = &quot;listone_fantacalcioit&quot;;&#10;&#10;&#10;context.fantacalcioTable  = &quot;listone_fantacalcioit&quot;;&#10;&#10;&#10;&#10;context.counter = 0;&#10;&#10;System.out.println(&quot;FILE DATI: &quot;+ context.filePath +context.file_name);&#10;&#10;System.out.println(&quot;TABELLA DI RIFERIMENTO: &quot;+ context.table_name);&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -881,10 +908,10 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="output"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tJava_1">
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tDBConnection_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <subjob>
@@ -913,13 +940,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_183d31d9-98c5-4d59-b1cc-eb9e692c3c94"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VKvIVTwx2OM09UtixTs1OoxhqWanj+Oa+DLAm8/sVsDHvLuFRegSA1RW8EJHRVIQuH5fMs+ellUq&#13;
-F5XHGwAPog==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c80db4ff-5359-41a2-8793-404b86555f5d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WwkW/z5GFU8pOR1W16c6a8u59h+uQE3RiZC7g339SBjPEKhoWerFzeVMTov439W0aKBobIRWQxHT&#13;
-VCn6GPGW3A==</DigestValue></Reference></SignedInfo><SignatureValue>IdCI422U7vyhbbGub88tBRynSj5yu2XYQ24NJupiwexQmTwJoj0CXgoLc8CKJapbJWskS9cdUew2&#13;
-gZYPgNFgQ0FSzThjTGy2ohpwnyC6hCWA15EFcj3NB85Khqh33k8uwaiU6cK+i8SApEcvBE68mTJv&#13;
-ejspuez56mjFPfQKCnaMmlimKgZ08RpdzT1zT/xKc33VqaZOqtkzyeL1gLvcqEXrV2GsI74RE5Ig&#13;
-k68m3CkqlH+76HfkvceYfB+h9qktqmTu5jNeyMMDZDjKmjNhnPmRyWKERDQ/z0j7yCuJXn83qB5r&#13;
-CYY5jZpKtNRrvyUJYwbstO7VEwNRpJKLwV7pNw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2b3a53e8-962b-48fd-87b2-68e375d8a8b9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DbppTdYz5YviOc8gDjkBhhPjkejZ4G6kHZGi1hlSBbTMa5HmAdL/ZQeFWA/EQ6gfdH7Iwp8B6JIM&#13;
+/bImpogi7A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_bbdc428a-38d8-4e78-ac42-7b43c5fc1e7c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>E+ndrePITbkgQxL6vMV9BUF/rnyJViY40BQuvyLlR3mMZ4PJRYBM4EgPjWpSOLypL+AXXImFEm/w&#13;
+EtQe2WQISA==</DigestValue></Reference></SignedInfo><SignatureValue>QHQpU/6QRNGmoBAE251uxyEUn3DPc1VTBnuI6DMg4d6ddiU2VTiasyMpthkWbq22GPr7KPuKqJoS&#13;
+bwH/0eSrUsx7sf8VFRtyi/EXmxJ28ksmGb15R5WyXQKdTLWtkZptIIoz/UlGEuGXYcPfcwXjBFgV&#13;
+1LakM/PwF0F4vdpJl21AOGgHtvgVmwRj+AVEaWiJ1dPO/M9A7ivqjPnyw5sGdfBe3obz+dgoPFVe&#13;
+yhB614i4RJkt/z+JkDXKI45FL+y7K8W+sdsEHiMKVyj3/hJQcXWlD/SxeJqrrCpY5TMol6YZ9Qzc&#13;
+rhBXlse1qYoYc5/24JaJbX6WEb4/lt96I5SsIQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -941,4 +968,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c80db4ff-5359-41a2-8793-404b86555f5d" Target="#_183d31d9-98c5-4d59-b1cc-eb9e692c3c94"><Timestamp>2024-08-26 06:48:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_bbdc428a-38d8-4e78-ac42-7b43c5fc1e7c" Target="#_2b3a53e8-962b-48fd-87b2-68e375d8a8b9"><Timestamp>2024-08-28 08:29:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
