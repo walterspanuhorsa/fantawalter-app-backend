@@ -1,190 +1,191 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="Default" jobType="Standard">
     <context confirmationNeeded="false" hide="false" name="Default"/>
     <parameters>
-      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
-      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
-      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
-      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
-      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
-      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
-      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
-      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
-      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
       <elementParameter field="CHECK" name="STARTABLE" value="true"/>
       <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
-      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
-      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
-      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
-      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Talend-Studio-Horsa/studio/workspace/in.csv&quot;"/>
-      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
-      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
-      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
-      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
-      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_12"/>
-      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Talend-Studio-Horsa/studio/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+      <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_12" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
       <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
-      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:oRbXzKAIlnoo/VQL8F0sG2zlDOH+z/g79J/FHUSy"/>
-      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
-      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
-      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
-      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
-      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
-      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
-      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
-      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
-      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
-      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
-      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
-      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
-      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
-      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
-      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
-      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:oRbXzKAIlnoo/VQL8F0sG2zlDOH+z/g79J/FHUSy" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
     </parameters>
     <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="400" posY="320">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#10;&#10;context.counter = context.counter + 1;&#10;&#13;&#10;output_row.newColumn = input_row.newColumn;&#13;&#10;output_row.newColumn1 = input_row.newColumn1;&#13;&#10;output_row.newColumn2 = input_row.newColumn2;&#13;&#10;output_row.newColumn3 = input_row.newColumn3;&#13;&#10;output_row.newColumn4 = input_row.newColumn4;&#13;&#10;output_row.newColumn5 = input_row.newColumn5;&#13;&#10;output_row.id = context.counter;&#10;output_row.ruolo = context.ruolo;"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;&#xA;context.counter = context.counter + 1;&#xA;&#xD;&#xA;output_row.newColumn = input_row.newColumn;&#xD;&#xA;output_row.newColumn1 = input_row.newColumn1;&#xD;&#xA;output_row.newColumn2 = input_row.newColumn2;&#xD;&#xA;output_row.newColumn3 = input_row.newColumn3;&#xD;&#xA;output_row.newColumn4 = input_row.newColumn4;&#xD;&#xA;output_row.newColumn5 = input_row.newColumn5;&#xD;&#xA;output_row.id = context.counter;&#xA;output_row.ruolo = context.ruolo;"/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJavaRow_1">
-        <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn4" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn5" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ruolo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="320">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
       <elementParameter field="IMAGE" name="PREVIEW" value="_PiTFYFgGEe-fm-QjNpOnlg-tMap_1-PREVIEW.bmp"/>
-      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-      <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-      <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="out4">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ruolo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <metadata connector="FLOW" name="out3">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ruolo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <metadata connector="FLOW" label="rejected" name="no_iniziale">
-        <column comment="" key="false" length="-1" name="nome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="nome" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ruolo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
         <uiProperties/>
-        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-        <outputTables activateExpressionFilter="true" expressionFilter="!Relational.ISNULL(row1.newColumn4) &amp;&amp; !row1.newColumn4.equals(&quot;&quot;) &#13;&#10;" name="out4" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="row1.id " name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="row1.newColumn + &quot; &quot; +row1.newColumn1 + &quot; &quot; +row1.newColumn2 " name="Nome" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row1.newColumn3 " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="Integer.parseInt(row1.newColumn4)" name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="&quot;nome column + column1&quot;" name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row1.ruolo " name="ruolo" nullable="true" type="id_String"/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="out4" expressionFilter="!Relational.ISNULL(row1.newColumn4) &amp;&amp; !row1.newColumn4.equals(&quot;&quot;) &#xD;&#xA;" activateExpressionFilter="true">
+          <mapperTableEntries name="id" expression="row1.id " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Nome" expression="row1.newColumn + &quot; &quot; +row1.newColumn1 + &quot; &quot; +row1.newColumn2 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" expression="row1.newColumn3 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" expression="Integer.parseInt(row1.newColumn4)" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="step" expression="&quot;nome column + column1&quot;" type="id_String" nullable="true"/>
+          <mapperTableEntries name="ruolo" expression="row1.ruolo " type="id_String" nullable="true"/>
         </outputTables>
-        <outputTables activateExpressionFilter="true" expressionFilter=" (!Relational.ISNULL(row1.newColumn3) &amp;&amp; !row1.newColumn3.equals(&quot;&quot;))&#13;&#10;&amp;&amp; (Relational.ISNULL(row1.newColumn4) || row1.newColumn4.equals(&quot;&quot;))" name="out3" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="row1.id " name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="row1.newColumn+ &quot; &quot; + row1.newColumn1" name="Nome" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row1.newColumn2 " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="Integer.parseInt(row1.newColumn3)" name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="&quot;nome solo column&quot;" name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row1.ruolo " name="ruolo" nullable="true" type="id_String"/>
+        <outputTables sizeState="INTERMEDIATE" name="out3" expressionFilter=" (!Relational.ISNULL(row1.newColumn3) &amp;&amp; !row1.newColumn3.equals(&quot;&quot;))&#xD;&#xA;&amp;&amp; (Relational.ISNULL(row1.newColumn4) || row1.newColumn4.equals(&quot;&quot;))" activateExpressionFilter="true">
+          <mapperTableEntries name="id" expression="row1.id " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Nome" expression="row1.newColumn+ &quot; &quot; + row1.newColumn1" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" expression="row1.newColumn2 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" expression="Integer.parseInt(row1.newColumn3)" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="step" expression="&quot;nome solo column&quot;" type="id_String" nullable="true"/>
+          <mapperTableEntries name="ruolo" expression="row1.ruolo " type="id_String" nullable="true"/>
         </outputTables>
-        <outputTables activateExpressionFilter="true" expressionFilter="(!Relational.ISNULL(row1.newColumn) &amp;&amp; !row1.newColumn.equals(&quot;&quot;) &amp;&amp;&#10;!Relational.ISNULL(row1.newColumn1) &amp;&amp; !row1.newColumn1.equals(&quot;&quot;)  &amp;&amp;&#10;(Relational.ISNULL(row1.newColumn3) ||  row1.newColumn3.equals(&quot;&quot;)))" name="no_iniziale" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="row1.newColumn " name="nome" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row1.newColumn1 " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="Integer.parseInt(row1.newColumn2) " name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="row1.id" name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="row1.ruolo" name="ruolo" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="&quot;no_iniz&quot;" name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row1.newColumn3 " name="newColumn3" nullable="true" type="id_String"/>
+        <outputTables sizeState="INTERMEDIATE" name="no_iniziale" expressionFilter="(!Relational.ISNULL(row1.newColumn) &amp;&amp; !row1.newColumn.equals(&quot;&quot;) &amp;&amp;&#xA;!Relational.ISNULL(row1.newColumn1) &amp;&amp; !row1.newColumn1.equals(&quot;&quot;)  &amp;&amp;&#xA;(Relational.ISNULL(row1.newColumn3) ||  row1.newColumn3.equals(&quot;&quot;)))" activateExpressionFilter="true">
+          <mapperTableEntries name="nome" expression="row1.newColumn " type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" expression="row1.newColumn1 " type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" expression="Integer.parseInt(row1.newColumn2) " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="id" expression="row1.id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="ruolo" expression="row1.ruolo" type="id_String" nullable="true"/>
+          <mapperTableEntries name="step" expression="&quot;no_iniz&quot;" type="id_String" nullable="true"/>
+          <mapperTableEntries name="newColumn3" expression="row1.newColumn3 " type="id_String" nullable="true"/>
         </outputTables>
-        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1" sizeState="INTERMEDIATE">
-          <mapperTableEntries name="newColumn" nullable="true" type="id_String"/>
-          <mapperTableEntries name="newColumn1" nullable="true" type="id_String"/>
-          <mapperTableEntries name="newColumn2" nullable="true" type="id_String"/>
-          <mapperTableEntries name="newColumn3" nullable="true" type="id_String"/>
-          <mapperTableEntries name="newColumn4" nullable="true" type="id_String"/>
-          <mapperTableEntries name="newColumn5" nullable="true" type="id_String"/>
-          <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
+        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="newColumn" type="id_String" nullable="true"/>
+          <mapperTableEntries name="newColumn1" type="id_String" nullable="true"/>
+          <mapperTableEntries name="newColumn2" type="id_String" nullable="true"/>
+          <mapperTableEntries name="newColumn3" type="id_String" nullable="true"/>
+          <mapperTableEntries name="newColumn4" type="id_String" nullable="true"/>
+          <mapperTableEntries name="newColumn5" type="id_String" nullable="true"/>
+          <mapperTableEntries name="id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="ruolo" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
     </node>
     <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="200">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-      <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-      <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:U0mi5RabSQ1oszRZ3lLo2mZ1u3IRW7SBvhLdyO2t"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:U0mi5RabSQ1oszRZ3lLo2mZ1u3IRW7SBvhLdyO2t" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
       <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
       <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from mappatura_squadre&quot;"/>
-      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
       <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -196,33 +197,33 @@
       </elementParameter>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tDBInput_1">
-        <column comment="" key="false" length="100" name="nome_corto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="nome_lungo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="nome_corto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="nome_lungo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="880" posY="440">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-      <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-      <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7IHLXCqvfbWFNp3Oo6/KNBOOOosVjfyXaHZwVr21"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7IHLXCqvfbWFNp3Oo6/KNBOOOosVjfyXaHZwVr21" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
       <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
       <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from mappatura_squadre&quot;"/>
-      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
       <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -234,134 +235,134 @@
       </elementParameter>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tDBInput_2">
-        <column comment="" key="false" length="100" name="nome_corto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="nome_lungo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="nome_corto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="nome_lungo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="280">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
       <elementParameter field="IMAGE" name="PREVIEW" value="_PiTFYFgGEe-fm-QjNpOnlg-tMap_2-PREVIEW.bmp"/>
-      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-      <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-      <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="get_nome_sq1">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="R" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
         <uiProperties/>
-        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-        <outputTables name="get_nome_sq1" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="out4.id" name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="out4.Nome" name="Nome" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row2.nome_lungo " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="out4.ruolo " name="R" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="out4.QT_A " name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="out4.step" name="step" nullable="true" type="id_String"/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="get_nome_sq1">
+          <mapperTableEntries name="id" expression="out4.id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Nome" expression="out4.Nome" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" expression="row2.nome_lungo " type="id_String" nullable="true"/>
+          <mapperTableEntries name="R" expression="out4.ruolo " type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" expression="out4.QT_A " type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="step" expression="out4.step" type="id_String" nullable="true"/>
         </outputTables>
-        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out4" sizeState="INTERMEDIATE">
-          <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries name="Nome" nullable="true" type="id_String"/>
-          <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
+        <inputTables sizeState="INTERMEDIATE" name="out4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Nome" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="step" type="id_String" nullable="true"/>
+          <mapperTableEntries name="ruolo" type="id_String" nullable="true"/>
         </inputTables>
-        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="out4.Squadra " name="nome_corto" nullable="true" operator="=" type="id_String"/>
-          <mapperTableEntries name="nome_lungo" nullable="true" type="id_String"/>
+        <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="nome_corto" expression="out4.Squadra " type="id_String" nullable="true" operator="="/>
+          <mapperTableEntries name="nome_lungo" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1000" posY="360">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_3"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
       <elementParameter field="IMAGE" name="PREVIEW" value="_PiTFYFgGEe-fm-QjNpOnlg-tMap_3-PREVIEW.bmp"/>
-      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-      <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-      <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="get_nome_sq2">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="R" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="5" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
         <uiProperties/>
-        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-        <outputTables name="get_nome_sq2" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="out3.id" name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="out3.Nome" name="Nome" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row3.nome_lungo " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="out3.ruolo " name="R" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="out3.QT_A" name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="out3.step" name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries name="id_fantacalcio" nullable="true" type="id_Integer"/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="get_nome_sq2">
+          <mapperTableEntries name="id" expression="out3.id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Nome" expression="out3.Nome" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" expression="row3.nome_lungo " type="id_String" nullable="true"/>
+          <mapperTableEntries name="R" expression="out3.ruolo " type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" expression="out3.QT_A" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="step" expression="out3.step" type="id_String" nullable="true"/>
+          <mapperTableEntries name="id_fantacalcio" type="id_Integer" nullable="true"/>
         </outputTables>
-        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="out3" sizeState="INTERMEDIATE">
-          <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries name="Nome" nullable="true" type="id_String"/>
-          <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
+        <inputTables sizeState="INTERMEDIATE" name="out3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Nome" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="step" type="id_String" nullable="true"/>
+          <mapperTableEntries name="ruolo" type="id_String" nullable="true"/>
         </inputTables>
-        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="out3.Squadra " name="nome_corto" nullable="true" type="id_String"/>
-          <mapperTableEntries name="nome_lungo" nullable="true" type="id_String"/>
+        <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="nome_corto" expression="out3.Squadra " type="id_String" nullable="true"/>
+          <mapperTableEntries name="nome_lungo" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
     </node>
     <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="280">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-      <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-      <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wP7OJudAf0AujU7EqDhpleQcF0JnpqzbkNxy77oH"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:wP7OJudAf0AujU7EqDhpleQcF0JnpqzbkNxy77oH" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
       <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
       <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
       <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
-      <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
-      <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-      <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
       <elementParameter field="TABLE" name="ADD_COLS"/>
       <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
       <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -401,55 +402,55 @@
       <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
       <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
       <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
-      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tDBOutput_1">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="R" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
       </metadata>
       <metadata connector="REJECT" name="REJECT">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="R" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="R" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1160" posY="360">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-      <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-      <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iAzAy2zdqFwyDJczbUtWb5JLQCOxNguRcKitGhEv"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:iAzAy2zdqFwyDJczbUtWb5JLQCOxNguRcKitGhEv" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
       <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
       <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
       <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
-      <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
-      <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-      <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
       <elementParameter field="TABLE" name="ADD_COLS"/>
       <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
       <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -494,42 +495,42 @@
       <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
       <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
       <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
-      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tDBOutput_2">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="R" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="5" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <metadata connector="REJECT" name="REJECT">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="R" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="5" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="440">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
       <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
       <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
       <elementParameter field="RADIO" name="VERTICAL" value="true"/>
       <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
       <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
       <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
-      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-      <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-      <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+      <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
       <elementParameter field="TABLE" name="LENGTHS" show="false">
         <elementValue elementRef="SCHEMA_COLUMN" value="nome"/>
         <elementValue elementRef="LENGTH" value="10"/>
@@ -547,96 +548,96 @@
         <elementValue elementRef="LENGTH" value="10"/>
       </elementParameter>
       <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+      <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" label="rejected" name="tLogRow_1">
-        <column comment="" key="false" length="-1" name="nome" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="nome" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ruolo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="880" posY="520">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_4"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
       <elementParameter field="IMAGE" name="PREVIEW" value="_PiTFYFgGEe-fm-QjNpOnlg-tMap_4-PREVIEW.bmp"/>
-      <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
-      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
-      <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
-      <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
-      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+      <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="copyOfget_nome_sq2">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="R" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="5" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
         <uiProperties/>
-        <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
-        <outputTables name="copyOfget_nome_sq2" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="no_iniz.id" name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="no_iniz.nome" name="Nome" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="row4.nome_lungo " name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="no_iniz.ruolo" name="R" nullable="true" type="id_String"/>
-          <mapperTableEntries expression="no_iniz.QT_A" name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries expression="no_iniz.step" name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries name="id_fantacalcio" nullable="true" type="id_Integer"/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="copyOfget_nome_sq2">
+          <mapperTableEntries name="id" expression="no_iniz.id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="Nome" expression="no_iniz.nome" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" expression="row4.nome_lungo " type="id_String" nullable="true"/>
+          <mapperTableEntries name="R" expression="no_iniz.ruolo" type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" expression="no_iniz.QT_A" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="step" expression="no_iniz.step" type="id_String" nullable="true"/>
+          <mapperTableEntries name="id_fantacalcio" type="id_Integer" nullable="true"/>
         </outputTables>
-        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="no_iniz" sizeState="INTERMEDIATE">
-          <mapperTableEntries name="nome" nullable="true" type="id_String"/>
-          <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
-          <mapperTableEntries name="QT_A" nullable="true" type="id_Integer"/>
-          <mapperTableEntries name="id" nullable="true" type="id_Integer"/>
-          <mapperTableEntries name="ruolo" nullable="true" type="id_String"/>
-          <mapperTableEntries name="step" nullable="true" type="id_String"/>
-          <mapperTableEntries name="newColumn3" nullable="true" type="id_String"/>
+        <inputTables sizeState="INTERMEDIATE" name="no_iniz" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="nome" type="id_String" nullable="true"/>
+          <mapperTableEntries name="Squadra" type="id_String" nullable="true"/>
+          <mapperTableEntries name="QT_A" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="id" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="ruolo" type="id_String" nullable="true"/>
+          <mapperTableEntries name="step" type="id_String" nullable="true"/>
+          <mapperTableEntries name="newColumn3" type="id_String" nullable="true"/>
         </inputTables>
-        <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
-          <mapperTableEntries expression="no_iniz.Squadra " name="nome_corto" nullable="true" operator="=" type="id_String"/>
-          <mapperTableEntries name="nome_lungo" nullable="true" type="id_String"/>
+        <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="nome_corto" expression="no_iniz.Squadra " type="id_String" nullable="true" operator="="/>
+          <mapperTableEntries name="nome_lungo" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
     </node>
     <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="520">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_3"/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_3" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-      <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-      <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:5IWVO+q4nzdgH6N4N+uHvqgwSqkvD6ucKCf0ggXm"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5IWVO+q4nzdgH6N4N+uHvqgwSqkvD6ucKCf0ggXm" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="context.table_name"/>
       <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
       <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
-      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
       <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
       <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
       <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
-      <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
-      <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true" show="false"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="100" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-      <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000" show="false"/>
       <elementParameter field="TABLE" name="ADD_COLS"/>
       <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
       <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
@@ -681,52 +682,52 @@
       <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
       <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
       <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
-      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tDBOutput_3">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="R" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="5" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <metadata connector="REJECT" name="REJECT">
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Nome" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="Squadra" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="5" name="R" nullable="true" originalLength="5" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="QT_A" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="step" nullable="true" originalLength="100" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Nome" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="Squadra" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="5" name="R" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="5" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="QT_A" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="step" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id_fantacalcio" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="760" posY="600">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
-      <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
-      <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
-      <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-      <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Fibvpyzfs8bZOoWkTKqBZQ1m+zhjJWzcb8hhf41y"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="TYPE" value="MySQL" show="false"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Fibvpyzfs8bZOoWkTKqBZQ1m+zhjJWzcb8hhf41y" show="false"/>
       <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
       <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
       <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from mappatura_squadre&quot;"/>
-      <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
-      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
-      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
-      <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
-      <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;noDatetimeStringSync=true&quot;"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+      <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+      <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
       <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
@@ -738,13 +739,13 @@
       </elementParameter>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tDBInput_3">
-        <column comment="" key="false" length="100" name="nome_corto" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="100" name="nome_lungo" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="nome_corto" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="100" name="nome_lungo" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="INPUT_1" offsetLabelX="0" offsetLabelY="0" source="INPUT_1" target="tJavaRow_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -774,7 +775,7 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="out4" lineStyle="0" metaname="out4" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_1" target="tMap_2">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -789,7 +790,7 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out4"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out4" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_1" target="tMap_3">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -807,7 +808,7 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="no_iniziale" lineStyle="0" metaname="no_iniziale" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tMap_1" target="tLogRow_1">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -816,15 +817,15 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="no_iniziale"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="no_iniziale" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_2">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_3">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="get_nome_sq1" lineStyle="0" metaname="get_nome_sq1" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_1">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -833,7 +834,7 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="get_nome_sq1"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="get_nome_sq1" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="get_nome_sq2" lineStyle="0" metaname="get_nome_sq2" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tDBOutput_2">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -845,7 +846,7 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="get_nome_sq2"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="get_nome_sq2" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="no_iniz" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tMap_4">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -860,7 +861,7 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="no_iniz"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="no_iniz" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="copyOfget_nome_sq2" lineStyle="0" metaname="copyOfget_nome_sq2" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tDBOutput_3">
       <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
@@ -872,65 +873,37 @@
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfget_nome_sq2"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfget_nome_sq2" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_4">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
     </connection>
     <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="INPUT_1"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;0;0" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
     </subjob>
-    <jobletNodes componentName="INPUT" componentVersion="0.1" input="true" offsetLabelX="0" offsetLabelY="0" posX="280" posY="320">
+    <jobletNodes componentName="INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="280" posY="320" input="true">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="INPUT_1"/>
-      <elementParameter field="CHECK" name="STARTABLE" show="false" value="true"/>
-      <elementParameter field="CHECK" name="START" show="false" value="true"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
       <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <elementParameter field="CHECK" name="INFORMATION" value="false"/>
       <elementParameter field="MEMO" name="COMMENT" value=""/>
       <metadata connector="FLOW" name="INPUT_1">
-        <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn4" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn5" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="ruolo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn2" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn3" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn4" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="newColumn5" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="id" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="ruolo" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3f71a466-f9e2-4463-a0a2-2ca15b81ece3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wWSkDaV40AmZFiJN+3fUm1KRlfY+YN7L/+ACjJXIB/PqbwGTwNWxr9BLwk7HXYhe2J/yOvnK9tEh&#13;
-FzxCzoEiww==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0e166826-5901-47d2-a945-27c721a87d37"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>koHPvG23FJe0MkqdXuDe3gpyGjcoId6UPG2wX+7imHD2/LaaPpmcTvmUt00+hD8L4gh1oLGYcrvB&#13;
-c3DN7fVUpw==</DigestValue></Reference></SignedInfo><SignatureValue>bIrsjqnLFyxXHOTzL3WBlEp/UjhkW5fpVAVn2UqjHktBb2eqgZp+WXsAk2Y1kt2v/9kiaSimFO79&#13;
-nv52U+xzkyGuNF/pC3r9HWXoih4iWYeI7v/Eb9CjxbN1i+pLFS2HU8ViH+lwvKD560IX9i+tzXI0&#13;
-yQSh24M15W77i2cXae+E7rmb9xVg4/ij+562r3tHCAnDylnVWeE0OxG8JCUNzMJi+3TBcjFCGZ6g&#13;
-3PaBAP7woRBK1TU21J/L2XAEgkICBXWPfXtzJLiFhb/Kz+WuG7tWbvcghusbcbV+ls++c5c/T2mO&#13;
-P2gWF7i+GJuD2tEcEFRSmYq/Ne/WrlfyegVg9A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
-DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
-VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
-QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
-YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
-bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
-IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
-DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
-alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
-e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
-CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
-TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
-BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
-gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
-eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
-f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
-G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
-mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
-hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
-WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
-gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
-qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0e166826-5901-47d2-a945-27c721a87d37" Target="#_3f71a466-f9e2-4463-a0a2-2ca15b81ece3"><Timestamp>2024-09-02 13:39:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+</xmi:XMI>

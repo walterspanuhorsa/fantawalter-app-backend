@@ -279,7 +279,153 @@
       <column comment="" defaultValue="" key="false" length="10" name="PREZZO10" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="680">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="600" posY="680">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_CUZ90GF0Ee-NJp8XjsdvaA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="inserisci_record">
+      <column comment="" key="false" length="30" name="FASCIA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="obbiettivo" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="Squadra" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MEDIA_TRONCATA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MIN" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="MAX" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="SICU" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="TIT" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="INF" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Note" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PMA" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO_carmyspecial" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO1" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO2" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO3" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO4" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO5" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO6" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO7" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO8" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO9" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="PREZZO10" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="inserisci_record" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row5.FASCIA" name="FASCIA" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row8.OBB " name="obbiettivo" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.Nome" name="Nome" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.R" name="R" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.Squadra" name="Squadra" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.MEDIA_TRONCATA" name="MEDIA_TRONCATA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.MIN" name="MIN" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.MAX" name="MAX" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.SICU" name="SICU" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.TIT" name="TIT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.INF" name="INF" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.Note" name="Note" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row5.PMA" name="PMA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO_carmyspecial" name="PREZZO_carmyspecial" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO1" name="PREZZO1" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO2" name="PREZZO2" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO3" name="PREZZO3" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO4" name="PREZZO4" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO5" name="PREZZO5" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO6" name="PREZZO6" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO7" name="PREZZO7" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO8" name="PREZZO8" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO9" name="PREZZO9" nullable="true" type="id_Integer"/>
+        <mapperTableEntries expression="row5.PREZZO10" name="PREZZO10" nullable="true" type="id_Integer"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="FASCIA" nullable="true" type="id_String"/>
+        <mapperTableEntries name="obbiettivo" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Nome" nullable="true" type="id_String"/>
+        <mapperTableEntries name="R" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Squadra" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MEDIA_TRONCATA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="MIN" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="MAX" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="SICU" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="TIT" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="INF" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="Note" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PMA" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO_carmyspecial" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO1" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO2" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO3" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO4" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO5" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO6" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO7" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO8" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO9" nullable="true" type="id_Integer"/>
+        <mapperTableEntries name="PREZZO10" nullable="true" type="id_Integer"/>
+      </inputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row8" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="row5.R " name="R" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries expression="row5.Nome " name="Nome" nullable="true" operator="=" type="id_String"/>
+        <mapperTableEntries name="OBB" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="840">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_7E428BfiEe29Bt9V2S3gow"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_8"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.mysql_fanta_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.mysql_fanta_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.mysql_fanta_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.mysql_fanta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7zi5jMH5oA2f+nGQqs0ijj7lfF5m/lnppgG8UUPKlziwA/lpUHUbhrMwPlWh/b5F7Bsa1sfyr+8="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="OBB"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from  OBB &quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.mysql_fanta_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="R"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="OBB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="3" name="R" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nome" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="OBB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="680">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputExcel_5"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="CHECK" name="USESTREAM" value="false"/>
@@ -706,7 +852,7 @@
       <column comment="" key="false" length="-1" name="newColumn11" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
       <outputTables name="output" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row4.newColumn1" name="newColumn1" nullable="true" type="id_String"/>
@@ -868,7 +1014,7 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tJava_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
-  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tFileOutputExcel_5">
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="INF"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -924,6 +1070,19 @@
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tJava_5">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="inserisci_record" lineStyle="0" metaname="inserisci_record" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputExcel_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="inserisci_record"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="OBB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileCopy_1" offsetLabelX="0" offsetLabelY="0" source="tFileCopy_1" target="tJava_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
@@ -1098,13 +1257,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="0;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="247;247;247"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e8e1fa68-8f74-4dfc-8d34-6e83c8f4e6d4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>maIBpPldNK6RQ6rLgLDoN49Zk1RmwceWhxiPPyd3T7vn92LDkP6jAkwC9wqMK5oHk1RbssJuyElR&#13;
-ryxUnYJGAQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_04bcbcc5-33f4-4741-828f-ab191ef444f5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>2DO5lq43rgfuORLPduIY8bKGRM0n6up0OXiwMMWxK4ulj1xbDX3k/2DR7/4Gp7lqtovDNI0M8MUg&#13;
-mDuw2SZ3zw==</DigestValue></Reference></SignedInfo><SignatureValue>FPP2JEpWnjujbCThn1CuM80S+Tn6IE5qXy4iRy/POZLa23FHgTB8QA43bs0NKbAfo/VxHbfSUgFO&#13;
-uXeBOqXNykYNrQEHIszV1u/N2v9bRXJ0qXqOqLsPYqOinrH5YKzCK6HSh/82QsFUhy010/j+2fhF&#13;
-cxaw6jgdSPk39QiTI1BuT0+MnJ55/GwdJUHdXFgQMFw3VaMpChmP/Y+75alVCE/L+pst477VFUxr&#13;
-3Rdlb2UFye9Xd6lfwvmz3VlW+rHClPtPuMmxhrtGTxnTdrU0DRTr5XX3TczdhfOgJCC3oI9sx8jU&#13;
-lrqYkI+OpiT7Y2pT2RjYoP1jMrtKvRmwzfvwkQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bee81a48-dd35-4ed1-92d0-e19f2a3acf28"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wgklPmLRoWrSiSSVnZIwPbclVOc2F0NJQYVFpDR6z7N/PWpFYBrCdwvyBoxRF8ZVGzDp1m2b5Sp2&#13;
+KMoxE/wHfw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3a54eed0-aafc-4a05-9152-ae407d4dc817"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7wsnp8SMchCLFlnLQCgkk+1/VzFfsIiXIF9bGiY9anU89fRaFxS4mleXF3j3OY1OaRvX3chRQ08C&#13;
+t0efUYqEWA==</DigestValue></Reference></SignedInfo><SignatureValue>a95B8pqKY6aOJdoYhYQv9Ao6n1p1n3CjeKEKh6T6qFH3xoniBePHZR2jJpX7gcModsT9R42GQcQ7&#13;
+tAxcSOnb5BXrI1X28mYL8oaOfHckhH6vZ5czo4bp9UBMoLFUV1CE8zlUBPr+wDljIs2RGO2rUkYU&#13;
+Vs8LMMbIkbUotYpGUiqf66fcNfavoSOIvgv4MAT2KqdvcjGAcpt/i3vx9h19UQbG4dSXnUxm/gyL&#13;
+2h9mZR8ZOGrrAG4S/UCi7BYy0rGOgbUFCp5dD3UcgI5dhzmfnJ3LFNN/Y8yMpIAIh4x5iMr3o8Li&#13;
+cRd8IYI3Orq7LSI2NUCAx6nvF6Klm8xZf91G5Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1126,4 +1285,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_04bcbcc5-33f4-4741-828f-ab191ef444f5" Target="#_e8e1fa68-8f74-4dfc-8d34-6e83c8f4e6d4"><Timestamp>2024-09-06 09:51:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3a54eed0-aafc-4a05-9152-ae407d4dc817" Target="#_bee81a48-dd35-4ed1-92d0-e19f2a3acf28"><Timestamp>2024-09-09 16:13:19</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
