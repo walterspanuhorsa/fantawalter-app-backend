@@ -184,7 +184,7 @@
     <elementParameter field="TEXT" name="LABEL" value="mysql_fanta"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="360">
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7E428BfiEe29Bt9V2S3gow" show="false"/>
@@ -228,7 +228,7 @@
       <column comment="" key="false" length="50" name="abbreviazione" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="50" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="360">
+  <node componentName="tFlowToIterate" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="520" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFlowToIterate_1" show="false"/>
     <elementParameter field="CHECK" name="DEFAULT_MAP" value="false"/>
     <elementParameter field="TABLE" name="MAP">
@@ -240,7 +240,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFlowToIterate_1"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="760" posY="360">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="680" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
     <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.SELECT = context.SELECT + &quot; , &quot; + ((String)globalMap.get(&quot;abbreviazione&quot;)) + &quot;.Prezzo as PREZZO_&quot; + ((String)globalMap.get(&quot;abbreviazione&quot;));&#xA;&#xA;context.FROM = context.FROM + &quot; LEFT JOIN &quot; + ((String)globalMap.get(&quot;nome_table&quot;)) + &quot; AS &quot;+((String)globalMap.get(&quot;abbreviazione&quot;))+&quot; ON cl.Nome = &quot; + ((String)globalMap.get(&quot;abbreviazione&quot;)) +&quot;.Nome&quot;;&#xA;&#xA;//context.ALTERTABLE = &quot;ALTER TABLE &quot;+context.table_name+&quot; ADD PREZZO_&quot;+((String)globalMap.get(&quot;abbreviazione&quot;))+&quot; INT NULL;&quot;;&#xA;&#xA;context.CREATETABLE = context.CREATETABLE + &quot;PREZZO_&quot;+((String)globalMap.get(&quot;abbreviazione&quot;))+&quot; INT NULL, &quot;;&#xA;&#xA;context.CREATEVIEW = context.CREATEVIEW + &quot;rqv.PREZZO_&quot;+((String)globalMap.get(&quot;abbreviazione&quot;))+&quot;, &quot;;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
