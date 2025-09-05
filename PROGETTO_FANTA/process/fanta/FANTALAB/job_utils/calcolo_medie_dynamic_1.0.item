@@ -847,7 +847,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="200" posY="1000">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_7" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.CREATEVIEW = context.CREATEVIEW.substring(0, context.CREATEVIEW.length() - 2);&#xA;&#xA;&#xA;&#xA;&#xA;context.CREATEVIEW =&quot;CREATE OR REPLACE VIEW v_report_quot AS &quot;+ context.CREATEVIEW + &quot; FROM fantalab.report_quot rep left JOIN fantalab.report_quot_valutazioni rqv ON rep.nome = rqv.nome&quot;;&#xA;&#xA;//System.out.println(context.CREATEVIEW);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(context.SELECT + context.FROM);&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;context.CREATEVIEW = context.CREATEVIEW.substring(0, context.CREATEVIEW.length() - 2);&#xA;&#xA;&#xA;&#xA;&#xA;context.CREATEVIEW =&quot;CREATE OR REPLACE VIEW v_report_quot AS &quot;+ context.CREATEVIEW + &quot; FROM fantalab.report_quot rep left JOIN fantalab.report_quot_valutazioni rqv ON rep.nome = rqv.nome&quot;;&#xA;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_7"/>
