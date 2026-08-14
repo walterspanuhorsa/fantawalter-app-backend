@@ -132,7 +132,7 @@
     <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>__PROCESS__&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
@@ -164,7 +164,7 @@
     <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>__PROCESS__&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
@@ -196,15 +196,16 @@
     <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>__PROCESS__&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
   <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_4" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
-    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="pg_set_ruolo_mantra"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="set_ruolo_mantra"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="PROGETTO_FANTA:_0wLjcI3NEfGl07lUijb32w"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
@@ -225,11 +226,11 @@
     <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>__PROCESS__&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_4"/>
   </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="320">
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1" show="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
@@ -243,12 +244,13 @@
     <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
     <elementParameter field="MEMO" name="INLINECONTENT" value="" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>GET DATE HOUR&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFixedFlowInput_1">
       <column comment="" key="false" length="-1" name="last_update" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="320">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="400" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_2" show="false"/>
@@ -328,7 +330,7 @@
     <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
     <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__&lt;br>&lt;b>__PROCESS__&lt;/b>"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_5"/>
   </node>
@@ -342,6 +344,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_3" offsetLabelX="0" offsetLabelY="0" source="tRunJob_3" target="tRunJob_4">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tDBOutput_1">
