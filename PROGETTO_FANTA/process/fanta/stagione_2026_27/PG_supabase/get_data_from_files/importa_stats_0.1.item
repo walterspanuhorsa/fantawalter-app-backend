@@ -121,7 +121,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="80">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.basePath = &quot;/Users/walter.spanu/Progetti/&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;System.out.println(&quot;IMPORTO LE STATISTICHE DEI GIOCATORI&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="context.basePath = &quot;/Users/walter.spanu/Progetti/&quot;;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;"/>
     <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -159,7 +159,7 @@
     <elementParameter field="TEXT" name="LABEL" value="PG_supabase"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="360" posY="240">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="context.basePath + &quot;INPUT/stats/classic_pma8_mod.xlsx&quot;"/>
@@ -436,7 +436,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="360">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="600" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -559,460 +559,12 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_1" show="false"/>
-    <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
-    <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
-    <elementParameter field="TABLE" name="CHECKCOLS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Obiett" id="0"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="1"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="2"/>
-      <elementValue elementRef="NULLABLE" value="false" id="3"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="4"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Fascia" id="5"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="6"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="7"/>
-      <elementValue elementRef="NULLABLE" value="false" id="8"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo" id="10"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="11"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="12"/>
-      <elementValue elementRef="NULLABLE" value="false" id="13"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="14"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Team" id="15"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="16"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="17"/>
-      <elementValue elementRef="NULLABLE" value="false" id="18"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="20"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="21"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="22"/>
-      <elementValue elementRef="NULLABLE" value="false" id="23"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="24"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Prezzo" id="25"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="26"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="27"/>
-      <elementValue elementRef="NULLABLE" value="false" id="28"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PMA" id="30"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="31"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="32"/>
-      <elementValue elementRef="NULLABLE" value="false" id="33"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="34"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Quo" id="35"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="36"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="37"/>
-      <elementValue elementRef="NULLABLE" value="false" id="38"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Titolarita" id="40"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="41"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="42"/>
-      <elementValue elementRef="NULLABLE" value="false" id="43"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="44"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Affidabilita" id="45"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="46"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="47"/>
-      <elementValue elementRef="NULLABLE" value="false" id="48"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Integrita" id="50"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="51"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="52"/>
-      <elementValue elementRef="NULLABLE" value="false" id="53"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="54"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Commento" id="55"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="56"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="57"/>
-      <elementValue elementRef="NULLABLE" value="false" id="58"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="59"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_1" id="60"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="61"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="62"/>
-      <elementValue elementRef="NULLABLE" value="false" id="63"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="64"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_2" id="65"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="66"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="67"/>
-      <elementValue elementRef="NULLABLE" value="false" id="68"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="69"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_3" id="70"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="71"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="72"/>
-      <elementValue elementRef="NULLABLE" value="false" id="73"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="74"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_4" id="75"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="76"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="77"/>
-      <elementValue elementRef="NULLABLE" value="false" id="78"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="79"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_5" id="80"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="81"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="82"/>
-      <elementValue elementRef="NULLABLE" value="false" id="83"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="84"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MV" id="85"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="86"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="87"/>
-      <elementValue elementRef="NULLABLE" value="false" id="88"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="89"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FMV" id="90"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="91"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="92"/>
-      <elementValue elementRef="NULLABLE" value="false" id="93"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="94"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Presenze" id="95"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="96"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="97"/>
-      <elementValue elementRef="NULLABLE" value="false" id="98"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="99"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FMV_Exp" id="100"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="101"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="102"/>
-      <elementValue elementRef="NULLABLE" value="false" id="103"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="104"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Tit" id="105"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="106"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="107"/>
-      <elementValue elementRef="NULLABLE" value="false" id="108"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="109"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Minuti" id="110"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="111"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="112"/>
-      <elementValue elementRef="NULLABLE" value="false" id="113"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="114"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Inf" id="115"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="116"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="117"/>
-      <elementValue elementRef="NULLABLE" value="false" id="118"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="119"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gol" id="120"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="121"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="122"/>
-      <elementValue elementRef="NULLABLE" value="false" id="123"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="124"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Assist" id="125"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="126"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="127"/>
-      <elementValue elementRef="NULLABLE" value="false" id="128"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="129"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Ammonizioni" id="130"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="131"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="132"/>
-      <elementValue elementRef="NULLABLE" value="false" id="133"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="134"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Espulsioni" id="135"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="136"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="137"/>
-      <elementValue elementRef="NULLABLE" value="false" id="138"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="139"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Segnati" id="140"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="141"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="142"/>
-      <elementValue elementRef="NULLABLE" value="false" id="143"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="144"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Sbagliati" id="145"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="146"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="147"/>
-      <elementValue elementRef="NULLABLE" value="false" id="148"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="149"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gol_Subiti" id="150"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="151"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="152"/>
-      <elementValue elementRef="NULLABLE" value="false" id="153"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="154"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Parati" id="155"/>
-      <elementValue elementRef="SELECTED_TYPE" value="String" id="156"/>
-      <elementValue elementRef="DATEPATTERN" value="" id="157"/>
-      <elementValue elementRef="NULLABLE" value="false" id="158"/>
-      <elementValue elementRef="MAX_LENGTH" value="false" id="159"/>
-    </elementParameter>
-    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema." show="false"/>
-    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
-    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema" show="false"/>
-    <elementParameter field="RADIO" name="JSON_SCHEMA" value="false"/>
-    <elementParameter field="TEXT" name="JSON_SCHEMA_URI" value="&quot;&quot;" show="false"/>
-    <elementParameter field="LABEL" name="NOTE_JSON_SCHEMA" value="(Supported URI formats: file:///path/schema.json, http(s)://host/schema.json, or a plain file path.)" show="false"/>
-    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
-    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
-    <elementParameter field="LABEL" name="INFO" value="For schema-based modes (Check all / Custom / Another schema):&#xA;  If only one column has error, errCode is a sum; if multiple columns have errors errCode is 16.&#xA;  (1) Type discrepancy (include wrong date pattern): 2&#xA;  (2) Empty or NULL: 4&#xA;  (3) Length/Precision Error: 8&#xA;"/>
-    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
-    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
-    <elementParameter field="CHECK" name="STRICT_DATE_CHECK" value="false"/>
-    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false" show="false"/>
-    <elementParameter field="CHECK" name="EMPTY_IS_NULL" value="false" show="false"/>
-    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
-    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Obiett" id="0"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Fascia" id="2"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo" id="4"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Team" id="6"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="8"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Prezzo" id="10"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PMA" id="12"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Quo" id="14"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Titolarita" id="16"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Affidabilita" id="18"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Integrita" id="20"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Commento" id="22"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_1" id="24"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_2" id="26"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_3" id="28"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_4" id="30"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_5" id="32"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MV" id="34"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FMV" id="36"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Presenze" id="38"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FMV_Exp" id="40"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Tit" id="42"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Minuti" id="44"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="45"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Inf" id="46"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="47"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gol" id="48"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Assist" id="50"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="51"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Ammonizioni" id="52"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="53"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Espulsioni" id="54"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="55"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Segnati" id="56"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="57"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Sbagliati" id="58"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="59"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gol_Subiti" id="60"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="61"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Parati" id="62"/>
-      <elementValue elementRef="EMPTY_NULL" value="false" id="63"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="CHECK_STRING_BY_BYTE_LENGTH" value="false"/>
-    <elementParameter field="TEXT" name="CHARSET" value="&quot;&quot;" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="JSON_SCHEMA_DRAFT" value="V202012" show="false"/>
-    <elementParameter field="CLOSED_LIST" name="JSON_SCHEMA_FILE_ENCODING" value="UTF-8" show="false"/>
-    <elementParameter field="TEXT" name="JSON_SCHEMA_CUSTOM_ENCODING" value="&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tSchemaComplianceCheck_1">
-      <column comment="" key="false" length="2" name="Obiett" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Fascia" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Ruolo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Team" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Prezzo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="PMA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Quo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Titolarita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Affidabilita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Integrita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8192" name="Commento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="MV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="FMV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Presenze" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="FMV_Exp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Pt__Tit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Minuti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Pt__Inf" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Assist" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Ammonizioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Espulsioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Segnati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Sbagliati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gol_Subiti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Parati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-    <metadata connector="OTHER" name="OTHER"/>
-    <metadata connector="REJECT" label="metadata" name="REJECT">
-      <column comment="" key="false" length="2" name="Obiett" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Fascia" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Ruolo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Team" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Prezzo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="PMA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Quo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Titolarita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Affidabilita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Integrita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8192" name="Commento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="MV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="FMV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Presenze" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="FMV_Exp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Pt__Tit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Minuti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Pt__Inf" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Assist" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Ammonizioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Espulsioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Segnati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Sbagliati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gol_Subiti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Parati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="360">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Obiett" id="0"/>
-      <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Fascia" id="2"/>
-      <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo" id="4"/>
-      <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Team" id="6"/>
-      <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="8"/>
-      <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Prezzo" id="10"/>
-      <elementValue elementRef="LENGTH" value="10" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PMA" id="12"/>
-      <elementValue elementRef="LENGTH" value="10" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Quo" id="14"/>
-      <elementValue elementRef="LENGTH" value="10" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Titolarita" id="16"/>
-      <elementValue elementRef="LENGTH" value="10" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Affidabilita" id="18"/>
-      <elementValue elementRef="LENGTH" value="10" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Integrita" id="20"/>
-      <elementValue elementRef="LENGTH" value="10" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Commento" id="22"/>
-      <elementValue elementRef="LENGTH" value="10" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_1" id="24"/>
-      <elementValue elementRef="LENGTH" value="10" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_2" id="26"/>
-      <elementValue elementRef="LENGTH" value="10" id="27"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_3" id="28"/>
-      <elementValue elementRef="LENGTH" value="10" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_4" id="30"/>
-      <elementValue elementRef="LENGTH" value="10" id="31"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_5" id="32"/>
-      <elementValue elementRef="LENGTH" value="10" id="33"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MV" id="34"/>
-      <elementValue elementRef="LENGTH" value="10" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FMV" id="36"/>
-      <elementValue elementRef="LENGTH" value="10" id="37"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Presenze" id="38"/>
-      <elementValue elementRef="LENGTH" value="10" id="39"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FMV_Exp" id="40"/>
-      <elementValue elementRef="LENGTH" value="10" id="41"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Tit" id="42"/>
-      <elementValue elementRef="LENGTH" value="10" id="43"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Minuti" id="44"/>
-      <elementValue elementRef="LENGTH" value="10" id="45"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Inf" id="46"/>
-      <elementValue elementRef="LENGTH" value="10" id="47"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gol" id="48"/>
-      <elementValue elementRef="LENGTH" value="10" id="49"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Assist" id="50"/>
-      <elementValue elementRef="LENGTH" value="10" id="51"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Ammonizioni" id="52"/>
-      <elementValue elementRef="LENGTH" value="10" id="53"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Espulsioni" id="54"/>
-      <elementValue elementRef="LENGTH" value="10" id="55"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Segnati" id="56"/>
-      <elementValue elementRef="LENGTH" value="10" id="57"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Sbagliati" id="58"/>
-      <elementValue elementRef="LENGTH" value="10" id="59"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Gol_Subiti" id="60"/>
-      <elementValue elementRef="LENGTH" value="10" id="61"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Parati" id="62"/>
-      <elementValue elementRef="LENGTH" value="10" id="63"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode" id="64"/>
-      <elementValue elementRef="LENGTH" value="10" id="65"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage" id="66"/>
-      <elementValue elementRef="LENGTH" value="10" id="67"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
-      <column comment="" key="false" length="2" name="Obiett" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="30" name="Fascia" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="Ruolo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="Team" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Prezzo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="5" name="PMA" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Quo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Titolarita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Affidabilita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Integrita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="8192" name="Commento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="50" name="Nota_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="MV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="FMV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Presenze" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="4" name="FMV_Exp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Pt__Tit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Minuti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Pt__Inf" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Assist" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Ammonizioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Espulsioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Segnati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Sbagliati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Gol_Subiti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Rig__Parati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="840" posY="240">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="760" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_PXLNAJKsEfGKEveA7E30ug-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_PXLNAJKsEfGKEveA7E30ug-tMap_2-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -1021,7 +573,7 @@
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="metadata" name="set_stats_table">
+    <metadata connector="FLOW" label="metadata" name="filtro_campi">
       <column comment="" key="false" length="1" name="Ruolo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
       <column comment="" key="false" length="50" name="Ruolo_mantra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
       <column comment="" key="false" length="3" name="Team" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -1053,40 +605,40 @@
       <column comment="" key="false" length="-1" name="Rig__Parati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
-      <varTables sizeState="INTERMEDIATE" name="Var"/>
-      <outputTables sizeState="INTERMEDIATE" name="set_stats_table">
-        <mapperTableEntries name="Ruolo" expression="row3.Ruolo" type="id_Character" nullable="true"/>
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="filtro_campi">
+        <mapperTableEntries name="Ruolo" expression="row1.Ruolo" type="id_Character" nullable="true"/>
         <mapperTableEntries name="Ruolo_mantra" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Team" expression="row3.Team" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Nome" expression="row3.Nome" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Quo" expression="row3.Quo" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Titolarita" expression="row3.Titolarita" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Affidabilita" expression="row3.Affidabilita" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Integrita" expression="row3.Integrita" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Commento" expression="row3.Commento" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Nota_1" expression="row3.Nota_1" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Nota_2" expression="row3.Nota_2" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Nota_3" expression="row3.Nota_3" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Nota_4" expression="row3.Nota_4" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Nota_5" expression="row3.Nota_5" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MV" expression="row3.MV" type="id_String" nullable="true"/>
-        <mapperTableEntries name="FMV" expression="row3.FMV" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Presenze" expression="row3.Presenze" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="FMV_Exp" expression="row3.FMV_Exp" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Pt__Tit" expression="row3.Pt__Tit" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Minuti" expression="row3.Minuti" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Pt__Inf" expression="row3.Pt__Inf" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Gol" expression="row3.Gol" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Assist" expression="row3.Assist" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Ammonizioni" expression="row3.Ammonizioni" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Espulsioni" expression="row3.Espulsioni" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Rig__Segnati" expression="row3.Rig__Segnati" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Rig__Sbagliati" expression="row3.Rig__Sbagliati" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Gol_Subiti" expression="row3.Gol_Subiti" type="id_Integer" nullable="true"/>
-        <mapperTableEntries name="Rig__Parati" expression="row3.Rig__Parati" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Team" expression="row1.Team" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nome" expression="row1.Nome" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Quo" expression="row1.Quo" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Titolarita" expression="row1.Titolarita" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Affidabilita" expression="row1.Affidabilita" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Integrita" expression="row1.Integrita" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Commento" expression="row1.Commento" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nota_1" expression="row1.Nota_1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nota_2" expression="row1.Nota_2" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nota_3" expression="row1.Nota_3" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nota_4" expression="row1.Nota_4" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nota_5" expression="row1.Nota_5" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MV" expression="row1.MV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FMV" expression="row1.FMV" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Presenze" expression="row1.Presenze" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FMV_Exp" expression="row1.FMV_Exp" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Pt__Tit" expression="row1.Pt__Tit" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Minuti" expression="row1.Minuti" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Pt__Inf" expression="row1.Pt__Inf" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Gol" expression="row1.Gol" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Assist" expression="row1.Assist" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Ammonizioni" expression="row1.Ammonizioni" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Espulsioni" expression="row1.Espulsioni" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Rig__Segnati" expression="row1.Rig__Segnati" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Rig__Sbagliati" expression="row1.Rig__Sbagliati" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Gol_Subiti" expression="row1.Gol_Subiti" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Rig__Parati" expression="row1.Rig__Parati" type="id_Integer" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="Obiett" type="id_String" nullable="true"/>
         <mapperTableEntries name="Fascia" type="id_String" nullable="true"/>
         <mapperTableEntries name="Ruolo" type="id_Character" nullable="true"/>
@@ -1122,7 +674,419 @@
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="240">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_1" show="false"/>
+    <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
+    <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
+    <elementParameter field="TABLE" name="CHECKCOLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo" id="0"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="1"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="2"/>
+      <elementValue elementRef="NULLABLE" value="false" id="3"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo_mantra" id="5"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="6"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="7"/>
+      <elementValue elementRef="NULLABLE" value="false" id="8"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Team" id="10"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="11"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="12"/>
+      <elementValue elementRef="NULLABLE" value="false" id="13"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="15"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="16"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="17"/>
+      <elementValue elementRef="NULLABLE" value="false" id="18"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Quo" id="20"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="21"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="22"/>
+      <elementValue elementRef="NULLABLE" value="false" id="23"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Titolarita" id="25"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="26"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="27"/>
+      <elementValue elementRef="NULLABLE" value="false" id="28"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Affidabilita" id="30"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="31"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="32"/>
+      <elementValue elementRef="NULLABLE" value="false" id="33"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Integrita" id="35"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="36"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="37"/>
+      <elementValue elementRef="NULLABLE" value="false" id="38"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Commento" id="40"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="41"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="42"/>
+      <elementValue elementRef="NULLABLE" value="false" id="43"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_1" id="45"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="46"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="47"/>
+      <elementValue elementRef="NULLABLE" value="false" id="48"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_2" id="50"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="51"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="52"/>
+      <elementValue elementRef="NULLABLE" value="false" id="53"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_3" id="55"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="56"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="57"/>
+      <elementValue elementRef="NULLABLE" value="false" id="58"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_4" id="60"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="61"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="62"/>
+      <elementValue elementRef="NULLABLE" value="false" id="63"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="64"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_5" id="65"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="66"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="67"/>
+      <elementValue elementRef="NULLABLE" value="false" id="68"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="69"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MV" id="70"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="71"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="72"/>
+      <elementValue elementRef="NULLABLE" value="false" id="73"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="74"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FMV" id="75"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="76"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="77"/>
+      <elementValue elementRef="NULLABLE" value="false" id="78"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="79"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Presenze" id="80"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="81"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="82"/>
+      <elementValue elementRef="NULLABLE" value="false" id="83"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="84"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FMV_Exp" id="85"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="86"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="87"/>
+      <elementValue elementRef="NULLABLE" value="false" id="88"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="89"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Tit" id="90"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="91"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="92"/>
+      <elementValue elementRef="NULLABLE" value="false" id="93"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="94"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Minuti" id="95"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="96"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="97"/>
+      <elementValue elementRef="NULLABLE" value="false" id="98"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="99"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Inf" id="100"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="101"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="102"/>
+      <elementValue elementRef="NULLABLE" value="false" id="103"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="104"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gol" id="105"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="106"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="107"/>
+      <elementValue elementRef="NULLABLE" value="false" id="108"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="109"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Assist" id="110"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="111"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="112"/>
+      <elementValue elementRef="NULLABLE" value="false" id="113"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="114"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ammonizioni" id="115"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="116"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="117"/>
+      <elementValue elementRef="NULLABLE" value="false" id="118"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="119"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Espulsioni" id="120"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="121"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="122"/>
+      <elementValue elementRef="NULLABLE" value="false" id="123"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="124"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Segnati" id="125"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="126"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="127"/>
+      <elementValue elementRef="NULLABLE" value="false" id="128"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="129"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Sbagliati" id="130"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="131"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="132"/>
+      <elementValue elementRef="NULLABLE" value="false" id="133"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="134"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gol_Subiti" id="135"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="136"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="137"/>
+      <elementValue elementRef="NULLABLE" value="false" id="138"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="139"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Parati" id="140"/>
+      <elementValue elementRef="SELECTED_TYPE" value="String" id="141"/>
+      <elementValue elementRef="DATEPATTERN" value="" id="142"/>
+      <elementValue elementRef="NULLABLE" value="false" id="143"/>
+      <elementValue elementRef="MAX_LENGTH" value="false" id="144"/>
+    </elementParameter>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Please note:&#xA;(1) Nullable setting in this table is more preferential than the default schema.&#xA;(2) Length checking is base on the value of the default schema." show="false"/>
+    <elementParameter field="RADIO" name="CHECK_ANOTHER" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_CHECK_ANOTHER" value="Please note: only index matching, for example, the second column of checking schema is correspond to the second of input schema" show="false"/>
+    <elementParameter field="RADIO" name="JSON_SCHEMA" value="false"/>
+    <elementParameter field="TEXT" name="JSON_SCHEMA_URI" value="&quot;&quot;" show="false"/>
+    <elementParameter field="LABEL" name="NOTE_JSON_SCHEMA" value="(Supported URI formats: file:///path/schema.json, http(s)://host/schema.json, or a plain file path.)" show="false"/>
+    <elementParameter field="CHECK" name="SUB_STRING" value="false"/>
+    <elementParameter field="LABEL" name="NOTE_SUB_STRING" value="     If exceed, either trim the field when above option checked or reject the row."/>
+    <elementParameter field="LABEL" name="INFO" value="For schema-based modes (Check all / Custom / Another schema):&#xA;  If only one column has error, errCode is a sum; if multiple columns have errors errCode is 16.&#xA;  (1) Type discrepancy (include wrong date pattern): 2&#xA;  (2) Empty or NULL: 4&#xA;  (3) Length/Precision Error: 8&#xA;"/>
+    <elementParameter field="CHECK" name="FAST_DATE_CHECK" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with multi-threaded jobs)"/>
+    <elementParameter field="CHECK" name="STRICT_DATE_CHECK" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_TIMEZONE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EMPTY_IS_NULL" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ALL_EMPTY_ARE_NULL" value="true"/>
+    <elementParameter field="TABLE" name="EMPTY_NULL_TABLE" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo" id="0"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo_mantra" id="2"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Team" id="4"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="6"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Quo" id="8"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Titolarita" id="10"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Affidabilita" id="12"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Integrita" id="14"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Commento" id="16"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_1" id="18"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_2" id="20"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_3" id="22"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_4" id="24"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_5" id="26"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MV" id="28"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FMV" id="30"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Presenze" id="32"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FMV_Exp" id="34"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Tit" id="36"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Minuti" id="38"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Inf" id="40"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gol" id="42"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Assist" id="44"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ammonizioni" id="46"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Espulsioni" id="48"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Segnati" id="50"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Sbagliati" id="52"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gol_Subiti" id="54"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Parati" id="56"/>
+      <elementValue elementRef="EMPTY_NULL" value="false" id="57"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_STRING_BY_BYTE_LENGTH" value="false"/>
+    <elementParameter field="TEXT" name="CHARSET" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_SCHEMA_DRAFT" value="V202012" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_SCHEMA_FILE_ENCODING" value="UTF-8" show="false"/>
+    <elementParameter field="TEXT" name="JSON_SCHEMA_CUSTOM_ENCODING" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tSchemaComplianceCheck_1">
+      <column comment="" key="false" length="1" name="Ruolo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Ruolo_mantra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Team" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Quo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Titolarita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Affidabilita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Integrita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8192" name="Commento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="MV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="FMV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Presenze" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="FMV_Exp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pt__Tit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Minuti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pt__Inf" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Assist" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ammonizioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Espulsioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Segnati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Sbagliati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gol_Subiti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Parati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="OTHER" name="OTHER"/>
+    <metadata connector="REJECT" label="metadata" name="REJECT">
+      <column comment="" key="false" length="1" name="Ruolo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Ruolo_mantra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Team" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Quo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Titolarita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Affidabilita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Integrita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8192" name="Commento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="MV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="FMV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Presenze" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="FMV_Exp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pt__Tit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Minuti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pt__Inf" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Assist" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ammonizioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Espulsioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Segnati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Sbagliati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gol_Subiti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Parati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1040" posY="360">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ruolo_mantra" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Team" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nome" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Quo" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Titolarita" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Affidabilita" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Integrita" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Commento" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_1" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_2" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_3" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_4" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota_5" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MV" id="28"/>
+      <elementValue elementRef="LENGTH" value="10" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FMV" id="30"/>
+      <elementValue elementRef="LENGTH" value="10" id="31"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Presenze" id="32"/>
+      <elementValue elementRef="LENGTH" value="10" id="33"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FMV_Exp" id="34"/>
+      <elementValue elementRef="LENGTH" value="10" id="35"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Tit" id="36"/>
+      <elementValue elementRef="LENGTH" value="10" id="37"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Minuti" id="38"/>
+      <elementValue elementRef="LENGTH" value="10" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pt__Inf" id="40"/>
+      <elementValue elementRef="LENGTH" value="10" id="41"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gol" id="42"/>
+      <elementValue elementRef="LENGTH" value="10" id="43"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Assist" id="44"/>
+      <elementValue elementRef="LENGTH" value="10" id="45"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Ammonizioni" id="46"/>
+      <elementValue elementRef="LENGTH" value="10" id="47"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Espulsioni" id="48"/>
+      <elementValue elementRef="LENGTH" value="10" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Segnati" id="50"/>
+      <elementValue elementRef="LENGTH" value="10" id="51"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Sbagliati" id="52"/>
+      <elementValue elementRef="LENGTH" value="10" id="53"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gol_Subiti" id="54"/>
+      <elementValue elementRef="LENGTH" value="10" id="55"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Rig__Parati" id="56"/>
+      <elementValue elementRef="LENGTH" value="10" id="57"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorCode" id="58"/>
+      <elementValue elementRef="LENGTH" value="10" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="errorMessage" id="60"/>
+      <elementValue elementRef="LENGTH" value="10" id="61"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="metadata" name="tLogRow_2">
+      <column comment="" key="false" length="1" name="Ruolo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Character" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Ruolo_mantra" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="50" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="Team" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nome" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Quo" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Titolarita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Affidabilita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Integrita" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="8192" name="Commento" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_1" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_2" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_3" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_4" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Nota_5" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="MV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="FMV" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Presenze" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="4" name="FMV_Exp" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pt__Tit" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Minuti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pt__Inf" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Assist" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Ammonizioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Espulsioni" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Segnati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Sbagliati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Gol_Subiti" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Rig__Parati" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7Mm0UI3NEfGl07lUijb32w" show="false"/>
@@ -1375,7 +1339,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Am_KIJZlEfGSidNEkBWTUw" show="false"/>
@@ -1516,7 +1480,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="520">
+  <node componentName="tSchemaComplianceCheck" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSchemaComplianceCheck_2" show="false"/>
     <elementParameter field="RADIO" name="CHECK_ALL" value="true"/>
     <elementParameter field="RADIO" name="CUSTOMER" value="false"/>
@@ -1670,7 +1634,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="520" posY="520">
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="920" posY="520">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7Mm0UI3NEfGl07lUijb32w" show="false"/>
@@ -1811,7 +1775,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="680">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="880" posY="640">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_3" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
@@ -1877,18 +1841,61 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
+  <node componentName="tFileExist" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="240">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileExist_1" show="false"/>
     <elementParameter field="FILE" name="FILE_NAME" value="context.basePath + &quot;INPUT/stats/classic_pma8_mod.xlsx&quot;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="240" posY="360">
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="400" posY="360">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
     <elementParameter field="TEXT" name="MESSAGE" value="&quot;MANCA IL FILE PER LE STATISTICHE&quot;"/>
     <elementParameter field="TEXT" name="CODE" value="42"/>
     <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="240">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Importo player stats table&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="120" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="MEMO_EDITOR_JAVA" name="CODE" value="System.out.println(&quot;Importo il listone di fantacalcio.it&quot;);"/>
+    <elementParameter field="MEMO_EDITOR_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="520">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="download_listone_fantacalcio"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="PROGETTO_FANTA:_DZDooJoUEfGSidNEkBWTUw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" value="true" show="false"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" value="false" show="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" value="false" show="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="LOAD_CONTEXT_FROM_FILE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_BASE64" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
@@ -1899,7 +1906,7 @@
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tDBClose_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputExcel_1" target="tSchemaComplianceCheck_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileInputExcel_1" target="tMap_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
   </connection>
@@ -1907,247 +1914,22 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tMap_1">
+  <connection connectorName="FLOW" label="filtro_campi" lineStyle="0" metaname="filtro_campi" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tSchemaComplianceCheck_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Ruolo_mantra" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="filtro_campi" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tSchemaComplianceCheck_1" target="tDBOutput_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
   </connection>
   <connection connectorName="REJECT" label="row4" lineStyle="0" metaname="tSchemaComplianceCheck_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tSchemaComplianceCheck_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="set_stats_table" lineStyle="0" metaname="set_stats_table" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tDBOutput_1">
-    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
-      <elementValue elementRef="TRACE_COLUMN" value="rig__segnati" id="0"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pma" id="3"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
-      <elementValue elementRef="TRACE_COLUMN" value="titolarita" id="6"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
-      <elementValue elementRef="TRACE_COLUMN" value="gol" id="9"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
-      <elementValue elementRef="TRACE_COLUMN" value="ammonizioni" id="12"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
-      <elementValue elementRef="TRACE_COLUMN" value="quo" id="15"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
-      <elementValue elementRef="TRACE_COLUMN" value="fmv_exp" id="18"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
-      <elementValue elementRef="TRACE_COLUMN" value="fmv" id="21"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
-      <elementValue elementRef="TRACE_COLUMN" value="rig__sbagliati" id="24"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
-      <elementValue elementRef="TRACE_COLUMN" value="espulsioni" id="27"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="28"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="29"/>
-      <elementValue elementRef="TRACE_COLUMN" value="budget" id="30"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="31"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="32"/>
-      <elementValue elementRef="TRACE_COLUMN" value="nota_5" id="33"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="34"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="35"/>
-      <elementValue elementRef="TRACE_COLUMN" value="presenze" id="36"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="37"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="38"/>
-      <elementValue elementRef="TRACE_COLUMN" value="minuti" id="39"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="40"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="41"/>
-      <elementValue elementRef="TRACE_COLUMN" value="nota_4" id="42"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="43"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="44"/>
-      <elementValue elementRef="TRACE_COLUMN" value="nota_3" id="45"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="46"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="47"/>
-      <elementValue elementRef="TRACE_COLUMN" value="nota_2" id="48"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="49"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="50"/>
-      <elementValue elementRef="TRACE_COLUMN" value="commento" id="51"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="52"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="53"/>
-      <elementValue elementRef="TRACE_COLUMN" value="nota_1" id="54"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="55"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="56"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pt__tit" id="57"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="58"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="59"/>
-      <elementValue elementRef="TRACE_COLUMN" value="mv" id="60"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="61"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="62"/>
-      <elementValue elementRef="TRACE_COLUMN" value="nome" id="63"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="64"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="65"/>
-      <elementValue elementRef="TRACE_COLUMN" value="integrita" id="66"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="67"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="68"/>
-      <elementValue elementRef="TRACE_COLUMN" value="team" id="69"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="70"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="71"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pt__inf" id="72"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="73"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="74"/>
-      <elementValue elementRef="TRACE_COLUMN" value="obiett" id="75"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="76"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="77"/>
-      <elementValue elementRef="TRACE_COLUMN" value="ruolo" id="78"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="79"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="80"/>
-      <elementValue elementRef="TRACE_COLUMN" value="prezzo" id="81"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="82"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="83"/>
-      <elementValue elementRef="TRACE_COLUMN" value="fascia" id="84"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="85"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="86"/>
-      <elementValue elementRef="TRACE_COLUMN" value="assist" id="87"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="88"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="89"/>
-      <elementValue elementRef="TRACE_COLUMN" value="gol_subiti" id="90"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="91"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="92"/>
-      <elementValue elementRef="TRACE_COLUMN" value="affidabilita" id="93"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="94"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="95"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Affidabilita" id="96"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="97"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="98"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Gol_Subiti" id="99"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="100"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="101"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Integrita" id="102"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="103"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="104"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Ammonizioni" id="105"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="106"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="107"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Rig__Sbagliati" id="108"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="109"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="110"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Ruolo" id="111"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="112"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="113"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Minuti" id="114"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="115"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="116"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Team" id="117"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="118"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="119"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Nome" id="120"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="121"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="122"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Rig__Segnati" id="123"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="124"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="125"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Commento" id="126"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="127"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="128"/>
-      <elementValue elementRef="TRACE_COLUMN" value="stats8_mod" id="129"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="130"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="131"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Gol" id="132"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="133"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="134"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Presenze" id="135"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="136"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="137"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Nota_5" id="138"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="139"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="140"/>
-      <elementValue elementRef="TRACE_COLUMN" value="MV" id="141"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="142"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="143"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Quo" id="144"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="145"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="146"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Nota_1" id="147"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="148"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="149"/>
-      <elementValue elementRef="TRACE_COLUMN" value="FMV_Exp" id="150"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="151"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="152"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Espulsioni" id="153"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="154"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="155"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Nota_2" id="156"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="157"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="158"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Nota_3" id="159"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="160"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="161"/>
-      <elementValue elementRef="TRACE_COLUMN" value="FMV" id="162"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="163"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="164"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Nota_4" id="165"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="166"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="167"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Pt__Tit" id="168"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="169"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="170"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Pt__Inf" id="171"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="172"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="173"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Titolarita" id="174"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="175"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="176"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Assist" id="177"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="178"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="179"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Rig__Parati" id="180"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="181"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="182"/>
-      <elementValue elementRef="TRACE_COLUMN" value="modLega" id="183"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="184"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="185"/>
-      <elementValue elementRef="TRACE_COLUMN" value="qtyLega" id="186"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="187"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="188"/>
-      <elementValue elementRef="TRACE_COLUMN" value="stats12_mod" id="189"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="190"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="191"/>
-      <elementValue elementRef="TRACE_COLUMN" value="stats10_mod" id="192"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="193"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="194"/>
-      <elementValue elementRef="TRACE_COLUMN" value="stats12_nomod" id="195"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="196"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="197"/>
-      <elementValue elementRef="TRACE_COLUMN" value="stats10_nomod" id="198"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="199"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="200"/>
-      <elementValue elementRef="TRACE_COLUMN" value="stats8_nomod" id="201"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="202"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="203"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pma12_mod" id="204"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="205"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="206"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pma10_nomod" id="207"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="208"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="209"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pma8_nomod" id="210"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="211"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="212"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pma8_mod" id="213"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="214"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="215"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pma12_nomod" id="216"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="217"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="218"/>
-      <elementValue elementRef="TRACE_COLUMN" value="pma10_mod" id="219"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="220"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="221"/>
-      <elementValue elementRef="TRACE_COLUMN" value="PMA" id="222"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="223"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="224"/>
-      <elementValue elementRef="TRACE_COLUMN" value="Ruolo_mantra" id="225"/>
-      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="226"/>
-      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="227"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="set_stats_table" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFileInputExcel_2" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_2" target="tSchemaComplianceCheck_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2165,12 +1947,21 @@
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;)) == true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1" show="false"/>
   </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" source="tFileExist_1" target="tFileInputExcel_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
-  </connection>
   <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFileExist_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFileExist_1" target="tWarn_1">
     <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Boolean)globalMap.get(&quot;tFileExist_1_EXISTS&quot;)) == false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tFileExist_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_2" offsetLabelX="0" offsetLabelY="0" source="tJava_2" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tFileInputExcel_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
@@ -2221,6 +2012,21 @@
   <subjob>
     <elementParameter field="CHECK" name="COLLAPSED" value="true" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;93;185" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="0;93;185"/>
   </subjob>
