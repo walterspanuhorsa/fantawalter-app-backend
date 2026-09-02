@@ -221,7 +221,7 @@
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="720" posY="400">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_2" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="context.basePath + &quot;INPUT/stats/&quot;+((String)globalMap.get(&quot;row5.nomefile&quot;))+&quot;.xlsx&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.basePath + &quot;INPUT/pma/&quot;+((String)globalMap.get(&quot;row5.nomefile&quot;))+&quot;.xlsx&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:i/0/RtTgAXvn7pXl9DvBPfEW4gwF/NAIbkBScuD+"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
@@ -640,7 +640,7 @@
       <column comment="" key="false" length="3" name="modificatore" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var">
         <mapperTableEntries name="pma_clean" expression="row6.PMA == null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: row6.PMA.trim().replace(&quot;%&quot;, &quot;&quot;).replace(&quot;,&quot;, &quot;.&quot;) " type="id_String"/>
         <mapperTableEntries name="PMA_norm" expression="Var.pma_clean != null&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&amp;&amp; Var.pma_clean.matches(&quot;[-+]?\\d+(\\.\\d+)?&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;? new BigDecimal(Var.pma_clean)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;: new BigDecimal(&quot;-1&quot;) " type="id_BigDecimal"/>
